@@ -1,0 +1,54 @@
+Some avatars are duplicates so that each new design has a spy/res-counterpart.
+Most avatars are named to the main account they were used for (not alt),
+or the creator if they were never used. Accounts are rarely named after the alt, unless the alt was more well known than the main
+(eg. starbird1002 instead of sunbird1002, flanders).
+
+Regarding_TRP_Avatars:
+Players whose avatar indexing starts with 2 or more (eg. swaram,tyrrox) in this folder but not -1, usually means
+they have a -1 avatar in the TRP folder, unless earlier versions were lost (see Lost/Missing)
+
+
+
+
+Unused:
+Ba3henov-14
+CITC-5,6,7,8
+NyanCat-4
+pam-3,4
+SadNixon-2
+sidewalkill-2-
+Tyrrox-2&3&4 
+I *think* InEdibleCake-8&9
+Naizea-2
+Nikolaj-2,3,5,6,7,8,9,10,11
+
+
+Lost/Missing:
+PROAVL:
+Chaos22-1 & 2 are lost and unlikely to ever be found.
+freshererer-2-, it was a goku head, used on account freshererererer.
+Dylan4000-1-res is not the true picture, it's cropped from a youtube video.
+incognitomode-1- (avatar with question mark)
+
+
+Not_Included:
+Rotated avatars used by Crouton for instance.
+Very little usage time and there were too many.
+Ansonberns and Bremen's are included for length of usage.
+
+
+Named_After_Creator:
+Naizea-4- currently in use by user Maximovic96 (26/10/2022)
+Ba3henov-13 in use by user Leaf aka Mathwizardaz
+
+
+Other:
+Tyrrox-4 has no existing res counterpart, as they were made for each spyrole (4 being oberon)
+punklee was initially approved (for at least 2 years) and was removed by moderators on approx 24/10/2022
+
+
+Credits - Thank you very much for your immense help!
+NyanCat
+hakha3
+Nikolaj
+Pam
