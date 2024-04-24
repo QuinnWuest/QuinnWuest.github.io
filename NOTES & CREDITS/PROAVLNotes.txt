@@ -8,6 +8,9 @@ Players whose avatar indexing starts with 2 or more (eg. swaram,tyrrox) in this 
 they have a -1 avatar in the TRP folder, unless earlier versions were lost (see Lost/Missing)
 
 
+Avatars made for tournaments:
+ingenue-2- for "engineous" in Tournament 7
+ratters- for "tomsy and the cooley wooleys" in Tournament 7
 
 
 Unused:
@@ -43,7 +46,8 @@ Ba3henov-13 in use by user Leaf aka Mathwizardaz
 
 Other:
 Tyrrox-4 has no existing res counterpart, as they were made for each spyrole (4 being oberon)
-punklee was initially approved (for at least 2 years) and was removed by moderators on approx 24/10/2022
+PunkLee-1 was initially approved (for at least 2 years) and was removed by moderators on approx 24/10/2022
+Gawaine-spy was lost. The current version being used again was remade.
 
 
 Credits - Thank you very much for your immense help!
