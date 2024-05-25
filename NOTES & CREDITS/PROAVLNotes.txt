@@ -8,11 +8,6 @@ Players whose avatar indexing starts with 2 or more (eg. swaram,tyrrox) in this 
 they have a -1 avatar in the TRP folder, unless earlier versions were lost (see Lost/Missing)
 
 
-Avatars made for tournaments:
-ingenue-2- for "engineous" in Tournament 7
-ratters- for "tomsy and the cooley wooleys" in Tournament 7
-
-
 Unused:
 Ba3henov-14
 CITC-5,6,7,8
