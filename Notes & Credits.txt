@@ -19,10 +19,11 @@ TheResistancePlus Notes:
 ProAvalon Notes:
 Indexing may not start at 1 due to either being missing or being hosted on TheResistancePlus.
 - Ba3henov-14, CITC-5,6,7,8, NyanCat-4, pam-3,4, SadNixon-2, sidewalkill-2-, Tyrrox-2&3&4, InEdibleCake-8&9, Naizea-2, were unused.
-- Chaos22-1&2, fresherer-2-, Dylan4000-1-res, incognitomode-1- were lost.
+- Chaos22-1&2, fresherer-2-, incognitomode-1-, DeathDemon-1- were lost.
 - freshererer-2- was a Goku head, used on freshererererer.
 - incognitomode-1- was an avatar with a question mark head.
-- Dylan4000-1-res- was cropped from a Youtube video.
+- DeathDemon-1- was a dog wearing glasses holding a bone.
+- Dylan4000-1-res- is not the original file. The saved version was cropped from a Youtube video.
 - QuinnWuest-3- was used by QuinnWuest, but is now in use by user stern.
 - Armthur-6- was the first avatar of size 1024x1024 to be accepted.
 - Tyrrox-4 has no existing res counterpart, as they were made for each spyrole. (4 being oberon)
