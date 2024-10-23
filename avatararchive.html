@@ -1,13 +1,507 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="initial-scale=1">
-    <title>Avalon Avatar Archive</title>
-  </head>
-  <style>
-  </style>
-  <body>
-	<h1>Avalon Avatar Archive</h1>
-  </body>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1">
+		<title>Avalon Avatar Archive</title>
+		<script src="js/jquery.3.7.0.min.js"></script>
+		<style>
+		@font-face {
+			font-family: 'Special Elite';
+			src: url(font/SpecialElite.ttf);
+		}
+		.main-title {
+			font-size: 75pt;
+			text-align: center;
+			margin-top: 0cm;
+			margin-bottom: -0.5cm;
+		}
+		.site-name {
+			text-align: center;
+			font-size: 40pt;
+			margin-bottom: 0.5cm;
+		}
+		body {
+			background-color: #aaddff;
+			font-family: 'Special Elite';
+		}
+		.players {
+			margin: auto;
+			justify-content: center;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			flex-wrap: wrap;
+		}
+		.player {
+			margin: 0.5cm;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		.player-name {
+			text-align: center;
+			font-size: 20pt;
+			margin: 0em auto;
+			position: relative;
+		}
+		.player-icons {
+			display: flex;
+			flex-wrap: wrap;
+			margin: 0em auto;
+			position: relative;
+			align-items: center;
+			justify-content: center;
+		}
+		.player-icons img {
+			width: 128px;
+		}
+		</style>
+	</head>
+	<body>
+		<p class="main-title">Avalon Avatar Archive</p>
+		<p class="site-name">ProAvalon</p>
+		<div class="players">
+			<div class="player">
+				<div class="player-name">username</div>
+				<div class="player-icons">
+					<img src="PROAVALON/username-res.png"></img>
+					<img src="PROAVALON/username-spy.png"></img>
+				</div>
+			</div>
+			<div class="player">
+				<div class="player-name">1CE1</div>
+				<div class="player-icons">
+					<img src="PROAVALON/1CE1-res.png"></img>
+					<img src="PROAVALON/1CE1-spy.png"></img>
+				</div>
+			</div>
+			<div class="player">
+				<div class="player-name">2High2Fall</div>
+				<div class="player-icons">
+					<img src="PROAVALON/2High2Fall-res.png"></img>
+					<img src="PROAVALON/2High2Fall-spy.png"></img>
+				</div>
+			</div>
+			<div class="player">
+				<div class="player-name">420LlamaPerci</div>
+				<div class="player-icons">
+					<img src="PROAVALON/420LlamaPerci-res.png"></img>
+					<img src="PROAVALON/420LlamaPerci-spy.png"></img>
+				</div>
+			</div>
+			<div class="player">
+				<div class="player-name">acro</div>
+				<div class="player-icons">
+					<img src="PROAVALON/acro-res.png"></img>
+					<img src="PROAVALON/acro-spy.png"></img>
+				</div>
+			</div>
+			<div class="player">
+				<div class="player-name">alexBlueno</div>
+				<div class="player-icons">
+					<img src="PROAVALON/alexBlueno-res.png"></img>
+					<img src="PROAVALON/alexBlueno-spy.png"></img>
+				</div>
+			</div>
+			<div class="player">
+				<div class="player-name">alexxx</div>
+				<div class="player-icons">
+					<img src="PROAVALON/alexxx-res.png"></img>
+					<img src="PROAVALON/alexxx-spy.png"></img>
+				</div>
+			</div>
+			<div class="player">
+				<div class="player-name">AlphaQAll</div>
+				<div class="player-icons">
+					<img src="PROAVALON/AlphaQAll-res.png"></img>
+					<img src="PROAVALON/AlphaQAll-spy.png"></img>
+				</div>
+			</div>
+			<div class="player">
+				<div class="player-name">anders</div>
+				<div class="player-icons">
+					<img src="PROAVALON/anders-1-res.png"></img>
+					<img src="PROAVALON/anders-1-spy.png"></img>
+					<img src="PROAVALON/anders-2-res.png"></img>
+					<img src="PROAVALON/anders-2-spy.png"></img>
+					<img src="PROAVALON/anders-3-res.png"></img>
+					<img src="PROAVALON/anders-3-spy.png"></img>
+					<img src="PROAVALON/anders-4-res.png"></img>
+					<img src="PROAVALON/anders-4-spy.png"></img>
+				</div>
+			</div>
+			<div class="player">
+				<div class="player-name">angy</div>
+				<div class="player-icons">
+					<img src="PROAVALON/angy-res.png"></img>
+					<img src="PROAVALON/angy-spy.png"></img>
+				</div>
+			</div>
+			<div class="player">
+				<div class="player-name">Anissakate</div>
+				<div class="player-icons">
+					<img src="PROAVALON/Anissakate-1-res.png"></img>
+					<img src="PROAVALON/Anissakate-1-spy.png"></img>
+					<img src="PROAVALON/Anissakate-2-res.png"></img>
+					<img src="PROAVALON/Anissakate-2-spy.png"></img>
+				</div>
+			</div>
+			<div class="player">
+				<div class="player-name">Anji</div>
+				<div class="player-icons">
+					<img src="PROAVALON/Anji-res.png"></img>
+					<img src="PROAVALON/Anji-spy.png"></img>
+				</div>
+			</div>
+			<div class="player">
+				<div class="player-name">anonymouse255</div>
+				<div class="player-icons">
+					<img src="PROAVALON/anonymouse255-1-res.png"></img>
+					<img src="PROAVALON/anonymouse255-1-spy.png"></img>
+					<img src="PROAVALON/anonymouse255-2-res.png"></img>
+					<img src="PROAVALON/anonymouse255-2-spy.png"></img>
+					<img src="PROAVALON/anonymouse255-3-res.png"></img>
+					<img src="PROAVALON/anonymouse255-3-spy.png"></img>
+					<img src="PROAVALON/anonymouse255-4-res.png"></img>
+					<img src="PROAVALON/anonymouse255-4-spy.png"></img>
+				</div>
+			</div>
+			<div class="player">
+				<div class="player-name">ansonberns</div>
+				<div class="player-icons">
+					<img src="PROAVALON/ansonberns-res.png"></img>
+					<img src="PROAVALON/ansonberns-spy.png"></img>
+				</div>
+			</div>
+			<div class="player">
+				<div class="player-name">antaria</div>
+				<div class="player-icons">
+					<img src="PROAVALON/antaria-1-res.png"></img>
+					<img src="PROAVALON/antaria-1-spy.png"></img>
+					<img src="PROAVALON/antaria-2-res.png"></img>
+					<img src="PROAVALON/antaria-2-spy.png"></img>
+				</div>
+			</div>
+			<div class="player">
+				<div class="player-name">Apathiac</div>
+				<div class="player-icons">
+					<img src="PROAVALON/Apathiac-res.png"></img>
+					<img src="PROAVALON/Apathiac-spy.png"></img>
+				</div>
+			</div>
+			<div class="player">
+				<div class="player-name">appleslices</div>
+				<div class="player-icons">
+					<img src="PROAVALON/appleslices-res.png"></img>
+					<img src="PROAVALON/appleslices-spy.png"></img>
+				</div>
+			</div>
+			<div class="player">
+				<div class="player-name">Armthur</div>
+				<div class="player-icons">
+					<img src="PROAVALON/Armthur-1-res.png"></img>
+					<img src="PROAVALON/Armthur-1-spy.png"></img>
+					<img src="PROAVALON/Armthur-2-res.png"></img>
+					<img src="PROAVALON/Armthur-2-spy.png"></img>
+					<img src="PROAVALON/Armthur-3-res.png"></img>
+					<img src="PROAVALON/Armthur-3-spy.png"></img>
+					<img src="PROAVALON/Armthur-4-res.png"></img>
+					<img src="PROAVALON/Armthur-4-spy.png"></img>
+					<img src="PROAVALON/Armthur-5-res.png"></img>
+					<img src="PROAVALON/Armthur-5-spy.png"></img>
+					<img src="PROAVALON/Armthur-6-res.png"></img>
+					<img src="PROAVALON/Armthur-6-spy.png"></img>
+				</div>
+			</div>
+			<div class="player">
+				<div class="player-name">Arthur</div>
+				<div class="player-icons">
+					<img src="PROAVALON/Arthur-1-res.png"></img>
+					<img src="PROAVALON/Arthur-1-spy.png"></img>
+					<img src="PROAVALON/Arthur-2-res.png"></img>
+					<img src="PROAVALON/Arthur-2-spy.png"></img>
+				</div>
+			</div>
+			<div class="player">
+				<div class="player-name">Arwenior</div>
+				<div class="player-icons">
+					<img src="PROAVALON/Arwenior-res.png"></img>
+					<img src="PROAVALON/Arwenior-spy.png"></img>
+				</div>
+			</div>
+			<div class="player">
+				<div class="player-name">Aster</div>
+				<div class="player-icons">
+					<img src="PROAVALON/Aster-res.png"></img>
+					<img src="PROAVALON/Aster-spy.png"></img>
+				</div>
+			</div>
+			<div class="player">
+				<div class="player-name">AveGang</div>
+				<div class="player-icons">
+					<img src="PROAVALON/AveGang-res.png"></img>
+					<img src="PROAVALON/AveGang-spy.png"></img>
+				</div>
+			</div>
+			<div class="player">
+				<div class="player-name">AveHunter</div>
+				<div class="player-icons">
+					<img src="PROAVALON/AveHunter-1-res.png"></img>
+					<img src="PROAVALON/AveHunter-1-spy.png"></img>
+					<img src="PROAVALON/AveHunter-2-res.png"></img>
+					<img src="PROAVALON/AveHunter-2-spy.png"></img>
+				</div>
+			</div>
+			<div class="player">
+				<div class="player-name">Averum</div>
+				<div class="player-icons">
+					<img src="PROAVALON/Averum-res.png"></img>
+					<img src="PROAVALON/Averum-spy.png"></img>
+				</div>
+			</div>
+			<div class="player">
+				<div class="player-name">Azimuth</div>
+				<div class="player-icons">
+					<img src="PROAVALON/Azimuth-res.png"></img>
+					<img src="PROAVALON/Azimuth-spy.png"></img>
+				</div>
+			</div>
+			<div class="player">
+				<div class="player-name">Ba3henov</div>
+				<div class="player-icons">
+					<img src="PROAVALON/Ba3henov-1-res.png"></img>
+					<img src="PROAVALON/Ba3henov-1-spy.png"></img>
+					<img src="PROAVALON/Ba3henov-2-res.png"></img>
+					<img src="PROAVALON/Ba3henov-2-spy.png"></img>
+					<img src="PROAVALON/Ba3henov-3-res.png"></img>
+					<img src="PROAVALON/Ba3henov-3-spy.png"></img>
+					<img src="PROAVALON/Ba3henov-4-res.png"></img>
+					<img src="PROAVALON/Ba3henov-4-spy.png"></img>
+					<img src="PROAVALON/Ba3henov-5-res.png"></img>
+					<img src="PROAVALON/Ba3henov-5-spy.png"></img>
+					<img src="PROAVALON/Ba3henov-6-res.png"></img>
+					<img src="PROAVALON/Ba3henov-6-spy.png"></img>
+					<img src="PROAVALON/Ba3henov-7-res.png"></img>
+					<img src="PROAVALON/Ba3henov-7-spy.png"></img>
+					<img src="PROAVALON/Ba3henov-8-res.png"></img>
+					<img src="PROAVALON/Ba3henov-8-spy.png"></img>
+					<img src="PROAVALON/Ba3henov-9-res.png"></img>
+					<img src="PROAVALON/Ba3henov-9-spy.png"></img>
+					<img src="PROAVALON/Ba3henov-10-res.png"></img>
+					<img src="PROAVALON/Ba3henov-10-spy.png"></img>
+					<img src="PROAVALON/Ba3henov-11-res.png"></img>
+					<img src="PROAVALON/Ba3henov-11-spy.png"></img>
+					<img src="PROAVALON/Ba3henov-12-res.png"></img>
+					<img src="PROAVALON/Ba3henov-12-spy.png"></img>
+					<img src="PROAVALON/Ba3henov-14-res.png"></img>
+					<img src="PROAVALON/Ba3henov-14-spy.png"></img>
+					<img src="PROAVALON/Ba3henov-15-res.png"></img>
+					<img src="PROAVALON/Ba3henov-15-spy.png"></img>
+					<img src="PROAVALON/Ba3henov-16-res.png"></img>
+					<img src="PROAVALON/Ba3henov-16-spy.png"></img>
+					<img src="PROAVALON/Ba3henov-17-res.png"></img>
+					<img src="PROAVALON/Ba3henov-17-spy.png"></img>
+					<img src="PROAVALON/Ba3henov-18-res.png"></img>
+					<img src="PROAVALON/Ba3henov-18-spy.png"></img>
+					<img src="PROAVALON/Ba3henov-19-res.png"></img>
+					<img src="PROAVALON/Ba3henov-19-spy.png"></img>
+				</div>
+			</div>
+			<div class="player">
+				<div class="player-name">bananaaaaaaas</div>
+				<div class="player-icons">
+					<img src="PROAVALON/bananaaaaaaas-1-res.png"></img>
+					<img src="PROAVALON/bananaaaaaaas-1-spy.png"></img>
+					<img src="PROAVALON/bananaaaaaaas-2-res.png"></img>
+					<img src="PROAVALON/bananaaaaaaas-2-spy.png"></img>
+				</div>
+			</div>
+			<div class="player">
+				<div class="player-name">barbearian</div>
+				<div class="player-icons">
+					<img src="PROAVALON/barbearian-res.png"></img>
+					<img src="PROAVALON/barbearian-spy.png"></img>
+				</div>
+			</div>
+			<div class="player">
+				<div class="player-name">BasicNerd</div>
+				<div class="player-icons">
+					<img src="PROAVALON/BasicNerd-res.png"></img>
+					<img src="PROAVALON/BasicNerd-spy.png"></img>
+				</div>
+			</div>
+			<div class="player">
+				<div class="player-name">Bassem</div>
+				<div class="player-icons">
+					<img src="PROAVALON/Bassem-res.png"></img>
+					<img src="PROAVALON/Bassem-spy.png"></img>
+				</div>
+			</div>
+			<div class="player">
+				<div class="player-name">benjk</div>
+				<div class="player-icons">
+					<img src="PROAVALON/benjk-1-res.png"></img>
+					<img src="PROAVALON/benjk-1-spy.png"></img>
+					<img src="PROAVALON/benjk-2-res.png"></img>
+					<img src="PROAVALON/benjk-2-spy.png"></img>
+				</div>
+			</div>
+			<div class="player">
+				<div class="player-name">Besjbo</div>
+				<div class="player-icons">
+					<img src="PROAVALON/Besjbo-1-res.png"></img>
+					<img src="PROAVALON/Besjbo-1-spy.png"></img>
+					<img src="PROAVALON/Besjbo-2-res.png"></img>
+					<img src="PROAVALON/Besjbo-2-spy.png"></img>
+				</div>
+			</div>
+			<div class="player">
+				<div class="player-name">Bezzo</div>
+				<div class="player-icons">
+					<img src="PROAVALON/Bezzo-1-res.png"></img>
+					<img src="PROAVALON/Bezzo-1-spy.png"></img>
+					<img src="PROAVALON/Bezzo-2-res.png"></img>
+					<img src="PROAVALON/Bezzo-2-spy.png"></img>
+				</div>
+			</div>
+			<div class="player">
+				<div class="player-name">bezzy</div>
+				<div class="player-icons">
+					<img src="PROAVALON/bezzy-res.png"></img>
+					<img src="PROAVALON/bezzy-spy.png"></img>
+				</div>
+			</div>
+			<div class="player">
+				<div class="player-name">bigbootybortha</div>
+				<div class="player-icons">
+					<img src="PROAVALON/bigbootybortha-res.png"></img>
+					<img src="PROAVALON/bigbootybortha-spy.png"></img>
+				</div>
+			</div>
+			<div class="player">
+				<div class="player-name">BigDigDev</div>
+				<div class="player-icons">
+					<img src="PROAVALON/BigDigDev-1-res.png"></img>
+					<img src="PROAVALON/BigDigDev-1-spy.png"></img>
+					<img src="PROAVALON/BigDigDev-2-res.png"></img>
+					<img src="PROAVALON/BigDigDev-2-spy.png"></img>
+					<img src="PROAVALON/BigDigDev-3-res.png"></img>
+					<img src="PROAVALON/BigDigDev-3-spy.png"></img>
+				</div>
+			</div>
+			<div class="player">
+				<div class="player-name">bigz_200</div>
+				<div class="player-icons">
+					<img src="PROAVALON/bigz_200-res.png"></img>
+					<img src="PROAVALON/bigz_200-spy.png"></img>
+				</div>
+			</div>
+			<div class="player">
+				<div class="player-name">BLGsabo</div>
+				<div class="player-icons">
+					<img src="PROAVALON/BLGsabo-1-res.png"></img>
+					<img src="PROAVALON/BLGsabo-1-spy.png"></img>
+					<img src="PROAVALON/BLGsabo-2-res.png"></img>
+					<img src="PROAVALON/BLGsabo-2-spy.png"></img>
+				</div>
+			</div>
+			<div class="player">
+				<div class="player-name">bossi</div>
+				<div class="player-icons">
+					<img src="PROAVALON/bossi-1-res.png"></img>
+					<img src="PROAVALON/bossi-1-spy.png"></img>
+					<img src="PROAVALON/bossi-2-res.png"></img>
+					<img src="PROAVALON/bossi-2-spy.png"></img>
+				</div>
+			</div>
+			<div class="player">
+				<div class="player-name">BowieZ</div>
+				<div class="player-icons">
+					<img src="PROAVALON/BowieZ-res.png"></img>
+					<img src="PROAVALON/BowieZ-spy.png"></img>
+				</div>
+			</div>
+			<div class="player">
+				<div class="player-name">Bremen</div>
+				<div class="player-icons">
+					<img src="PROAVALON/Bremen-1-res.png"></img>
+					<img src="PROAVALON/Bremen-1-spy.png"></img>
+					<img src="PROAVALON/Bremen-2-res.png"></img>
+					<img src="PROAVALON/Bremen-2-spy.png"></img>
+					<img src="PROAVALON/Bremen-3-res.png"></img>
+					<img src="PROAVALON/Bremen-3-spy.png"></img>
+				</div>
+			</div>
+			<div class="player">
+				<div class="player-name">BroccLung</div>
+				<div class="player-icons">
+					<img src="PROAVALON/BroccLung-res.png"></img>
+					<img src="PROAVALON/BroccLung-spy.png"></img>
+				</div>
+			</div>
+			<div class="player">
+				<div class="player-name">bumfuzzle28</div>
+				<div class="player-icons">
+					<img src="PROAVALON/bumfuzzle28-1-res.png"></img>
+					<img src="PROAVALON/bumfuzzle28-1-spy.png"></img>
+					<img src="PROAVALON/bumfuzzle28-2-res.png"></img>
+					<img src="PROAVALON/bumfuzzle28-2-spy.png"></img>
+					<img src="PROAVALON/bumfuzzle28-3-res.png"></img>
+					<img src="PROAVALON/bumfuzzle28-3-spy.png"></img>
+					<img src="PROAVALON/bumfuzzle28-4-res.png"></img>
+					<img src="PROAVALON/bumfuzzle28-4-spy.png"></img>
+					<img src="PROAVALON/bumfuzzle28-5-res.png"></img>
+					<img src="PROAVALON/bumfuzzle28-5-spy.png"></img>
+					<img src="PROAVALON/bumfuzzle28-6-res.png"></img>
+					<img src="PROAVALON/bumfuzzle28-6-spy.png"></img>
+				</div>
+			</div>
+			<div class="player">
+				<div class="player-name">Buncha</div>
+				<div class="player-icons">
+					<img src="PROAVALON/Buncha-res.png"></img>
+					<img src="PROAVALON/Buncha-spy.png"></img>
+				</div>
+			</div>
+			<div class="player">
+				<div class="player-name">catfat</div>
+				<div class="player-icons">
+					<img src="PROAVALON/catfat-1-res.png"></img>
+					<img src="PROAVALON/catfat-1-spy.png"></img>
+					<img src="PROAVALON/catfat-2-res.png"></img>
+					<img src="PROAVALON/catfat-2-spy.png"></img>
+				</div>
+			</div>
+			<div class="player">
+				<div class="player-name">Chaos22</div>
+				<div class="player-icons">
+					<img src="PROAVALON/Chaos22-3-res.png"></img>
+					<img src="PROAVALON/Chaos22-3-spy.png"></img>
+					<img src="PROAVALON/Chaos22-4-res.png"></img>
+					<img src="PROAVALON/Chaos22-4-spy.png"></img>
+					<img src="PROAVALON/Chaos22-5-res.png"></img>
+					<img src="PROAVALON/Chaos22-5-spy.png"></img>
+					<img src="PROAVALON/Chaos22-6-res.png"></img>
+					<img src="PROAVALON/Chaos22-6-spy.png"></img>
+					<img src="PROAVALON/Chaos22-7-res.png"></img>
+					<img src="PROAVALON/Chaos22-7-spy.png"></img>
+					<br>
+					<img src="PROAVALON/Chaos22-8-res.png"></img>
+					<img src="PROAVALON/Chaos22-8-spy.png"></img>
+					<img src="PROAVALON/Chaos22-9-res.png"></img>
+					<img src="PROAVALON/Chaos22-9-spy.png"></img>
+					<img src="PROAVALON/Chaos22-10-res.png"></img>
+					<img src="PROAVALON/Chaos22-10-spy.png"></img>
+					<img src="PROAVALON/Chaos22-11-res.png"></img>
+					<img src="PROAVALON/Chaos22-11-spy.png"></img>
+					<img src="PROAVALON/Chaos22-12-res.png"></img>
+					<img src="PROAVALON/Chaos22-12-spy.png"></img>
+					<br>
+					<img src="PROAVALON/Chaos22-13-res.png"></img>
+					<img src="PROAVALON/Chaos22-13-spy.png"></img>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
