@@ -1,0 +1,14 @@
+C:\Users\Quinn\Pictures\avalon\TRP_PROAVL_IST AVATAR ARCHIVE\MakeHTMLDivsForArchive\bin\Debug\net6.0\MakeHTMLDivsForArchive.exe
+C:\Users\Quinn\Pictures\avalon\TRP_PROAVL_IST AVATAR ARCHIVE\MakeHTMLDivsForArchive\bin\Debug\net6.0\MakeHTMLDivsForArchive.deps.json
+C:\Users\Quinn\Pictures\avalon\TRP_PROAVL_IST AVATAR ARCHIVE\MakeHTMLDivsForArchive\bin\Debug\net6.0\MakeHTMLDivsForArchive.runtimeconfig.json
+C:\Users\Quinn\Pictures\avalon\TRP_PROAVL_IST AVATAR ARCHIVE\MakeHTMLDivsForArchive\bin\Debug\net6.0\MakeHTMLDivsForArchive.dll
+C:\Users\Quinn\Pictures\avalon\TRP_PROAVL_IST AVATAR ARCHIVE\MakeHTMLDivsForArchive\bin\Debug\net6.0\MakeHTMLDivsForArchive.pdb
+C:\Users\Quinn\Pictures\avalon\TRP_PROAVL_IST AVATAR ARCHIVE\MakeHTMLDivsForArchive\obj\Debug\net6.0\MakeHTMLDivsForArchive.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Quinn\Pictures\avalon\TRP_PROAVL_IST AVATAR ARCHIVE\MakeHTMLDivsForArchive\obj\Debug\net6.0\MakeHTMLDivsForArchive.AssemblyInfoInputs.cache
+C:\Users\Quinn\Pictures\avalon\TRP_PROAVL_IST AVATAR ARCHIVE\MakeHTMLDivsForArchive\obj\Debug\net6.0\MakeHTMLDivsForArchive.AssemblyInfo.cs
+C:\Users\Quinn\Pictures\avalon\TRP_PROAVL_IST AVATAR ARCHIVE\MakeHTMLDivsForArchive\obj\Debug\net6.0\MakeHTMLDivsForArchive.csproj.CoreCompileInputs.cache
+C:\Users\Quinn\Pictures\avalon\TRP_PROAVL_IST AVATAR ARCHIVE\MakeHTMLDivsForArchive\obj\Debug\net6.0\MakeHTMLDivsForArchive.dll
+C:\Users\Quinn\Pictures\avalon\TRP_PROAVL_IST AVATAR ARCHIVE\MakeHTMLDivsForArchive\obj\Debug\net6.0\refint\MakeHTMLDivsForArchive.dll
+C:\Users\Quinn\Pictures\avalon\TRP_PROAVL_IST AVATAR ARCHIVE\MakeHTMLDivsForArchive\obj\Debug\net6.0\MakeHTMLDivsForArchive.pdb
+C:\Users\Quinn\Pictures\avalon\TRP_PROAVL_IST AVATAR ARCHIVE\MakeHTMLDivsForArchive\obj\Debug\net6.0\MakeHTMLDivsForArchive.genruntimeconfig.cache
+C:\Users\Quinn\Pictures\avalon\TRP_PROAVL_IST AVATAR ARCHIVE\MakeHTMLDivsForArchive\obj\Debug\net6.0\ref\MakeHTMLDivsForArchive.dll

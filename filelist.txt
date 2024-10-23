@@ -296,7 +296,6 @@ Faico-1-res.png
 Faico-1-spy.png
 Faico-2-res.png
 Faico-2-spy.png
-filelist.txt
 flAnders-1-res.png
 flAnders-1-spy.png
 flAnders-2-res.png
@@ -544,7 +543,7 @@ morgenstern-1-spy.png
 morgenstern-2-res.png
 morgenstern-2-spy.png
 morgenstern-3-res.png
-morgnstern-3-spy.png
+morgenstern-3-spy.png
 morningcatt-res.png
 morningcatt-spy.png
 moustafa769-res.png
