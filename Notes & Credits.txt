@@ -15,6 +15,8 @@ TheResistancePlus Notes:
 - Wayne-3, Ref-Rain, and maddie-3 were unused, but were later used on ProAvalon.
 - bb-4 was unused prototype made by user riip, spy version completed by Chaos22
 - ywain-2 spy version completed by chaos22.
+- fossa- went by username "CITC" on TRP.
+- M40A3- was the account used by user sand.
 
 ProAvalon Notes:
 Indexing may not start at 1 due to either being missing or being hosted on TheResistancePlus.
@@ -24,7 +26,6 @@ Indexing may not start at 1 due to either being missing or being hosted on TheRe
 - incognitomode-1- was an avatar with a question mark head.
 - DeathDemon-1- was a dog wearing glasses holding a bone.
 - Dylan4000-1-res- is not the original file. The saved version was cropped from a Youtube video.
-- QuinnWuest-3- was used by QuinnWuest, but is now in use by user stern.
 - Armthur-6- was the first avatar of size 1024x1024 to be accepted.
 - Tyrrox-4 has no existing res counterpart, as they were made for each spyrole. (4 being oberon)
 

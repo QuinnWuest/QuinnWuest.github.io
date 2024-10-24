@@ -26,8 +26,10 @@ Anissakate-1-res.png
 Anissakate-1-spy.png
 Anissakate-2-res.png
 Anissakate-2-spy.png
-Anji-res.png
-Anji-spy.png
+Anji-1-res.png
+Anji-1-spy.png
+Anji-2-res.png
+Anji-2-spy.png
 anonymouse255-1-res.png
 anonymouse255-1-spy.png
 anonymouse255-2-res.png
@@ -36,6 +38,10 @@ anonymouse255-3-res.png
 anonymouse255-3-spy.png
 anonymouse255-4-res.png
 anonymouse255-4-spy.png
+anonymouse255-5-res.png
+anonymouse255-5-spy.png
+anonymouse255-6-res.png
+anonymouse255-6-spy.png
 ansonberns-res.png
 ansonberns-spy.png
 antaria-1-res.png
@@ -242,6 +248,8 @@ dd-2-res.png
 dd-2-spy.png
 DeathDemon-2-res.png
 DeathDemon-2-spy.png
+DeathDemon-3-res.png
+DeathDemon-3-spy.png
 Debzzzz-res.png
 Debzzzz-spy.png
 defund-res.png
@@ -374,8 +382,10 @@ Hydro-1-res.png
 Hydro-1-spy.png
 Hydro-2-res.png
 Hydro-2-spy.png
-ibeg-res.png
-ibeg-spy.png
+ibeg-1-res.png
+ibeg-1-spy.png
+ibeg-2-res.png
+ibeg-2-spy.png
 Iconic-1-res.png
 Iconic-1-spy.png
 Iconic-2-res.png
@@ -540,8 +550,6 @@ morgenstern-1-res.png
 morgenstern-1-spy.png
 morgenstern-2-res.png
 morgenstern-2-spy.png
-morgenstern-3-res.png
-morgenstern-3-spy.png
 morningcatt-res.png
 morningcatt-spy.png
 moustafa769-res.png
@@ -664,10 +672,6 @@ Pinocchio-res.png
 Pinocchio-spy.png
 polandspring-res.png
 polandspring-spy.png
-popanda2005-1-res.png
-popanda2005-1-spy.png
-popanda2005-2-res.png
-popanda2005-2-spy.png
 promanos-res.png
 promanos-spy.png
 PrussianArms-res.png
@@ -686,6 +690,8 @@ QuinnWuest-1-res.png
 QuinnWuest-1-spy.png
 QuinnWuest-2-res.png
 QuinnWuest-2-spy.png
+QuinnWuest-3-res.png
+QuinnWuest-3-spy.png
 QuinnWuest-4-res.png
 QuinnWuest-4-spy.png
 QuinnWuest-5-res.png

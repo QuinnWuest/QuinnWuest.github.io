@@ -20,8 +20,8 @@ sb.Append(
     "\t\t\tsrc: url(font/SpecialElite.ttf);\r\n" +
     "\t\t}\r\n" +
     "\t\t.main-title {\r\n" +
-    "\t\t\tmargin-top: 1cm;\r\n" +
-    "\t\t\tmargin-bottom: -0.5cm;\r\n" +
+    "\t\t\tmargin: 0em auto;\r\n" +
+    "\t\t\tpadding: 0;\r\n" +
     "\t\t}\r\n" +
     "\t\t.main-title img {\r\n" +
     "\t\t\twidth: 100%;\r\n" +
@@ -33,7 +33,7 @@ sb.Append(
     "\t\t\tcolor: white;\r\n" +
     "\t\t\t-webkit-text-stroke-width: 0.5px;\r\n" +
     "\t\t\t-webkit-text-stroke-color: black;\r\n" +
-    "\t\t\tmargin-top: 0cm;\r\n" +
+    "\t\t\tmargin-top: 0.5cm;\r\n" +
     "\t\t\tmargin-bottom: 0.5cm;\r\n" +
     "\t\t}\r\n" +
     "\t\tbody {\r\n" +
@@ -108,6 +108,9 @@ for (int folder = 0; folder < folders.Length; folder++)
             if (i != 0)
                 sb.Append("\t\t\t\t</div>\r\n\t\t\t</div>\n");
             username = lines[i].Substring(0, lines[i].IndexOf('-'));
+            //stupid case
+            if (username == "Ref")
+                username = "Ref-Rain";
             sb.Append($"\t\t\t<div class=\"player\">\r\n\t\t\t\t<div class=\"player-name\">{username}</div>\r\n\t\t\t\t<div class=\"player-icons\">\n");
             sb.Append($"\t\t\t\t\t<div class=\"player-icon\"><img src=\"{folders[folder]}/{lines[i]}\"></img></div>\n");
         }
