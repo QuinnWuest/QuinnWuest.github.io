@@ -6,7 +6,7 @@ string username = "-";
 
 const int size = 96;
 
-StringBuilder sb = new StringBuilder();
+StringBuilder sb = new();
 sb.Append(
     "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n" +
     "\t<head>\r\n" +
@@ -96,9 +96,7 @@ for (int folder = 0; folder < folders.Length; folder++)
     var inputPath = $@"C:\Users\Quinn\Pictures\avalon\TRP_PROAVL_IST AVATAR ARCHIVE\{filenames[folder]}";
     var lines = File.ReadAllLines(inputPath);
     if (folder != 0)
-    {
         sb.Append("\t\t</div>\r\n");
-    }
     sb.Append($"\t\t<p class=\"site-name\">{sitenames[folder]}</p>\r\n");
     sb.Append("\t\t<div class=\"players\">\r\n");
     for (int i = 0; i < lines.Length; i++)
@@ -107,7 +105,7 @@ for (int folder = 0; folder < folders.Length; folder++)
         {
             if (i != 0)
                 sb.Append("\t\t\t\t</div>\r\n\t\t\t</div>\n");
-            username = lines[i].Substring(0, lines[i].IndexOf('-'));
+            username = lines[i][..lines[i].IndexOf('-')];
             //stupid case
             if (username == "Ref")
                 username = "Ref-Rain";
@@ -115,9 +113,7 @@ for (int folder = 0; folder < folders.Length; folder++)
             sb.Append($"\t\t\t\t\t<div class=\"player-icon\"><img src=\"{folders[folder]}/{lines[i]}\"></img></div>\n");
         }
         else
-        {
             sb.Append($"\t\t\t\t\t<div class=\"player-icon\"><img src=\"{folders[folder]}/{lines[i]}\"></img></div>\n");
-        }
     }
     sb.Append("\t\t\t\t</div>\r\n\t\t\t</div>\n");
 }

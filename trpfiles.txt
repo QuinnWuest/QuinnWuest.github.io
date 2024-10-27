@@ -22,6 +22,8 @@ buddyboyb1-2-res.png
 buddyboyb1-2-spy.png
 charm-1-res.png
 charm-1-spy.png
+CITC-1-res.png
+CITC-1-spy.png
 Crouton-res.png
 Crouton-spy.png
 CUZNER-res.png
@@ -32,8 +34,6 @@ deleted-2-res.png
 deleted-2-spy.png
 fantasy-res.png
 fantasy-spy.png
-fossa-1-res.png
-fossa-1-spy.png
 Guinevere-1-res.png
 Guinevere-1-spy.png
 Guinevere-2-res.png
@@ -72,6 +72,8 @@ Leler-3-res.png
 Leler-3-spy.png
 Leler-4-res.png
 Leler-4-spy.png
+M40A3-res.png
+M40A3-spy.png
 maddie-1-res.png
 maddie-1-spy.png
 maddie-2-res.png
@@ -112,8 +114,6 @@ Ref-Rain-3-res.png
 Ref-Rain-3-spy.png
 riip-res.png
 riip-spy.png
-sand-res.png
-sand-spy.png
 standstill-res.png
 standstill-spy.png
 swaram-1-res.png

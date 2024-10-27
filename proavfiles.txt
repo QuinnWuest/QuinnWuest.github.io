@@ -762,10 +762,10 @@ SecretJeb-res.png
 SecretJeb-spy.png
 secretwoa-res.png
 secretwoa-spy.png
-seraa-res.png
-seraa-spy.png
-seraphina-res.png
-seraphina-spy.png
+seraphina-1-res.png
+seraphina-1-spy.png
+seraphina-2-res.png
+seraphina-2-spy.png
 seren-res.png
 seren-spy.png
 sharki901-res.png
