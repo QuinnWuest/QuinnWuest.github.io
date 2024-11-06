@@ -224,8 +224,10 @@ chrome-1-res.png
 chrome-1-spy.png
 chrome-2-res.png
 chrome-2-spy.png
-Comp1ex-res.png
-Comp1ex-spy.png
+Comp1ex-1-res.png
+Comp1ex-1-spy.png
+Comp1ex-2-res.png
+Comp1ex-2-spy.png
 Coxinha-res.png
 Coxinha-spy.png
 CrabbyPatty-res.png
@@ -904,8 +906,10 @@ vegansoda-res.png
 vegansoda-spy.png
 VITROMO-res.png
 VITROMO-spy.png
-Voltaic-res.png
-Voltaic-spy.png
+Voltaic-1-res.png
+Voltaic-1-spy.png
+Voltaic-2-res.png
+Voltaic-2-spy.png
 wabadabakalakaboo-res.png
 wabadabakalakaboo-spy.png
 wanglebangle-1-res.png
