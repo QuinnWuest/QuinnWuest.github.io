@@ -96,13 +96,14 @@ for (int folder = 0; folder < folders.Length; folder++)
 {
     var inputPath = $@"C:\Users\Quinn\Pictures\avalon\TRP_PROAVL_IST AVATAR ARCHIVE\{filenames[folder]}";
     var lines = File.ReadAllLines(inputPath);
+    var prevLine = "";
     if (folder != 0)
         sb.Append("\t\t</div>\r\n");
     sb.Append($"\t\t<p class=\"site-name\">{sitenames[folder]}</p>\r\n");
     sb.Append("\t\t<div class=\"players\">\r\n");
     for (int i = 0; i < lines.Length; i++)
     {
-        if (!lines[i].StartsWith(username))
+        if (!lines[i].StartsWith(username) || lines[i].Length != prevLine.Length)
         {
             if (i != 0)
                 sb.Append("\t\t\t\t</div>\r\n\t\t\t</div>\n");
@@ -115,6 +116,7 @@ for (int folder = 0; folder < folders.Length; folder++)
         }
         else
             sb.Append($"\t\t\t\t\t<div class=\"player-icon\"><img src=\"{folders[folder]}/{lines[i]}\"></img></div>\n");
+        prevLine = lines[i];
     }
     sb.Append("\t\t\t\t</div>\r\n\t\t\t</div>\n");
 }
