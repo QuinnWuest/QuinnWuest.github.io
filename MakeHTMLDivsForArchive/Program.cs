@@ -103,7 +103,7 @@ for (int folder = 0; folder < folders.Length; folder++)
     sb.Append("\t\t<div class=\"players\">\r\n");
     for (int i = 0; i < lines.Length; i++)
     {
-        if (!lines[i].StartsWith(username) || lines[i].Length != prevLine.Length)
+        if (!lines[i].StartsWith(username) || lines[i].IndexOf('-') != prevLine.IndexOf('-'))
         {
             if (i != 0)
                 sb.Append("\t\t\t\t</div>\r\n\t\t\t</div>\n");
