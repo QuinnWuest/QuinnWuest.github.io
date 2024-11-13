@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-var outputPath = @"C:\Users\Quinn\Pictures\avalon\TRP_PROAVL_IST AVATAR ARCHIVE\avatararchive.html";
+var outputPath = @"C:\Users\Quinn\Desktop\QW.github.io\Avalon\avatararchive.html";
 
 string username = "-";
 
@@ -13,7 +13,7 @@ sb.Append(
     "\t\t<meta charset=\"UTF-8\">\r\n" +
     "\t\t<meta name=\"viewport\" content=\"initial-scale=1\">\r\n" +
     "\t\t<title>Avalon Avatar Archive</title>\r\n" +
-    "\t\t<link rel=\"icon\" href=\"PROAVALON/base-3-res.png\">" +
+    "\t\t<link rel=\"icon\" href=\"BASE/base-3-res.png\">\r\n" +
     "\t\t<script src=\"js/jquery.3.7.0.min.js\"></script>\r\n" +
     "\t\t<style>\r\n" +
     "\t\t@font-face {\r\n" +
@@ -94,7 +94,7 @@ var sitenames = new[] { "ProAvalon", "TheResistancePlus", "AvalonIst" };
 var filenames = new[] { "proavfiles.txt", "trpfiles.txt", "avalonistfiles.txt" };
 for (int folder = 0; folder < folders.Length; folder++)
 {
-    var inputPath = $@"C:\Users\Quinn\Pictures\avalon\TRP_PROAVL_IST AVATAR ARCHIVE\{filenames[folder]}";
+    var inputPath = $@"C:\Users\Quinn\Desktop\QW.github.io\Avalon\{filenames[folder]}";
     var lines = File.ReadAllLines(inputPath);
     var prevLine = "";
     if (folder != 0)
