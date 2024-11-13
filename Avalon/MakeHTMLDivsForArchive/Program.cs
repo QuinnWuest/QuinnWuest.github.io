@@ -13,7 +13,7 @@ sb.Append(
     "\t\t<meta charset=\"UTF-8\">\r\n" +
     "\t\t<meta name=\"viewport\" content=\"initial-scale=1\">\r\n" +
     "\t\t<title>Avalon Avatar Archive</title>\r\n" +
-    "\t\t<link rel=\"icon\" href=\"BASE/base-3-res.png\">\r\n" +
+    "\t\t<link rel=\"icon\" href=\"BASE/base-4-res.png\">\r\n" +
     "\t\t<script src=\"js/jquery.3.7.0.min.js\"></script>\r\n" +
     "\t\t<style>\r\n" +
     "\t\t@font-face {\r\n" +
