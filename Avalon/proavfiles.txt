@@ -532,6 +532,8 @@ Maximovic96-3-res.png
 Maximovic96-3-spy.png
 Maximovic96-4-res.png
 Maximovic96-4-spy.png
+Maximovic96-5-res.png
+Maximovic96-5-spy.png
 mdelmundo-res.png
 mdelmundo-spy.png
 meir-1-res.png
