@@ -60,10 +60,6 @@ killer-1-res.png
 killer-1-spy.png
 l0de-res.png
 l0de-spy.png
-Latias-1-res.png
-Latias-1-spy.png
-Latias-2-res.png
-Latias-2-spy.png
 Leler-1-res.png
 Leler-1-spy.png
 Leler-2-res.png
@@ -112,6 +108,10 @@ Ref-Rain-2-res.png
 Ref-Rain-2-spy.png
 Ref-Rain-3-res.png
 Ref-Rain-3-spy.png
+Ref-Rain-4-res.png
+Ref-Rain-4-spy.png
+Ref-Rain-5-res.png
+Ref-Rain-5-spy.png
 riip-res.png
 riip-spy.png
 standstill-res.png
