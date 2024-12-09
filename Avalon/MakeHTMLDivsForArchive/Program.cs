@@ -1,8 +1,7 @@
-﻿using System.Text;
+﻿using System.Diagnostics;
+using System.Text;
 
 var outputPath = @"C:\Users\Quinn\Desktop\QW.github.io\Avalon\avatararchive.html";
-
-string username = "-";
 
 const int size = 96;
 
@@ -33,6 +32,16 @@ sb.Append(
     "\t\t\tfont-weight: bold;\r\n" +
     "\t\t\tcolor: white;\r\n" +
     "\t\t\t-webkit-text-stroke-width: 0.5px;\r\n" +
+    "\t\t\t-webkit-text-stroke-color: black;\r\n" +
+    "\t\t\tmargin-top: 0.5cm;\r\n" +
+    "\t\t\tmargin-bottom: 0.5cm;\r\n" +
+    "\t\t}\r\n" +
+    "\t\t.tourney-number {\r\n" +
+    "\t\t\ttext-align: center;\r\n" +
+    "\t\t\tfont-size: 40pt;\r\n" +
+    "\t\t\tfont-weight: bold;\r\n" +
+    "\t\t\tcolor: white;\r\n" +
+    "\t\t\t-webkit-text-stroke-width: 0.2px;\r\n" +
     "\t\t\t-webkit-text-stroke-color: black;\r\n" +
     "\t\t\tmargin-top: 0.5cm;\r\n" +
     "\t\t\tmargin-bottom: 0.5cm;\r\n" +
@@ -89,37 +98,98 @@ sb.Append(
     "\t<body>\r\n" +
     "\t\t<p class=\"main-title\"><img src=\"title-img.png\"></p>\r\n"
     );
-var folders = new[] { "PROAVALON", "TRP", "AVALON_IST" };
-var sitenames = new[] { "ProAvalon", "TheResistancePlus", "AvalonIst" };
-var filenames = new[] { "proavfiles.txt", "trpfiles.txt", "avalonistfiles.txt" };
+var folders = new[] { "PROAVALON", "TRP", "AVALON_IST", "TOURNAMENT" };
+var sitenames = new[] { "ProAvalon", "TheResistancePlus", "AvalonIst", "Tournament Avatars" };
+var filenames = new[] { "proavfiles.txt", "trpfiles.txt", "avalonistfiles.txt", "tournamentfiles.txt" };
+
+string inputPath;
+string[] lines;
+string prevLine;
+
+string username = "-";
+int tournamentNumber = -1;
+int tournamentSize = -1;
+int team = -1;
+int teamNameIx = -1;
+var teamNamePath = $@"C:\Users\Quinn\Desktop\QW.github.io\Avalon\tournamentteamnames.txt";
+string[] teamNames = File.ReadAllLines(teamNamePath);
+
 for (int folder = 0; folder < folders.Length; folder++)
 {
-    var inputPath = $@"C:\Users\Quinn\Desktop\QW.github.io\Avalon\{filenames[folder]}";
-    var lines = File.ReadAllLines(inputPath);
-    var prevLine = "";
+    inputPath = $@"C:\Users\Quinn\Desktop\QW.github.io\Avalon\{filenames[folder]}";
+    lines = File.ReadAllLines(inputPath);
+    prevLine = "";
     if (folder != 0)
         sb.Append("\t\t</div>\r\n");
-    sb.Append($"\t\t<p class=\"site-name\">{sitenames[folder]}</p>\r\n");
-    sb.Append("\t\t<div class=\"players\">\r\n");
-    for (int i = 0; i < lines.Length; i++)
+    if (folder != 3)
     {
-        if (!lines[i].StartsWith(username) || lines[i].IndexOf('-') != prevLine.IndexOf('-'))
+        sb.Append($"\t\t<p class=\"site-name\">{sitenames[folder]}</p>\r\n");
+        sb.Append("\t\t<div class=\"players\">\r\n");
+        for (int i = 0; i < lines.Length; i++)
         {
-            if (i != 0)
-                sb.Append("\t\t\t\t</div>\r\n\t\t\t</div>\n");
-            username = lines[i][..lines[i].IndexOf('-')];
-            //stupid case
-            if (username == "Ref")
-                username = "Ref-Rain";
-            sb.Append($"\t\t\t<div class=\"player\">\r\n\t\t\t\t<div class=\"player-name\">{username}</div>\r\n\t\t\t\t<div class=\"player-icons\">\n");
-            sb.Append($"\t\t\t\t\t<div class=\"player-icon\"><img src=\"{folders[folder]}/{lines[i]}\"></img></div>\n");
+            {
+                if (!lines[i].StartsWith(username) || lines[i].IndexOf('-') != prevLine.IndexOf('-'))
+                {
+                    if (i != 0)
+                        sb.Append("\t\t\t\t</div>\r\n\t\t\t</div>\n");
+                    username = lines[i][..lines[i].IndexOf('-')];
+                    //stupid case
+                    if (username == "Ref")
+                        username = "Ref-Rain";
+                    sb.Append($"\t\t\t<div class=\"player\">\r\n\t\t\t\t<div class=\"player-name\">{username}</div>\r\n\t\t\t\t<div class=\"player-icons\">\n");
+                    sb.Append($"\t\t\t\t\t<div class=\"player-icon\"><img src=\"{folders[folder]}/{lines[i]}\"></img></div>\n");
+                }
+                else
+                    sb.Append($"\t\t\t\t\t<div class=\"player-icon\"><img src=\"{folders[folder]}/{lines[i]}\"></img></div>\n");
+                prevLine = lines[i];
+            }
         }
-        else
-            sb.Append($"\t\t\t\t\t<div class=\"player-icon\"><img src=\"{folders[folder]}/{lines[i]}\"></img></div>\n");
-        prevLine = lines[i];
+    }
+    else
+    {
+        sb.Append($"\t\t<p class=\"site-name\">Tournament Avatars</p>\r\n");
+        for (int i = 0; i < lines.Length; i++)
+        {
+            bool newTournament = false;
+            bool newTeam = false;
+            int tempSize = lines[i][0] - '0';
+            if (!int.TryParse(lines[i].Substring(2, 2), out int tempNumber))
+                tempNumber = lines[i][2] - '0';
+            if (tournamentSize != tempSize || tournamentNumber != tempNumber)
+            {
+                newTournament = true;
+                team = -1;
+            }
+            int tempTeam = lines[i][5] - '0';
+            if (team != tempTeam)
+                newTeam = true;
+            if (newTournament)
+            {
+                if (tournamentNumber != -1)
+                    sb.Append("\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n");
+                tournamentSize = tempSize;
+                tournamentNumber = tempNumber;
+                sb.Append($"\t\t<div class=\"tourney-number\">{tournamentSize}p Tournament #{tournamentNumber}</div>\r\n");
+                sb.Append("\t\t<div class=\"players\">\r\n");
+            }
+            if (newTeam)
+            {
+                teamNameIx++;
+                if (i != 0 && !newTournament)
+                    sb.Append("\t\t\t\t</div>\r\n\t\t\t</div>\n");
+                team = tempTeam;
+                sb.Append($"\t\t\t<div class=\"player\">\r\n\t\t\t\t<div class=\"player-name\">{teamNames[teamNameIx].Substring(4)}</div>\r\n\t\t\t\t<div class=\"player-icons\">\n");
+                sb.Append($"\t\t\t\t\t<div class=\"player-icon\"><img src=\"{folders[folder]}/{lines[i]}\"></img></div>\n");
+            }
+            else
+            {
+                sb.Append($"\t\t\t\t\t<div class=\"player-icon\"><img src=\"{folders[folder]}/{lines[i]}\"></img></div>\n");
+            }
+        }
     }
     sb.Append("\t\t\t\t</div>\r\n\t\t\t</div>\n");
 }
+
 sb.Append("\t\t</div>\r\n\t</body>\r\n</html>");
 
 File.WriteAllText(outputPath, sb.ToString());

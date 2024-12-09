@@ -224,6 +224,8 @@ chrome-1-res.png
 chrome-1-spy.png
 chrome-2-res.png
 chrome-2-spy.png
+Cild-res.png
+Cild-spy.png
 Comp1ex-1-res.png
 Comp1ex-1-spy.png
 Comp1ex-2-res.png
@@ -868,8 +870,10 @@ Tamboz-1-res.png
 Tamboz-1-spy.png
 Tamboz-2-res.png
 Tamboz-2-spy.png
-Tazia-res.png
-Tazia-spy.png
+Tazia-1-res.png
+Tazia-1-spy.png
+Tazia-2-spy.png
+Tazia-2-spy.png
 TealW-1-res.png
 TealW-1-spy.png
 TealW-2-spy.png
