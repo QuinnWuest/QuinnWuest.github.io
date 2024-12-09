@@ -668,6 +668,8 @@ pat-2-res.png
 pat-2-spy.png
 pat-3-res.png
 pat-3-spy.png
+pat-4-res.png
+pat-4-spy.png
 pennless-1-res.png
 pennless-1-spy.png
 pennless-2-res.png

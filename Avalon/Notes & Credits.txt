@@ -39,11 +39,18 @@ Avalon.IST Notes:
 - enokii, bubsidos-2, bb, Tyrrox, cloud are created by user Pam.
 
 Tournament Notes:
-Filename format goes as follows: Username-t#-index-allignment.
-Username is for the user of the avatar or the team captain.
-T# refers to the tournament number. (8T# refers to the 8p tournament number.)
-- imbapingu-t8- avatars were resized and recentered by QuinnWuest. They are all named after team captain imbapingu, as each res and spy avatar was randomly picked by each of the team members.
-- Avatars for team not.last in Tournament 3 are not present. Each member had a base avatar that was randomly rotated. Bremen-2&3- and ansonberns- avatars came from this tournament, but remain in the PROAVALON folder due to their extended use.
+Filename format goes as follows:
+- Tournament Size
+- Tournament Number
+- Team Number
+- Player name (or 0default if it was a shared avatar)
+- Index (if applicable)
+- Alignment
+These avatars were made during a tournament, but were moved to the PROAVALON folder due to their extended use.
+- Bremen-2- and Bremen-3- (6t03-6-Bremen-)
+- ansonberns- (6t03-6-ansonberns-)
+- imbapingu-2- (6t07-2-imbapingu-)
+- pat-4- (6t07-2-pat-)
 
 Credits: Thank you so much for your immense help!
 hakha3

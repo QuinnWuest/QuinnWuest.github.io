@@ -1,5 +1,5 @@
-6t03-1-Maximovic96-res.png
-6t03-1-Maximovic96-spy.png
+6t03-1-0default-res.png
+6t03-1-0default-spy.png
 6t03-2-starbird1002-1-res.png
 6t03-2-starbird1002-1-spy.png
 6t03-2-starbird1002-2-res.png
@@ -18,14 +18,12 @@
 6t03-5-pam-spy.png
 6t03-5-Yules-res.png
 6t03-5-Yules-spy.png
-6t05-2-pat-res.png
-6t05-2-pat-spy.png
-6t07-1-pat-res.png
-6t07-1-pat-spy.png
+6t05-2-0default-res.png
+6t05-2-0default-spy.png
 6t07-3-ratters-res.png
 6t07-3-ratters-spy.png
-6t07-5-ignenue-0-res.png
-6t07-5-ingenue-0-spy.png
+6t07-5-0default-res.png
+6t07-5-0default-spy.png
 6t08-1-mrfahrenheit-res.png
 6t08-1-mrfahrenheit-spy.png
 6t08-1-SecretJeb-res.png
