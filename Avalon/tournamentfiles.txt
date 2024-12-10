@@ -78,6 +78,8 @@
 6t09-6-themeeman-spy.png
 6t09-6-Tyrrox-res.png
 6t09-6-Tyrrox-spy.png
+6t10-3-wanglebangle-res.png
+6t10-3-wanglebangle-spy.png
 6t10-4-0default-res.png
 6t10-4-0default-spy.png
 6t10-4-bumfuzzle28-res.png
