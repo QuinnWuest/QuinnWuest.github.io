@@ -64,6 +64,8 @@ Armthur-5-res.png
 Armthur-5-spy.png
 Armthur-6-res.png
 Armthur-6-spy.png
+Armthur-7-res.png
+Armthur-7-spy.png
 arogame123-1-res.png
 arogame123-1-spy.png
 Artemis001-res.png
