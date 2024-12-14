@@ -768,8 +768,10 @@ sapphire778-res.png
 sapphire778-spy.png
 SasaniDoesGamesYT-res.png
 SasaniDoesGamesYT-spy.png
-sb-res.png
-sb-spy.png
+sb-1-res.png
+sb-1-spy.png
+sb-2-res.png
+sb-2-spy.png
 scoobydoo-res.png
 scoobydoo-spy.png
 scorchie-res.png
