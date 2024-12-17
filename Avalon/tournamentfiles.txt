@@ -42,6 +42,8 @@
 6t08-3-imbapingu-05-spy.png
 6t08-3-imbapingu-06-res.png
 6t08-3-imbapingu-06-spy.png
+6t08-4-0default-res.png
+6t08-4-0default-spy.png
 6t09-1-0default-res.png
 6t09-1-0default-spy.png
 6t09-1-bumfuzzle28-res.png
