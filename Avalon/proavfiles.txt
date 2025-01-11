@@ -942,6 +942,8 @@ wolfbloodwitch-res.png
 wolfbloodwitch-spy.png
 Wrath-res.png
 Wrath-spy.png
+WyzDM-res.png
+WyzDM-spy.png
 xaxin-res.png
 xaxin-spy.png
 xKoa-res.png
