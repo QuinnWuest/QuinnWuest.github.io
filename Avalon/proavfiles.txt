@@ -618,6 +618,8 @@ no3-res.png
 no3-spy.png
 nospaghetti-res.png
 nospaghetti-spy.png
+not.me-res.png
+not.me-spy.png
 npmt20bfacg-res.png
 npmt20bfacg-spy.png
 NyanCat-1-res.png
@@ -718,8 +720,6 @@ QuinnWuest-7-res.png
 QuinnWuest-7-spy.png
 QuinnWuest-8-res.png
 QuinnWuest-8-spy.png
-QuinnWuest-9-res.png
-QuinnWuest-9-spy.png
 RadiantCowbells-res.png
 RadiantCowbells-spy.png
 Radiation-1-res.png
