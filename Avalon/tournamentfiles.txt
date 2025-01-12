@@ -94,6 +94,8 @@
 6t10-4-glorious-spy.png
 6t10-4-Maximovic96-res.png
 6t10-4-Maximovic96-spy.png
+6t10-4-ninth-res.png
+6t10-4-ninth-spy.png
 6t10-4-QuinnWuest-res.png
 6t10-4-QuinnWuest-spy.png
 6t10-5-0default-res.png
