@@ -1,5 +1,4 @@
-﻿using System.Diagnostics;
-using System.Text;
+﻿using System.Text;
 
 var outputPath = @"C:\Users\Quinn\Desktop\QW.github.io\Avalon\avatararchive.html";
 
@@ -153,7 +152,7 @@ for (int folder = 0; folder < folders.Length; folder++)
             bool newTournament = false;
             bool newTeam = false;
             int tempSize = lines[i][0] - '0';
-            if (!int.TryParse(lines[i].Substring(2, 2), out int tempNumber))
+            if (!int.TryParse(lines[i].AsSpan(2, 2), out int tempNumber))
                 tempNumber = lines[i][2] - '0';
             if (tournamentSize != tempSize || tournamentNumber != tempNumber)
             {

@@ -704,6 +704,8 @@ putinWalk-1-res.png
 putinWalk-1-spy.png
 putinWalk-2-res.png
 putinWalk-2-spy.png
+queenofireland-res.png
+queenofireland-spy.png
 QuinnWuest-1-res.png
 QuinnWuest-1-spy.png
 QuinnWuest-2-res.png
