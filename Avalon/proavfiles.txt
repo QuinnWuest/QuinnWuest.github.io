@@ -408,6 +408,8 @@ illyasviel-res.png
 illyasviel-spy.png
 imbapingu-1-res.png
 imbapingu-1-spy.png
+imbapingu-2-res.png
+imbapingu-2-spy.png
 impossiblesoul-res.png
 impossiblesoul-spy.png
 ImpotentUncle-res.png
