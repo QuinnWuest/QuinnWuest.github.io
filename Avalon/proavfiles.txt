@@ -488,6 +488,8 @@ KingBiew-res.png
 KingBiew-spy.png
 kmh-res.png
 kmh-spy.png
+kow-res.png
+kow-spy.png
 krAzykAzi-1-res.png
 krAzykAzi-1-spy.png
 krAzykAzi-2-res.png
@@ -726,6 +728,8 @@ Radiation-1-res.png
 Radiation-1-spy.png
 Radiation-2-res.png
 Radiation-2-spy.png
+RagsyTheFaded-res.png
+RagsyTheFaded-spy.png
 randmantest-1-res.png
 randmantest-1-spy.png
 randmantest-2-res.png
