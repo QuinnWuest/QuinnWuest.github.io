@@ -262,6 +262,8 @@ DeathDemon-3-res.png
 DeathDemon-3-spy.png
 Debzzzz-res.png
 Debzzzz-spy.png
+defiant-res.png
+defiant-spy.png
 defund-res.png
 defund-spy.png
 Delta-1-res.png
@@ -370,8 +372,10 @@ Hammy-res.png
 Hammy-spy.png
 handshakeemoji-res.png
 handshakeemoji-spy.png
-Happymeal-res.png
-Happymeal-spy.png
+Happymeal-1-res.png
+Happymeal-1-spy.png
+Happymeal-2-res.png
+Happymeal-2-spy.png
 Hazzz-res.png
 Hazzz-spy.png
 helloperson-res.png
@@ -768,6 +772,8 @@ SadNixon-2-res.png
 SadNixon-2-spy.png
 SadNixon-3-res.png
 SadNixon-3-spy.png
+Sakl-res.png
+Sakl-spy.png
 saltypotato-1-res.png
 saltypotato-1-spy.png
 saltypotato-2-res.png
