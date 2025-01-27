@@ -362,8 +362,8 @@ Guest101-res.png
 Guest101-spy.png
 Hades-1-res.png
 Hades-1-spy.png
-Hades-3-res.png
-Hades-3-spy.png
+Hades-2-res.png
+Hades-2-spy.png
 hai-res.png
 hai-spy.png
 hakha3-res.png
@@ -868,6 +868,8 @@ SundaeLundae-res.png
 SundaeLundae-spy.png
 Sunspot-res.png
 Sunspot-spy.png
+SuperDeath-res.png
+SuperDeath-spy.png
 superkushal-res.png
 superkushal-spy.png
 sushiconduit-1-res.png
