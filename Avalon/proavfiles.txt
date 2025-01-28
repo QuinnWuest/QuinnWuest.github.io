@@ -900,6 +900,7 @@ Tazia-2-spy.png
 Tazia-2-spy.png
 TealW-1-res.png
 TealW-1-spy.png
+TealW-2-res.png
 TealW-2-spy.png
 Teddy-res.png
 Teddy-spy.png
@@ -935,6 +936,7 @@ Tyrrox-2-res.png
 Tyrrox-2-spy.png
 Tyrrox-3-res.png
 Tyrrox-3-spy.png
+Tyrrox-4-res.png
 Tyrrox-4-spy.png
 vegansoda-res.png
 vegansoda-spy.png

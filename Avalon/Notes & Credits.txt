@@ -27,7 +27,7 @@ Indexing may not start at 1 due to either being missing or being hosted on TheRe
 - DeathDemon-1- was a dog wearing glasses holding a bone.
 - Dylan4000-1-res- is not the original file. The saved version was cropped from a Youtube video.
 - Armthur-6- was the first avatar of size 1024x1024 to be accepted.
-- Tyrrox-4 has no existing res counterpart, as they were made for each spyrole. (4 being oberon)
+- Tyrrox-4- had no existing res counterpart, as they were made for each spyrole. (4 being oberon)
 
 Avalon.IST Notes:
 - Chaos22-3, J0nY and baby are unused.
@@ -51,6 +51,13 @@ These avatars were made during a tournament, but were moved to the PROAVALON fol
 - ansonberns- (6t03-6-ansonberns-)
 - imbapingu-2- (6t07-2-imbapingu-)
 - pat-4- (6t07-2-pat-)
+
+Base Notes:
+- base-1- used on TheResistanceOnline.
+- base-2- used on TheResistancePlus and ProAvalon.
+- base-3- is base-2- made symmetrical, by QuinnWuest. Used on ProAvalon.
+- base-4- is the 1024x1024 size base avatar, introduced on ProAvalon. SVG initially made by Timwi. Used on ProAvalon.
+- Tyrrox- were hypothetical avatars that were to be used for some of the base Avalon Roles. (Percival, Merlin, Morgana, Assassin, Oberon)
 
 Credits: Thank you so much for your immense help!
 hakha3
