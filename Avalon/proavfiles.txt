@@ -934,12 +934,6 @@ Trickyputty-res.png
 Trickyputty-spy.png
 Typrix-res.png
 Typrix-spy.png
-Tyrrox-2-res.png
-Tyrrox-2-spy.png
-Tyrrox-3-res.png
-Tyrrox-3-spy.png
-Tyrrox-4-res.png
-Tyrrox-4-spy.png
 vegansoda-res.png
 vegansoda-spy.png
 VITROMO-res.png
