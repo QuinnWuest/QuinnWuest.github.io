@@ -726,6 +726,8 @@ QuinnWuest-5-res.png
 QuinnWuest-5-spy.png
 QuinnWuest-6-res.png
 QuinnWuest-6-spy.png
+QuinnWuest-7-res.png
+QuinnWuest-7-spy.png
 RadiantCowbells-res.png
 RadiantCowbells-spy.png
 Radiation-1-res.png
