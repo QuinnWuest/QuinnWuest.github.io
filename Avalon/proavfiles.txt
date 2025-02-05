@@ -582,8 +582,10 @@ mrh99-1-res.png
 mrh99-1-spy.png
 mrh99-2-res.png
 mrh99-2-spy.png
-muse-res.png
-muse-spy.png
+muse-1-res.png
+muse-1-spy.png
+muse-2-res.png
+muse-2-spy.png
 MyHero-2-res.png
 MyHero-2-spy.png
 MyHero-3-res.png
