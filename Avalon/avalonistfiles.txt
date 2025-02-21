@@ -4,6 +4,8 @@ bb-res.png
 bb-spy.png
 Bremmy-res.png
 Bremmy-spy.png
+bubsidos-res.png
+bubsidos-spy.png
 Chaos22-1-res.png
 Chaos22-1-spy.png
 Chaos22-2-res.png
