@@ -92,14 +92,22 @@ sb.Append(
     "\t\t\talign-items: center;\r\n" +
     "\t\t\tjustify-content: center;\r\n" +
     "\t\t}\r\n" +
+    "\t\t.notes {\r\n" +
+    "\t\t\tflex-direction: column;\r\n" +
+    "\t\t\tborder: 4px solid black;\r\n" +
+    "\t\t\tborder-radius: 1cm;\r\n" +
+    "\t\t\tbackground-color: #aaddff;\r\n" +
+    "\t\t\tfont-size: 14pt;\r\n" +
+    "\t\t\tpadding: 0.5cm;\r\n" +
+    "\t\t}\r\n" +
     "\t\t</style>\r\n" +
     "\t</head>\r\n" +
     "\t<body>\r\n" +
     "\t\t<p class=\"main-title\"><img src=\"title-img.png\"></p>\r\n"
     );
-var folders = new[] { "PROAVALON", "TRP", "AVALON_IST", "TOURNAMENT" };
-var sitenames = new[] { "ProAvalon", "TheResistancePlus", "AvalonIst", "Tournament Avatars" };
-var filenames = new[] { "proavfiles.txt", "trpfiles.txt", "avalonistfiles.txt", "tournamentfiles.txt" };
+var folders = new[] { "PROAVALON", "TRP", "AVALON_IST", "TOURNAMENT", "BASE" };
+var sitenames = new[] { "ProAvalon", "TheResistancePlus", "AvalonIst", "Tournament Avatars", "Base Avatars" };
+var filenames = new[] { "proavfiles.txt", "trpfiles.txt", "avalonistfiles.txt", "tournamentfiles.txt", "basefiles.txt" };
 
 string inputPath;
 string[] lines;
@@ -188,6 +196,18 @@ for (int folder = 0; folder < folders.Length; folder++)
     }
     sb.Append("\t\t\t\t</div>\r\n\t\t\t</div>\n");
 }
+sb.Append("\t\t</div>\r\n");
+sb.Append($"\t<div>\r\n");
+sb.Append($"\t\t<p class=\"site-name\">Notes & Credits</p>\r\n");
+var notespath = $@"C:\Users\Quinn\Desktop\QW.github.io\Avalon\notesandcredits.txt";
+var notes = File.ReadAllLines(notespath);
+
+sb.Append($"\t\t\t<div class=\"notes\">\r\n");
+for (int i = 0; i < notes.Length; i++)
+{
+    sb.Append($"\t\t\t{notes[i]}\r\n");
+}
+sb.Append($"\t\t\t</div>\r\n");
 
 sb.Append("\t\t</div>\r\n\t</body>\r\n</html>");
 

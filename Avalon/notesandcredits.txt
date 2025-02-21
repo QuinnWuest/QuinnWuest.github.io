@@ -1,0 +1,77 @@
+<p>All avatars used in folder TRP were used on site: <a href="https://theresistanceplus.com">TheResistancePlus.com</a></p>
+<p>All avatars used in folder PROAVALON were used on site: <a href="https://proavalon.com">ProAvalon.com</a></p>
+<p>All avatars used in folder AVALON_IST were used on the avalon.ist site (no longer running)</p>
+<p>All avatars used in folder TOURNAMENT were made specifically for use during tournaments.</p>
+<p class="tourney-number">General Notes:</p>
+<p>Avatar file names may not match the accounts they were used on, rather they are named after the main account of the user. Some exceptions include starbird1002 (instead of sunbird1002) and flAnders (instead of anders)</p>
+<p class="tourney-number">TheResistancePlus Notes:</p>
+<ul>
+	<li>peck-1 was the first custom avatar on TRP</li>
+	<li>redtatsu256-3&4 have no spy counterparts.</li>
+	<li>buddyboyb1-2, ywain-2, deleted-2 were unused.</li>
+	<li>Wayne-3, Ref-Rain, and maddie-3 were unused, but were later used on ProAvalon.</li>
+	<li>bb-4 was unused prototype made by user riip, spy version completed by Chaos22</li>
+	<li>ywain-2 spy version completed by chaos22.</li>
+	<li>CITC- is now known by "fossa".</li>
+	<li>M40A3- was the account used by user sand.</li>
+</ul>
+<p class="tourney-number">ProAvalon Notes:</p>
+<p>Indexing may not start at 1 due to either being missing or being hosted on TheResistancePlus.</p>
+<ul>
+	<li>Ba3henov-14, CITC-5,6,7,8, NyanCat-4, pam-3,4, SadNixon-2, sidewalkill-2-, Tyrrox-2&3&4, InEdibleCake-8&9, Naizea-2, were unused.</li>
+	<li>Chaos22-1&2, fresherer-2-, incognitomode-1-, DeathDemon-1- were lost.
+	<ul>
+		<li>freshererer-2- was a Goku head, used on freshererererer.</li>
+		<li>incognitomode-1- was an avatar with a question mark head.</li>
+		<li>DeathDemon-1- was a dog wearing glasses holding a bone.</li>
+		<li>Dylan4000-1-res- is not the original file. The saved version was cropped from a Youtube video.</li>
+	</ul>
+	</li>
+	<li>Armthur-6- was the first avatar of size 1024x1024 to be accepted.</li>
+	<li>Tyrrox-4- had no existing res counterpart, as they were made for each spyrole. (4 being oberon)</li>
+</ul>
+<p class="tourney-number">Avalon.IST Notes:</p>
+<ul>
+	<li>Chaos22-3, J0nY and baby are unused.</li>
+	<li>bb was unused, but the res version served as site decoration.</li>
+	<li>Team 6 jerseys were shared by team members for Avalon tournament January 2021 .ist</li>
+	<li>Magician's (Biew's) avatar is only TRP-based since it was only used on this site.</li>
+	<li>enokii, bubsidos-2, Magician share gold medal for winning aforementioned tournament.</li>
+	<li>enokii's avatar was shared by remaining team members, (eg. bb) but name is stored under enokii since enokii was team captain.</li>
+	<li>enokii, bubsidos-2, bb, Tyrrox, cloud are created by user Pam.</li>
+</ul>
+<p class="tourney-number">Tournament Notes:</p>
+<p>Filename format goes as follows:</p>
+<ul>
+	<li>Tournament Size</li>
+	<li>Tournament Number</li>
+	<li>Team Number</li>
+	<li>Player name (or 0default if it was a shared avatar)</li>
+	<li>Index (if applicable)</li>
+	<li>Alignment</li>
+</ul>
+<p>These avatars were made during a tournament, but were moved to the PROAVALON folder due to their extended use.</p>
+<ul>
+	<li>Bremen-2- and Bremen-3- (6t03-6-Bremen-)</li>
+	<li>ansonberns- (6t03-6-ansonberns-)</li>
+	<li>imbapingu-2- (6t07-2-imbapingu-)</li>
+	<li>pat-4- (6t07-2-pat-)</li>
+</ul>
+<p class="tourney-number">Base Notes:</p>
+<ul>
+	<li>base-1- used on TheResistanceOnline.</li>
+	<li>base-2- used on TheResistancePlus and ProAvalon.</li>
+	<li>base-3- were the avatars used for trumpmode on TheResistancePlus.</li>
+	<li>base-4- is base-2- made symmetrical, by QuinnWuest. Used on ProAvalon.</li>
+	<li>base-5- is the 1024x1024 size base avatar, introduced on ProAvalon. SVG initially made by Timwi. Used on ProAvalon.</li>
+	<li>Tyrrox- were hypothetical avatars that were to be used for some of the base Avalon Roles. (Percival, Merlin, Assassin, Morgana, Oberon)</li>
+</ul>
+<p class="tourney-number">Credits:</p>
+<p>Thank you so much for your immense help!</p>
+<ul>
+	<li>Chaos22 (originally hosted the archive on Google Drive)</li>
+	<li>hakha3</li>
+	<li>OhBabyATripleOhhhhYeahhhh</li>
+	<li>Pam</li>
+	<li>NyanCat</li>
+</ul>
