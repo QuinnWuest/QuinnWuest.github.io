@@ -80,10 +80,8 @@ Arwenior-res.png
 Arwenior-spy.png
 Aster-res.png
 Aster-spy.png
-AveHunter-1-res.png
-AveHunter-1-spy.png
-AveHunter-2-res.png
-AveHunter-2-spy.png
+AveHunter-res.png
+AveHunter-spy.png
 Averum-1-res.png
 Averum-1-spy.png
 Averum-2-res.png
@@ -676,8 +674,6 @@ pam-2-res.png
 pam-2-spy.png
 pam-3-res.png
 pam-3-spy.png
-pam-4-res.png
-pam-4-spy.png
 pandamania-1-res.png
 pandamania-1-spy.png
 pandamania-2-res.png

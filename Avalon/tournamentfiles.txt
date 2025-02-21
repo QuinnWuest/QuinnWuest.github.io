@@ -4,6 +4,8 @@
 6t03-2-starbird1002-1-spy.png
 6t03-2-starbird1002-2-res.png
 6t03-2-starbird1002-2-spy.png
+6t03-3-0default-res.png
+6t03-3-0default-spy.png
 6t03-5-arogame123-res.png
 6t03-5-arogame123-spy.png
 6t03-5-killer-res.png
@@ -14,8 +16,10 @@
 6t03-5-ognjen05-spy.png
 6t03-5-Owen2250-res.png
 6t03-5-Owen2250-spy.png
-6t03-5-pam-res.png
-6t03-5-pam-spy.png
+6t03-5-pam-1-res.png
+6t03-5-pam-1-spy.png
+6t03-5-pam-2-res.png
+6t03-5-pam-2-spy.png
 6t03-5-Yules-res.png
 6t03-5-Yules-spy.png
 6t05-2-0default-res.png
