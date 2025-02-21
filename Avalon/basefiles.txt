@@ -1,13 +1,17 @@
-Base Avatar-1-res.png
-Base Avatar-1-spy.png
-Base Avatar-2-res.png
-Base Avatar-2-spy.png
-Base Avatar-3-res.png
-Base Avatar-3-spy.png
-Base Avatar-4-res.png
-Base Avatar-4-spy.png
-Base Avatar-5-res.png
-Base Avatar-5-spy.png
+TheResistanceOnline-res.png
+TheResistanceOnline-spy.png
+TheResistancePlus-1-res.png
+TheResistancePlus-1-spy.png
+TheResistancePlus-2-res.png
+TheResistancePlus-2-spy.png
+ProAvalon-1-res.png
+ProAvalon-1-spy.png
+ProAvalon-2-res.png
+ProAvalon-2-spy.png
+AvalonIST-1-res.png
+AvalonIST-1-spy.png
+AvalonIST-2-res.png
+AvalonIST-2-spy.png
 Tyrrox-merlin.png
 Tyrrox-percival.png
 Tyrrox-assassin.png

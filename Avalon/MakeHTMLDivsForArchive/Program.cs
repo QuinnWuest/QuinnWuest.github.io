@@ -15,8 +15,8 @@ sb.Append(
     "\t\t<script src=\"js/jquery.3.7.0.min.js\"></script>\r\n" +
     "\t\t<style>\r\n" +
     "\t\t@font-face {\r\n" +
-    "\t\t\tfont-family: 'Special Elite';\r\n" +
-    "\t\t\tsrc: url(font/SpecialElite.ttf);\r\n" +
+    "\t\t\tfont-family: 'Merriwether';\r\n" +
+    "\t\t\tsrc: url(font/merriweather.light.ttf);\r\n" +
     "\t\t}\r\n" +
     "\t\t.main-title {\r\n" +
     "\t\t\tmargin: 0em auto;\r\n" +
@@ -30,8 +30,6 @@ sb.Append(
     "\t\t\tfont-size: 80pt;\r\n" +
     "\t\t\tfont-weight: bold;\r\n" +
     "\t\t\tcolor: white;\r\n" +
-    "\t\t\t-webkit-text-stroke-width: 0.5px;\r\n" +
-    "\t\t\t-webkit-text-stroke-color: black;\r\n" +
     "\t\t\tmargin-top: 0.5cm;\r\n" +
     "\t\t\tmargin-bottom: 0.5cm;\r\n" +
     "\t\t}\r\n" +
@@ -40,14 +38,12 @@ sb.Append(
     "\t\t\tfont-size: 40pt;\r\n" +
     "\t\t\tfont-weight: bold;\r\n" +
     "\t\t\tcolor: white;\r\n" +
-    "\t\t\t-webkit-text-stroke-width: 0.2px;\r\n" +
-    "\t\t\t-webkit-text-stroke-color: black;\r\n" +
     "\t\t\tmargin-top: 0.5cm;\r\n" +
     "\t\t\tmargin-bottom: 0.5cm;\r\n" +
     "\t\t}\r\n" +
     "\t\tbody {\r\n" +
     "\t\t\tbackground-color: #4477bb;\r\n" +
-    "\t\t\tfont-family: 'Special Elite';\r\n" +
+    "\t\t\tfont-family: 'Merriwether';\r\n" +
     "\t\t}\r\n" +
     "\t\t.players {\r\n" +
     "\t\t\tmargin: auto;\r\n" +

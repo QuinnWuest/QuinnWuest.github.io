@@ -6,7 +6,7 @@
 <p>Avatar file names may not match the accounts they were used on, rather they are named after the main account of the user. Some exceptions include starbird1002 (instead of sunbird1002) and flAnders (instead of anders)</p>
 <p class="tourney-number">TheResistancePlus Notes:</p>
 <ul>
-	<li>peck-1 was the first custom avatar on TRP</li>
+	<li>peck-1 was the first custom avatar on TRP.</li>
 	<li>redtatsu256-3&4 have no spy counterparts.</li>
 	<li>buddyboyb1-2, ywain-2, deleted-2 were unused.</li>
 	<li>Wayne-3, Ref-Rain, and maddie-3 were unused, but were later used on ProAvalon.</li>
@@ -34,7 +34,6 @@
 <ul>
 	<li>Chaos22-3, J0nY and baby are unused.</li>
 	<li>bb was unused, but the res version served as site decoration.</li>
-	<li>Team 6 jerseys were shared by team members for Avalon tournament January 2021 .ist</li>
 	<li>Magician's (Biew's) avatar is only TRP-based since it was only used on this site.</li>
 	<li>enokii, bubsidos-2, Magician share gold medal for winning aforementioned tournament.</li>
 	<li>enokii's avatar was shared by remaining team members, (eg. bb) but name is stored under enokii since enokii was team captain.</li>
@@ -59,11 +58,6 @@
 </ul>
 <p class="tourney-number">Base Notes:</p>
 <ul>
-	<li>base-1- used on TheResistanceOnline.</li>
-	<li>base-2- used on TheResistancePlus and ProAvalon.</li>
-	<li>base-3- were the avatars used for trumpmode on TheResistancePlus.</li>
-	<li>base-4- is base-2- made symmetrical, by QuinnWuest. Used on ProAvalon.</li>
-	<li>base-5- is the 1024x1024 size base avatar, introduced on ProAvalon. SVG initially made by Timwi. Used on ProAvalon.</li>
 	<li>Tyrrox- were hypothetical avatars that were to be used for some of the base Avalon Roles. (Percival, Merlin, Assassin, Morgana, Oberon)</li>
 </ul>
 <p class="tourney-number">Credits:</p>
