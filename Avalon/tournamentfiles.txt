@@ -48,6 +48,8 @@
 6t05-2-0default-spy.png
 6t07-1-fashdusaRETURNS-res.png
 6t07-1-fashdusaRETURNS-spy.png
+6t07-1-chork-res.png
+6t07-1-chork-spy.png
 6t07-3-ratters-res.png
 6t07-3-ratters-spy.png
 6t07-5-0default-res.png
