@@ -20,6 +20,8 @@ anders-3-res.png
 anders-3-spy.png
 anders-4-res.png
 anders-4-spy.png
+anders-5-res.png
+anders-5-spy.png
 angy-res.png
 angy-spy.png
 Anissakate-1-res.png
