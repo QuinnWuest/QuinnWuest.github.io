@@ -628,8 +628,10 @@ no3-res.png
 no3-spy.png
 nospaghetti-res.png
 nospaghetti-spy.png
-not.me-res.png
-not.me-spy.png
+not.me-1-res.png
+not.me-1-spy.png
+not.me-2-res.png
+not.me-2-spy.png
 npmt20bfacg-res.png
 npmt20bfacg-spy.png
 NyanCat-1-res.png
