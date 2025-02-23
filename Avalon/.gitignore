@@ -1,1 +1,3 @@
 MakeHTMLDivsForArchive/.vs/
+*.pdb
+*.dll
