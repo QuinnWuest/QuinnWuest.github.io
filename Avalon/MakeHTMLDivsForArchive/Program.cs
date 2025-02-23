@@ -19,8 +19,16 @@ sb.Append(
     "\t\t\tsrc: url(font/merriweather.light.ttf);\r\n" +
     "\t\t}\r\n" +
     "\t\t.main-title {\r\n" +
-    "\t\t\tmargin: 0em auto;\r\n" +
-    "\t\t\tpadding: 0;\r\n" +
+    "\t\t\ttext-align: center;\r\n" +
+    "\t\t\tfont-size: 100pt;\r\n" +
+    "\t\t\tmargin-top: 0.5cm;\r\n" +
+    "\t\t\tmargin-bottom: 0.5cm;\r\n" +
+    "\t\t\tbackground: linear-gradient(90deg, rgba(60, 255, 200, 1) 0%, rgba(180, 100, 255, 1) 100%);\r\n" +
+    "\t\t\t\t-webkit-background-clip: text;\r\n" +
+    "\t\t\t\tbackground-clip: text;\r\n" +
+    "\t\t\t\t-webkit-text-fill-color: transparent;\r\n" +
+    "\t\t\t-webkit-text-stroke-width: 2pt;\r\n" +
+    "\t\t\t-webkit-text-stroke-color: black;\r\n" +
     "\t\t}\r\n" +
     "\t\t.main-title img {\r\n" +
     "\t\t\twidth: 100%;\r\n" +
@@ -28,7 +36,6 @@ sb.Append(
     "\t\t.site-name {\r\n" +
     "\t\t\ttext-align: center;\r\n" +
     "\t\t\tfont-size: 80pt;\r\n" +
-    "\t\t\tfont-weight: bold;\r\n" +
     "\t\t\tcolor: white;\r\n" +
     "\t\t\tmargin-top: 0.5cm;\r\n" +
     "\t\t\tmargin-bottom: 0.5cm;\r\n" +
@@ -36,7 +43,6 @@ sb.Append(
     "\t\t.tourney-number {\r\n" +
     "\t\t\ttext-align: center;\r\n" +
     "\t\t\tfont-size: 40pt;\r\n" +
-    "\t\t\tfont-weight: bold;\r\n" +
     "\t\t\tcolor: white;\r\n" +
     "\t\t\tmargin-top: 0.5cm;\r\n" +
     "\t\t\tmargin-bottom: 0.5cm;\r\n" +
@@ -99,7 +105,7 @@ sb.Append(
     "\t\t</style>\r\n" +
     "\t</head>\r\n" +
     "\t<body>\r\n" +
-    "\t\t<p class=\"main-title\"><img src=\"title-img.png\"></p>\r\n"
+    "\t\t<p class=\"main-title\">Avalon Avatar Archive</p>\r\n"
     );
 var folders = new[] { "PROAVALON", "TRP", "AVALON_IST", "TOURNAMENT", "BASE" };
 var sitenames = new[] { "ProAvalon", "TheResistancePlus", "AvalonIst", "Tournament Avatars", "Base Avatars" };

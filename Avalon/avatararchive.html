@@ -12,8 +12,16 @@
 			src: url(font/merriweather.light.ttf);
 		}
 		.main-title {
-			margin: 0em auto;
-			padding: 0;
+			text-align: center;
+			font-size: 100pt;
+			margin-top: 0.5cm;
+			margin-bottom: 0.5cm;
+			background: linear-gradient(90deg, rgba(60, 255, 200, 1) 0%, rgba(180, 100, 255, 1) 100%);
+				-webkit-background-clip: text;
+				background-clip: text;
+				-webkit-text-fill-color: transparent;
+			-webkit-text-stroke-width: 2pt;
+			-webkit-text-stroke-color: black;
 		}
 		.main-title img {
 			width: 100%;
@@ -21,7 +29,6 @@
 		.site-name {
 			text-align: center;
 			font-size: 80pt;
-			font-weight: bold;
 			color: white;
 			margin-top: 0.5cm;
 			margin-bottom: 0.5cm;
@@ -29,7 +36,6 @@
 		.tourney-number {
 			text-align: center;
 			font-size: 40pt;
-			font-weight: bold;
 			color: white;
 			margin-top: 0.5cm;
 			margin-bottom: 0.5cm;
@@ -92,7 +98,7 @@
 		</style>
 	</head>
 	<body>
-		<p class="main-title"><img src="title-img.png"></p>
+		<p class="main-title">Avalon Avatar Archive</p>
 		<p class="site-name">ProAvalon</p>
 		<div class="players">
 			<div class="player">
