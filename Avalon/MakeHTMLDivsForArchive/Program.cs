@@ -20,7 +20,7 @@ sb.Append(
     "\t\t}\r\n" +
     "\t\t.main-title {\r\n" +
     "\t\t\ttext-align: center;\r\n" +
-    "\t\t\tfont-size: 100pt;\r\n" +
+    "\t\t\tfont-size: 120pt;\r\n" +
     "\t\t\tmargin-top: 0.5cm;\r\n" +
     "\t\t\tmargin-bottom: 0.5cm;\r\n" +
     "\t\t\tbackground: linear-gradient(90deg, rgba(60, 255, 200, 1) 0%, rgba(180, 100, 255, 1) 100%);\r\n" +
