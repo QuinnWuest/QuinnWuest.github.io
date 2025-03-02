@@ -562,8 +562,10 @@ meir-2-res.png
 meir-2-spy.png
 Mell0-res.png
 Mell0-spy.png
-menach2-res.png
-menach2-spy.png
+menach2-1-res.png
+menach2-1-spy.png
+menach2-2-res.png
+menach2-2-spy.png
 metaresistance-res.png
 metaresistance-spy.png
 Mick78910-res.png
