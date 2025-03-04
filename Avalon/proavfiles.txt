@@ -276,6 +276,8 @@ dexypuu-res.png
 dexypuu-spy.png
 dianage-res.png
 dianage-spy.png
+Dr3-res.png
+Dr3-spy.png
 DrDuca-1-res.png
 DrDuca-1-spy.png
 DrDuca-2-res.png
