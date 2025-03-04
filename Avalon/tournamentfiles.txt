@@ -152,8 +152,8 @@
 6t10-6-olong-spy.png
 6t10-6-pandamania-res.png
 6t10-6-pandamania-spy.png
-6t10-6-ragdoll100-res.png
-6t10-6-ragdoll100-spy.png
+6t10-6-ragdoll0100-res.png
+6t10-6-ragdoll0100-spy.png
 6t10-6-saltypotato-res.png
 6t10-6-saltypotato-spy.png
 8t02-5-alexxx-res.png
