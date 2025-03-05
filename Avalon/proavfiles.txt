@@ -522,8 +522,10 @@ Lucid-res.png
 Lucid-spy.png
 LuckyNo-res.png
 LuckyNo-spy.png
-ManuAvalon-res.png
-ManuAvalon-spy.png
+ManuAvalon-1-res.png
+ManuAvalon-1-spy.png
+ManuAvalon-2-res.png
+ManuAvalon-2-spy.png
 Maria-1-res.png
 Maria-1-spy.png
 Maria-2-res.png
