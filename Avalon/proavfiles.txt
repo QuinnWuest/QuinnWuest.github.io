@@ -356,10 +356,8 @@ glorious-2-res.png
 glorious-2-spy.png
 Godxevoir-res.png
 Godxevoir-spy.png
-goodjobfren-1-res.png
-goodjobfren-1-spy.png
-goodjobfren-2-res.png
-goodjobfren-2-spy.png
+goodjobfren-res.png
+goodjobfren-spy.png
 Gratia666-res.png
 Gratia666-spy.png
 Guest101-res.png
@@ -720,8 +718,10 @@ putinWalk-1-res.png
 putinWalk-1-spy.png
 putinWalk-2-res.png
 putinWalk-2-spy.png
-queenofireland-res.png
-queenofireland-spy.png
+queenofireland-1-res.png
+queenofireland-1-spy.png
+queenofireland-2-res.png
+queenofireland-2-spy.png
 QuinnWuest-1-res.png
 QuinnWuest-1-spy.png
 QuinnWuest-2-res.png
