@@ -6,106 +6,108 @@ const int size = 96;
 
 StringBuilder sb = new();
 sb.Append(
-    "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n" +
-    "\t<head>\r\n" +
-    "\t\t<meta charset=\"UTF-8\">\r\n" +
-    "\t\t<meta name=\"viewport\" content=\"initial-scale=1\">\r\n" +
-    "\t\t<title>Avalon Avatar Archive</title>\r\n" +
-    "\t\t<link rel=\"icon\" href=\"BASE/ProAvalon-2-res.png\">\r\n" +
-    "\t\t<script src=\"js/jquery.3.7.0.min.js\"></script>\r\n" +
-    "\t\t<style>\r\n" +
-    "\t\t@font-face {\r\n" +
-    "\t\t\tfont-family: 'Merriwether';\r\n" +
-    "\t\t\tsrc: url(font/merriweather.light.ttf);\r\n" +
-    "\t\t}\r\n" +
-    "\t\t.main-title {\r\n" +
-    "\t\t\ttext-align: center;\r\n" +
-    "\t\t\tfont-size: 120pt;\r\n" +
-    "\t\t\tmargin-top: 0.5cm;\r\n" +
-    "\t\t\tmargin-bottom: 0.5cm;\r\n" +
-    "\t\t\tbackground: linear-gradient(90deg, rgba(60, 255, 200, 1) 0%, rgba(180, 100, 255, 1) 100%);\r\n" +
-    "\t\t\t\t-webkit-background-clip: text;\r\n" +
-    "\t\t\t\tbackground-clip: text;\r\n" +
-    "\t\t\t\t-webkit-text-fill-color: transparent;\r\n" +
-    "\t\t\t-webkit-text-stroke-width: 2pt;\r\n" +
-    "\t\t\t-webkit-text-stroke-color: black;\r\n" +
-    "\t\t}\r\n" +
-    "\t\t.main-title img {\r\n" +
-    "\t\t\twidth: 100%;\r\n" +
-    "\t\t}\r\n" +
-    "\t\t.site-name {\r\n" +
-    "\t\t\ttext-align: center;\r\n" +
-    "\t\t\tfont-size: 80pt;\r\n" +
-    "\t\t\tcolor: white;\r\n" +
-    "\t\t\tmargin-top: 0.5cm;\r\n" +
-    "\t\t\tmargin-bottom: 0.5cm;\r\n" +
-    "\t\t}\r\n" +
-    "\t\t.tourney-number {\r\n" +
-    "\t\t\ttext-align: center;\r\n" +
-    "\t\t\tfont-size: 40pt;\r\n" +
-    "\t\t\tcolor: white;\r\n" +
-    "\t\t\tmargin-top: 0.5cm;\r\n" +
-    "\t\t\tmargin-bottom: 0.5cm;\r\n" +
-    "\t\t}\r\n" +
-    "\t\tbody {\r\n" +
-    "\t\t\tbackground-color: #4477bb;\r\n" +
-    "\t\t\tfont-family: 'Merriwether';\r\n" +
-    "\t\t}\r\n" +
-    "\t\t.players {\r\n" +
-    "\t\t\tmargin: auto;\r\n" +
-    "\t\t\tjustify-content: center;\r\n" +
-    "\t\t\tdisplay: flex;\r\n" +
-    "\t\t\tflex-direction: row;\r\n" +
-    "\t\t\talign-items: center;\r\n" +
-    "\t\t\tflex-wrap: wrap;\r\n" +
-    "\t\t}\r\n" +
-    "\t\t.player {\r\n" +
-    "\t\t\tmargin: 0.25cm;\r\n" +
-    "\t\t\tdisplay: flex;\r\n" +
-    "\t\t\tflex-direction: column;\r\n" +
-    "\t\t\talign-items: center;\r\n" +
-    "\t\t\tborder: 4px solid black;\r\n" +
-    "\t\t\tborder-radius: 1cm;\r\n" +
-    "\t\t\tbackground-color: #aaddff;\r\n" +
-    "\t\t\tpadding: 0.5cm;\r\n" +
-    "\t\t}\r\n" +
-    "\t\t.player-name {\r\n" +
-    "\t\t\ttext-align: center;\r\n" +
-    "\t\t\tfont-size: 20pt;\r\n" +
-    "\t\t\tmargin: 0em auto;\r\n" +
-    "\t\t\tposition: relative;\r\n" +
-    "\t\t}\r\n" +
-    "\t\t.player-icons {\r\n" +
-    "\t\t\tdisplay: flex;\r\n" +
-    "\t\t\tflex-wrap: wrap;\r\n" +
-    "\t\t\tmargin: 0em auto;\r\n" +
-    "\t\t\tposition: relative;\r\n" +
-    "\t\t\talign-items: center;\r\n" +
-    "\t\t\tjustify-content: center;\r\n" +
-    "\t\t}\r\n" +
-    "\t\t.player-icons img {\r\n" +
-    "\t\t\tpadding: 0;\r\n" +
-    $"\t\t\theight: {size}px;\r\n" +
-    "\t\t}\r\n" +
-    "\t\t.player-icon {\r\n" +
-    $"\t\t\twidth: {size}px;\r\n" +
-    "\t\t\tdisplay: flex;\r\n" +
-    "\t\t\tposition: relative;\r\n" +
-    "\t\t\talign-items: center;\r\n" +
-    "\t\t\tjustify-content: center;\r\n" +
-    "\t\t}\r\n" +
-    "\t\t.notes {\r\n" +
-    "\t\t\tflex-direction: column;\r\n" +
-    "\t\t\tborder: 4px solid black;\r\n" +
-    "\t\t\tborder-radius: 1cm;\r\n" +
-    "\t\t\tbackground-color: #aaddff;\r\n" +
-    "\t\t\tfont-size: 14pt;\r\n" +
-    "\t\t\tpadding: 0.5cm;\r\n" +
-    "\t\t}\r\n" +
-    "\t\t</style>\r\n" +
-    "\t</head>\r\n" +
-    "\t<body>\r\n" +
-    "\t\t<p class=\"main-title\">Avalon Avatar Archive</p>\r\n"
+    $@"<!DOCTYPE html>
+	<html lang=""en"">
+		<head>
+			<meta charset=""UTF-8"">
+			<meta name=""viewport"" content=""initial-scale=1"">
+			<title>Avalon Avatar Archive</title>
+			<link rel=""icon"" href=""BASE/ProAvalon-2-res.png"">
+			<script src=""js/jquery.3.7.0.min.js""></script>
+			<style>
+			@font-face {{
+				font-family: 'Merriwether';
+				src: url(font/merriweather.light.ttf);
+			}}
+			.main-title {{
+				text-align: center;
+				font-size: 120pt;
+				margin-top: 0.5cm;
+				margin-bottom: 0.5cm;
+				background: linear-gradient(90deg, rgba(60, 255, 200, 1) 0%, rgba(180, 100, 255, 1) 100%);
+					-webkit-background-clip: text;
+					background-clip: text;
+					-webkit-text-fill-color: transparent;
+				-webkit-text-stroke-width: 2pt;
+				-webkit-text-stroke-color: black;
+			}}
+			.main-title img {{
+				width: 100%;
+			}}
+			.site-name {{
+				text-align: center;
+				font-size: 80pt;
+				color: white;
+				margin-top: 0.5cm;
+				margin-bottom: 0.5cm;
+			}}
+			.tourney-number {{
+				text-align: center;
+				font-size: 40pt;
+				color: white;
+				margin-top: 0.5cm;
+				margin-bottom: 0.5cm;
+			}}
+			body {{
+				background-color: #4477bb;
+				font-family: 'Merriwether';
+			}}
+			.players {{
+				margin: auto;
+				justify-content: center;
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				flex-wrap: wrap;
+			}}
+			.player {{
+				margin: 0.25cm;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				border: 4px solid black;
+				border-radius: 1cm;
+				background-color: #aaddff;
+				padding: 0.5cm;
+			}}
+			.player-name {{
+				text-align: center;
+				font-size: 20pt;
+				margin: 0em auto;
+				position: relative;
+			}}
+			.player-icons {{
+				display: flex;
+				flex-wrap: wrap;
+				margin: 0em auto;
+				position: relative;
+				align-items: center;
+				justify-content: center;
+			}}
+			.player-icons img {{
+				padding: 0;
+				height: {size}px;
+			}}
+			.player-icon {{
+				width: {size}px;
+				display: flex;
+				position: relative;
+				align-items: center;
+				justify-content: center;
+			}}
+			.notes {{
+				flex-direction: column;
+				border: 4px solid black;
+				border-radius: 1cm;
+				background-color: #aaddff;
+				font-size: 14pt;
+				padding: 0.5cm;
+			}}
+			</style>
+		</head>
+		<body>
+			<p class=""main-title"">Avalon Avatar Archive</p>
+	"
     );
 var folders = new[] { "PROAVALON", "TRP", "AVALON_IST", "TOURNAMENT", "BASE" };
 var sitenames = new[] { "ProAvalon", "TheResistancePlus", "AvalonIst", "Tournament Avatars", "Base Avatars" };
