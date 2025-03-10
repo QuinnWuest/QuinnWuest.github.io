@@ -910,7 +910,7 @@ Tamboz-2-res.png
 Tamboz-2-spy.png
 Tazia-1-res.png
 Tazia-1-spy.png
-Tazia-2-spy.png
+Tazia-2-res.png
 Tazia-2-spy.png
 TealW-1-res.png
 TealW-1-spy.png
