@@ -624,6 +624,8 @@ nero-res.png
 nero-spy.png
 nicksong04-res.png
 nicksong04-spy.png
+nicomismo-res.png
+nicomismo-spy.png
 Nightsnake-res.png
 Nightsnake-spy.png
 nigiris-res.png
