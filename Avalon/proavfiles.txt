@@ -864,6 +864,8 @@ SourceTalk-2-res.png
 SourceTalk-2-spy.png
 speedforced-res.png
 speedforced-spy.png
+Spellblade-res.png
+Spellblade-spy.png
 starbird1002-res.png
 starbird1002-spy.png
 starkrush-res.png
