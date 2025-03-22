@@ -248,8 +248,10 @@ danielhe9999-res.png
 danielhe9999-spy.png
 DarkMerlin-res.png
 DarkMerlin-spy.png
-darkpsyduck-res.png
-darkpsyduck-spy.png
+darkpsyduck-1-res.png
+darkpsyduck-1-spy.png
+darkpsyduck-2-res.png
+darkpsyduck-2-spy.png
 datpunkard-res.png
 datpunkard-spy.png
 David21435-res.png
