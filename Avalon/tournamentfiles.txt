@@ -172,3 +172,5 @@
 8t02-5-wanglebangle-spy.png
 8t02-5-Wrath-res.png
 8t02-5-Wrath-spy.png
+8t02-8-pandamania-res.png
+8t02-8-pandamania-spy.png
