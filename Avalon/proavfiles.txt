@@ -194,6 +194,8 @@ bumfuzzle28-6-res.png
 bumfuzzle28-6-spy.png
 bumfuzzle28-7-res.png
 bumfuzzle28-7-spy.png
+bumfuzzle28-8-res.png
+bumfuzzle28-8-spy.png
 Buncha-res.png
 Buncha-spy.png
 catfat-1-res.png
