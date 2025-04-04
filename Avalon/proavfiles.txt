@@ -764,8 +764,6 @@ randmantest-3-res.png
 randmantest-3-spy.png
 RealGrizzle123-res.png
 RealGrizzle123-spy.png
-rico-res.png
-rico-spy.png
 rio-res.png
 rio-spy.png
 Riot-res.png
