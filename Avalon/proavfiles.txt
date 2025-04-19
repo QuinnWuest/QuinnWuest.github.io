@@ -226,6 +226,10 @@ Chaos22-13-res.png
 Chaos22-13-spy.png
 charm-2-res.png
 charm-2-spy.png
+cheezer-1-res.png
+cheezer-1-spy.png
+cheezer-2-res.png
+cheezer-2-spy.png
 chickenn-res.png
 chickenn-spy.png
 chork-res.png
@@ -456,6 +460,8 @@ J0nY-2-res.png
 J0nY-2-spy.png
 jack-res.png
 jack-spy.png
+Jad17-res.png
+Jad17-spy.png
 Jamieee-res.png
 Jamieee-spy.png
 jaysoo-res.png
@@ -746,8 +752,6 @@ QuinnWuest-7-res.png
 QuinnWuest-7-spy.png
 QuinnWuest-8-res.png
 QuinnWuest-8-spy.png
-QuinnWuest-9-res.png
-QuinnWuest-9-spy.png
 RadiantCowbells-res.png
 RadiantCowbells-spy.png
 Radiation-1-res.png

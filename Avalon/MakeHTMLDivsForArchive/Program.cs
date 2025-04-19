@@ -2,7 +2,7 @@
 
 var outputPath = @"C:\Users\Quinn\Desktop\QW.github.io\Avalon\avatararchive.html";
 
-const int size = 96;
+const int size = 100;
 
 StringBuilder sb = new();
 sb.Append(
