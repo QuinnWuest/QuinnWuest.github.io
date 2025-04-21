@@ -348,6 +348,8 @@ fossa-9-res.png
 fossa-9-spy.png
 freshererer-1-res.png
 freshererer-1-spy.png
+FrostFlame-res.png
+FrostFlame-spy.png
 ft029-res.png
 ft029-spy.png
 fuffy136-res.png
