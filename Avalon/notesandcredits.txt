@@ -27,10 +27,11 @@
 		<li>Dylan4000-1-res is not the original file. The saved version was cropped from a Youtube video.</li>
 	</ul>
 	</li>
+	<li>BowieZ, Naizea-2, OHBABYATRIPLEOHHHHYEAHHHH-5, and StarWarsXD-1 are not displayed due to controversial political association.</li>
+	<li>bigz_200 is not displayed due to it potentially triggering trypophobia.</li>
 	<li>On April 30, 2024, avatars of size 1024×1024 became acceptable on the site. (alongside 128×128)</li>
 	<li>Armthur-6 was the first avatar of size 1024×1024 to be accepted.</li>
 	<li>Similar looking avatars may instead be 1024×1024 remakes.</li>
-	<li>Tyrrox-4 had no existing res counterpart, as they were made for each spyrole. (4 being oberon)</li>
 </ul>
 <p class="tourney-number">Avalon.IST Notes:</p>
 <ul>
@@ -59,6 +60,7 @@
 <p class="tourney-number">Base Notes:</p>
 <ul>
 	<li>Tyrrox- were hypothetical avatars that were to be used for some of the base Avalon Roles. (Percival, Merlin, Assassin, Morgana, Oberon)</li>
+	<li>TheResistancePlus-2 is not displayed due to controversial political association.</li>
 </ul>
 <p class="tourney-number">Credits:</p>
 <p>Thank you so much for your immense help!</p>

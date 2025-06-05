@@ -160,8 +160,6 @@ BigDigDev-2-res.png
 BigDigDev-2-spy.png
 BigDigDev-3-res.png
 BigDigDev-3-spy.png
-bigz_200-res.png
-bigz_200-spy.png
 BLGsabo-1-res.png
 BLGsabo-1-spy.png
 BLGsabo-2-res.png
@@ -170,8 +168,6 @@ bossi-1-res.png
 bossi-1-spy.png
 bossi-2-res.png
 bossi-2-spy.png
-BowieZ-res.png
-BowieZ-spy.png
 Bremen-1-res.png
 Bremen-1-spy.png
 Bremen-2-res.png
@@ -244,6 +240,8 @@ Comp1ex-1-res.png
 Comp1ex-1-spy.png
 Comp1ex-2-res.png
 Comp1ex-2-spy.png
+Comp1ex-3-res.png
+Comp1ex-3-spy.png
 Coxinha-res.png
 Coxinha-spy.png
 CrabbyPatty-res.png
@@ -624,8 +622,6 @@ nacho-res.png
 nacho-spy.png
 Naizea-1-res.png
 Naizea-1-spy.png
-Naizea-2-res.png
-Naizea-2-spy.png
 Naizea-3-res.png
 Naizea-3-spy.png
 Nateorade-res.png
@@ -682,8 +678,6 @@ OHBABYATRIPLEOHHHHYEAHHHH-3-res.png
 OHBABYATRIPLEOHHHHYEAHHHH-3-spy.png
 OHBABYATRIPLEOHHHHYEAHHHH-4-res.png
 OHBABYATRIPLEOHHHHYEAHHHH-4-spy.png
-OHBABYATRIPLEOHHHHYEAHHHH-5-res.png
-OHBABYATRIPLEOHHHHYEAHHHH-5-spy.png
 OHBABYATRIPLEOHHHHYEAHHHH-6-res.png
 OHBABYATRIPLEOHHHHYEAHHHH-6-spy.png
 olong-res.png
@@ -880,8 +874,6 @@ starbird1002-res.png
 starbird1002-spy.png
 starkrush-res.png
 starkrush-spy.png
-StarWarsXD-1-res.png
-StarWarsXD-1-spy.png
 StarWarsXD-2-res.png
 StarWarsXD-2-spy.png
 StarWarsXD-3-res.png

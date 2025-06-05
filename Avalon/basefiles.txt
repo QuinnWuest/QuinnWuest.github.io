@@ -2,8 +2,6 @@ TheResistanceOnline-res.png
 TheResistanceOnline-spy.png
 TheResistancePlus-1-res.png
 TheResistancePlus-1-spy.png
-TheResistancePlus-2-res.png
-TheResistancePlus-2-spy.png
 ProAvalon-1-res.png
 ProAvalon-1-spy.png
 ProAvalon-2-res.png
