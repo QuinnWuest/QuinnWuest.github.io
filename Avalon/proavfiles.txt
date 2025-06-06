@@ -82,6 +82,8 @@ Arwenior-res.png
 Arwenior-spy.png
 Aster-res.png
 Aster-spy.png
+Autoprick-res.png
+Autoprick-spy.png
 AveHunter-res.png
 AveHunter-spy.png
 Averum-1-res.png
