@@ -698,6 +698,8 @@ pandamania-1-res.png
 pandamania-1-spy.png
 pandamania-2-res.png
 pandamania-2-spy.png
+pandamania-3-spy.png
+pandamania-3-res.png
 pat-1-res.png
 pat-1-spy.png
 pat-2-res.png
