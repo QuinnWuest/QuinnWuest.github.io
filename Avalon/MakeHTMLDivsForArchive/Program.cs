@@ -200,17 +200,13 @@ for (int folder = 0; folder < folders.Length; folder++)
     }
     sb.Append("\t\t\t\t</div>\r\n\t\t\t</div>\n");
 }
-sb.Append("\t\t</div>\r\n");
-sb.Append($"\t<div>\r\n");
-sb.Append($"\t\t<p class=\"site-name\">Notes & Credits</p>\r\n");
+sb.Append("\t\t</div>\r\n\t<div>\r\n\t\t<p class=\"site-name\">Notes & Credits</p>\r\n");
 var notespath = $@"C:\Users\Quinn\Desktop\QW.github.io\Avalon\notesandcredits.txt";
 var notes = File.ReadAllLines(notespath);
 
 sb.Append($"\t\t\t<div class=\"notes\">\r\n");
 for (int i = 0; i < notes.Length; i++)
-{
     sb.Append($"\t\t\t{notes[i]}\r\n");
-}
 sb.Append($"\t\t\t</div>\r\n");
 
 sb.Append("\t\t</div>\r\n\t</body>\r\n</html>");

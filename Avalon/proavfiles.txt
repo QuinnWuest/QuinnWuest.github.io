@@ -774,6 +774,8 @@ RichRobby-2-res.png
 RichRobby-2-spy.png
 RichRobby-3-res.png
 RichRobby-3-spy.png
+RichRobby-4-res.png
+RichRobby-4-spy.png
 rio-res.png
 rio-spy.png
 Riot-res.png
