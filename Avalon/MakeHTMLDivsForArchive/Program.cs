@@ -180,8 +180,7 @@ for (int folder = 0; folder < folders.Length; folder++)
                     sb.Append("\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n");
                 tournamentSize = tempSize;
                 tournamentNumber = tempNumber;
-                sb.Append($"\t\t<div class=\"tourney-number\">{tournamentSize}p Tournament #{tournamentNumber}</div>\r\n");
-                sb.Append("\t\t<div class=\"players\">\r\n");
+                sb.Append($"\t\t<div class=\"tourney-number\">{tournamentSize}p Tournament #{tournamentNumber}</div>\r\n\t\t<div class=\"players\">\r\n");
             }
             if (newTeam)
             {
@@ -193,9 +192,7 @@ for (int folder = 0; folder < folders.Length; folder++)
                 sb.Append($"\t\t\t\t\t<div class=\"player-icon\"><img src=\"{folders[folder]}/{lines[i]}\"></img></div>\n");
             }
             else
-            {
                 sb.Append($"\t\t\t\t\t<div class=\"player-icon\"><img src=\"{folders[folder]}/{lines[i]}\"></img></div>\n");
-            }
         }
     }
     sb.Append("\t\t\t\t</div>\r\n\t\t\t</div>\n");
