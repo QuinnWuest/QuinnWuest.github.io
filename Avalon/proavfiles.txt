@@ -232,6 +232,8 @@ chickenn-res.png
 chickenn-spy.png
 chork-res.png
 chork-spy.png
+Chrollo-res.png
+Chrollo-spy.png
 chrome-1-res.png
 chrome-1-spy.png
 chrome-2-res.png

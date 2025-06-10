@@ -21,5 +21,7 @@
 6111 Team #1: Ref of the Flame
 6112 Team #2: Eyes on the Fries
 6114 Team #4: Boyz II Meemen
+6116 Team #6: Don't Pet the Llamas
 8025 Team #5: wangerines
+8027 Team #7: Road Bread
 8028 Team #8: i think it's hilarious...

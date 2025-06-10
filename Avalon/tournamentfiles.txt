@@ -176,8 +176,14 @@
 6t11-4-bumfuzzle28-spy.png
 6t11-4-darkpsyduck-res.png
 6t11-4-darkpsyduck-spy.png
+6t11-4-FrostFlame-res.png
+6t11-4-FrostFlame-spy.png
 6t11-4-QuinnWuest-res.png
 6t11-4-QuinnWuest-spy.png
+6t11-6-0default-res.png
+6t11-6-0default-spy.png
+6t11-6-pandamania-res.png
+6t11-6-pandamania-spy.png
 8t02-5-alexxx-res.png
 8t02-5-alexxx-spy.png
 8t02-5-Mick78910-res.png
@@ -194,5 +200,7 @@
 8t02-5-wanglebangle-spy.png
 8t02-5-Wrath-res.png
 8t02-5-Wrath-spy.png
+8t02-7-0default-res.png
+8t02-7-0default-spy.png
 8t02-8-pandamania-res.png
 8t02-8-pandamania-spy.png
