@@ -168,6 +168,8 @@
 6t11-1-Ref-Rain-spy.png
 6t11-1-wanglebangle-res.png
 6t11-1-wanglebangle-spy.png
+6t11-1-Wednesday-res.png
+6t11-1-Wednesday-spy.png
 6t11-2-Mick78910-res.png
 6t11-2-Mick78910-spy.png
 6t11-4-0default-res.png
@@ -182,6 +184,8 @@
 6t11-4-QuinnWuest-spy.png
 6t11-6-0default-res.png
 6t11-6-0default-spy.png
+6t11-6-indexandthumbcrossedemoji-res.png
+6t11-6-indexandthumbcrossedemoji-spy.png
 6t11-6-pandamania-res.png
 6t11-6-pandamania-spy.png
 8t02-5-alexxx-res.png
