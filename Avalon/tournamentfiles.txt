@@ -172,6 +172,8 @@
 6t11-1-Wednesday-spy.png
 6t11-2-Mick78910-res.png
 6t11-2-Mick78910-spy.png
+6t11-2-saltypotato-res.png
+6t11-2-saltypotato-spy.png
 6t11-4-0default-res.png
 6t11-4-0default-spy.png
 6t11-4-bumfuzzle28-res.png
