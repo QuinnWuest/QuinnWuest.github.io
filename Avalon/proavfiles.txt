@@ -540,6 +540,8 @@ Lucid-res.png
 Lucid-spy.png
 LuckyNo-res.png
 LuckyNo-spy.png
+MacDeddy-res.png
+MacDeddy-spy.png
 ManuAvalon-1-res.png
 ManuAvalon-1-spy.png
 ManuAvalon-2-res.png
