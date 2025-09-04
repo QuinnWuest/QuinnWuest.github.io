@@ -1,5 +1,7 @@
-1CE1-res.png
-1CE1-spy.png
+1CE1-1-res.png
+1CE1-1-spy.png
+1CE1-2-res.png
+1CE1-2-spy.png
 2High2Fall-res.png
 2High2Fall-spy.png
 420LlamaPerci-res.png
@@ -502,6 +504,8 @@ Kesta-res.png
 Kesta-spy.png
 khaled-res.png
 khaled-spy.png
+kilamonjaro-res.png
+kilamonjaro-spy.png
 killer-2-res.png
 killer-2-spy.png
 kinematic-1-res.png
@@ -990,8 +994,10 @@ WyzDM-res.png
 WyzDM-spy.png
 xaxin-res.png
 xaxin-spy.png
-xKoa-res.png
-xKoa-spy.png
+xKoa-1-res.png
+xKoa-1-spy.png
+xKoa-2-res.png
+xKoa-2-spy.png
 xpc-1-res.png
 xpc-1-spy.png
 xpc-2-res.png
