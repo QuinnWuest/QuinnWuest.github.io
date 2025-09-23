@@ -904,8 +904,10 @@ stromblessed-res.png
 stromblessed-spy.png
 SundaeLundae-res.png
 SundaeLundae-spy.png
-Sunspot-res.png
-Sunspot-spy.png
+Sunspot-1-res.png
+Sunspot-1-spy.png
+Sunspot-2-res.png
+Sunspot-2-spy.png
 SuperDeath-res.png
 SuperDeath-spy.png
 superkushal-res.png
