@@ -810,8 +810,10 @@ SadNixon-2-res.png
 SadNixon-2-spy.png
 SadNixon-3-res.png
 SadNixon-3-spy.png
-Sakl-res.png
-Sakl-spy.png
+Sakki-1-res.png
+Sakki-1-spy.png
+Sakki-2-res.png
+Sakki-2-spy.png
 saltypotato-1-res.png
 saltypotato-1-spy.png
 saltypotato-2-res.png
