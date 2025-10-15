@@ -826,6 +826,8 @@ sb-1-res.png
 sb-1-spy.png
 sb-2-res.png
 sb-2-spy.png
+scholar-res.png
+scholar-spy.png
 scoobydoo-res.png
 scoobydoo-spy.png
 scorchie-res.png
