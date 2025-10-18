@@ -46,6 +46,8 @@
 6t03-5-Yules-spy.png
 6t05-2-0default-res.png
 6t05-2-0default-spy.png
+6t07-1-0default-res.png
+6t07-1-0default-spy.png
 6t07-1-chork-res.png
 6t07-1-chork-spy.png
 6t07-1-imbapingu-res.png
@@ -58,8 +60,16 @@
 6t07-3-ratters-spy.png
 6t07-5-0default-res.png
 6t07-5-0default-spy.png
+6t08-1-Comp1ex-res.png
+6t08-1-Comp1ex-spy.png
+6t08-1-Maniac-res.png
+6t08-1-Maniac-spy.png
+6t08-1-Mick78910-res.png
+6t08-1-Mick78910-spy.png
 6t08-1-mrfahrenheit-res.png
 6t08-1-mrfahrenheit-spy.png
+6t08-1-Mysticsquire-res.png
+6t08-1-Mysticsquire-spy.png
 6t08-1-SecretJeb-res.png
 6t08-1-SecretJeb-spy.png
 6t08-1-wanglebangle-res.png
@@ -208,5 +218,7 @@
 8t02-5-Wrath-spy.png
 8t02-7-0default-res.png
 8t02-7-0default-spy.png
-8t02-8-pandamania-res.png
-8t02-8-pandamania-spy.png
+8t02-8-0default-1-res.png
+8t02-8-0default-1-spy.png
+8t02-8-0default-2-res.png
+8t02-8-0default-2-spy.png
