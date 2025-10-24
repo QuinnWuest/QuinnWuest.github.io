@@ -814,6 +814,8 @@ Sakki-1-res.png
 Sakki-1-spy.png
 Sakki-2-res.png
 Sakki-2-spy.png
+Sakki-3-res.png
+Sakki-3-spy.png
 saltypotato-1-res.png
 saltypotato-1-spy.png
 saltypotato-2-res.png
