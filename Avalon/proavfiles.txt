@@ -244,6 +244,8 @@ chrome-2-res.png
 chrome-2-spy.png
 Cild-res.png
 Cild-spy.png
+CocoPops-res.png
+CocoPops-spy.png
 Comp1ex-1-res.png
 Comp1ex-1-spy.png
 Comp1ex-2-res.png
@@ -844,6 +846,8 @@ seraphina-2-res.png
 seraphina-2-spy.png
 seren-res.png
 seren-spy.png
+shanelly-res.png
+shanelly-spy.png
 sharki901-res.png
 sharki901-spy.png
 Shedd-res.png
@@ -960,8 +964,10 @@ Thiercy-res.png
 Thiercy-spy.png
 Third-res.png
 Third-spy.png
-TikiTorch3-res.png
-TikiTorch3-spy.png
+TikiTorch3-1-res.png
+TikiTorch3-1-spy.png
+TikiTorch3-2-res.png
+TikiTorch3-2-spy.png
 tiltedfish-1-res.png
 tiltedfish-1-spy.png
 tiltedfish-2-res.png
