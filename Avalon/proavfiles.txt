@@ -834,8 +834,6 @@ scholar-res.png
 scholar-spy.png
 scoobydoo-res.png
 scoobydoo-spy.png
-scorchie-res.png
-scorchie-spy.png
 SecretJeb-res.png
 SecretJeb-spy.png
 secretwoa-res.png
