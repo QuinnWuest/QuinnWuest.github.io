@@ -596,8 +596,12 @@ menach2-2-res.png
 menach2-2-spy.png
 metaresistance-res.png
 metaresistance-spy.png
-Mick78910-res.png
-Mick78910-spy.png
+Mick78910-1-res.png
+Mick78910-1-spy.png
+Mick78910-2-res.png
+Mick78910-2-spy.png
+Mick78910-3-res.png
+Mick78910-3-spy.png
 Monstah-res.png
 Monstah-spy.png
 morgenstern-1-res.png
