@@ -848,8 +848,10 @@ seraphina-2-res.png
 seraphina-2-spy.png
 seren-res.png
 seren-spy.png
-shanelly-res.png
-shanelly-spy.png
+shanelly-1-res.png
+shanelly-1-spy.png
+shanelly-2-res.png
+shanelly-2-spy.png
 sharki901-res.png
 sharki901-spy.png
 Shedd-res.png
