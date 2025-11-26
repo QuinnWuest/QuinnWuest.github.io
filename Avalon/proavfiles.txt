@@ -784,6 +784,8 @@ randmantest-3-res.png
 randmantest-3-spy.png
 RealGrizzle123-res.png
 RealGrizzle123-spy.png
+retributionist-res.png
+retributionist-spy.png
 RichRobby-1-res.png
 RichRobby-1-spy.png
 RichRobby-2-res.png
