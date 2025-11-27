@@ -354,6 +354,8 @@ fossa-8-res.png
 fossa-8-spy.png
 fossa-9-res.png
 fossa-9-spy.png
+fossa-10-res.png
+fossa-10-spy.png
 freshererer-1-res.png
 freshererer-1-spy.png
 FrostFlame-res.png
