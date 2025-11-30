@@ -1006,6 +1006,8 @@ wanglebangle-1-res.png
 wanglebangle-1-spy.png
 wanglebangle-2-res.png
 wanglebangle-2-spy.png
+wanglebangle-3-res.png
+wanglebangle-3-spy.png
 wolfbloodwitch-res.png
 wolfbloodwitch-spy.png
 Wrath-res.png
