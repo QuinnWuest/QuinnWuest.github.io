@@ -734,6 +734,8 @@ pepsi-res.png
 pepsi-spy.png
 Pinocchio-res.png
 Pinocchio-spy.png
+poacker-res.png
+poacker-spy.png
 polandspring-res.png
 polandspring-spy.png
 promanos-res.png
@@ -858,6 +860,8 @@ shanelly-2-res.png
 shanelly-2-spy.png
 sharki901-res.png
 sharki901-spy.png
+sharpy-res.png
+sharpy-spy.png
 Shedd-res.png
 Shedd-spy.png
 Shun2-res.png
