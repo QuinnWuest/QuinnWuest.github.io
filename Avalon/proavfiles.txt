@@ -604,8 +604,10 @@ Mick78910-2-res.png
 Mick78910-2-spy.png
 Mick78910-3-res.png
 Mick78910-3-spy.png
-Monstah-res.png
-Monstah-spy.png
+Monstah-1-res.png
+Monstah-1-spy.png
+Monstah-2-res.png
+Monstah-2-spy.png
 morgenstern-1-res.png
 morgenstern-1-spy.png
 morgenstern-2-res.png
