@@ -1014,8 +1014,10 @@ wanglebangle-2-res.png
 wanglebangle-2-spy.png
 wanglebangle-3-res.png
 wanglebangle-3-spy.png
-wolfbloodwitch-res.png
-wolfbloodwitch-spy.png
+wolfbloodwitch-1-res.png
+wolfbloodwitch-1-spy.png
+wolfbloodwitch-2-res.png
+wolfbloodwitch-2-spy.png
 Wrath-res.png
 Wrath-spy.png
 WyzDM-res.png
