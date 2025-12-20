@@ -200,6 +200,10 @@
 6t11-6-indexandthumbcrossedemoji-spy.png
 6t11-6-pandamania-res.png
 6t11-6-pandamania-spy.png
+6t12-5-0default-res.png
+6t12-5-0default-spy.png
+6t12-5-BasicNerd-res.png
+6t12-5-BasicNerd-spy.png
 8t02-5-alexxx-res.png
 8t02-5-alexxx-spy.png
 8t02-5-Mick78910-res.png
