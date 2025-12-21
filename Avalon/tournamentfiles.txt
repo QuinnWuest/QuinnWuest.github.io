@@ -206,6 +206,8 @@
 6t12-4-0default-02-spy.png
 6t12-4-Autoprick-res.png
 6t12-4-Autoprick-spy.png
+6t12-4-olong-res.png
+6t12-4-olong-spy.png
 6t12-5-0default-res.png
 6t12-5-0default-spy.png
 6t12-5-BasicNerd-res.png
