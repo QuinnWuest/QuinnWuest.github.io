@@ -412,6 +412,8 @@ hermione-3-res.png
 hermione-3-spy.png
 hermione-4-res.png
 hermione-4-spy.png
+hermione-5-res.png
+hermione-5-spy.png
 hydrenixx-res.png
 hydrenixx-spy.png
 Hydro-1-res.png
