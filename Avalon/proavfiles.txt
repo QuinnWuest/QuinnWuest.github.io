@@ -200,6 +200,8 @@ bumfuzzle28-8-res.png
 bumfuzzle28-8-spy.png
 Buncha-res.png
 Buncha-spy.png
+bystander-res.png
+bystander-spy.png
 catfat-1-res.png
 catfat-1-spy.png
 catfat-2-res.png
@@ -756,6 +758,8 @@ putinWalk-1-res.png
 putinWalk-1-spy.png
 putinWalk-2-res.png
 putinWalk-2-spy.png
+Queen00-res.png
+Queen00-spy.png
 queenofireland-1-res.png
 queenofireland-1-spy.png
 queenofireland-2-res.png
@@ -898,6 +902,8 @@ slogival-3-res.png
 slogival-3-spy.png
 slogival-4-res.png
 slogival-4-spy.png
+SmellyBanana-res.png
+SmellyBanana-spy.png
 Smep-res.png
 Smep-spy.png
 Snow-res.png
