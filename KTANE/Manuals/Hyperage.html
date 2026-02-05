@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1">
+    <title>Hyperage — Keep Talking and Nobody Explodes Module</title>
+    <link rel="stylesheet" type="text/css" href="css/font.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/ktane-utils.js"></script>
+    <style>
+        .page-footer::before { content: 'Page '; }
+        .page-footer::after { content: ' of 2'; }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <div class="page page-bg-01">
+            <div class="page-header">
+                <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+                <span class="page-header-section-title">Hyperage</span>
+            </div>
+            <div class="page-content">
+                <img src="img/Component/Hyperage.svg" class="diagram">
+                <h2>On the Subject of Hyperage</h2>
+                <p class="flavour-text">What does “Hyperage” even mean?!</p>
+
+                <p>The module consists of 16 buttons and a hypercube.</p>
+                <ul>
+                    <li>To solve the module, determine the hypervolume of the hyperparallelepiped Γ.</li>
+                    <li>Γ is defined by one of its vertices: O(0, 0, 0, 0).</li>
+                    <li>Γ is defined by four edges: OA(x1, y1, z1, w1); OB(x2, y2, z2, w2); OC(x3, y3, z3, w3); OD(x4, y4, z4, w4).</li>
+                </ul>
+
+                <h3>Finding the Correct Squares</h3>
+                <p>Hovering over a button will:</p>
+                <ol>
+                    <li>Display a rotation of the hypercube.
+                        <ul>
+                            <li>A rotation is denoted by two letters. A rotation AB means that after the rotation, the +A axis is transformed into the +B axis.</li>
+                            <li>Note: When looking directly at the module:
+                                <ul>
+                                    <li>+X runs from left to right,</li>
+                                    <li>+Y runs from back to front,</li>
+                                    <li>+Z runs from bottom to top,</li>
+                                    <li>+W runs from inner to outer.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Display four values, one of which will be unknown and shown as <code>?.???</code>.</li>
+                    <li>Display a base-16 digit assigned to the button. This is shown for convenience only.</li>
+                </ol>
+
+                <p>Find four buttons that form a square (called the <em>square buttons</em>) whose center lies exactly on the center of another button (called the <em>center button</em>). Additionally, the rotations of the square buttons, in clockwise order, must be IJ, JK, KL, LI, where I, J, K, and L are distinct hypercube axes (X, Y, Z, W) in any order.</p>
+
+                <p>Locate the first square button in reading order and label its coordinates as A. The next square button clockwise is B, then C, then D. For each of A, B, C, and D, replace the missing coordinate with the corresponding coordinate from the center button. Then replace the remaining unknown coordinate with <code>1.000</code>.</p>
+
+                <p>To calculate the hypervolume of Γ, compute the absolute value of the determinant of the matrix whose rows are the coordinates of A, B, C, and D in XYZW order.</p>
+
+                <p>Convert the resulting hypervolume to base 4 and truncate it to three digits after the decimal point.</p>
+            </div>
+            <div class="page-footer relative-footer">1</div>
+        </div>
+
+        <div class="page page-bg-02">
+            <div class="page-header">
+                <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+                <span class="page-header-section-title">Hyperage</span>
+            </div>
+            <div class="page-content">
+
+                <h3>Submission</h3>
+                <p>After pressing any button, the module enters submission mode. Initially, the number in the center display is 0.</p>
+                <ul>
+                    <li>Pressing any numbered button appends its digit to the input, or replaces the input if it is currently 0.</li>
+                    <li>Pressing any button labeled with the word “RST” clears the input.</li>
+                    <li>Pressing the “.” button adds a decimal point to the input.</li>
+                    <li>Pressing any button labeled with the word “SUBM” submits the current input.
+                        <strong>Note:</strong> The module always expects exactly three digits after the decimal point—no more and no less.
+                        <ul>
+                            <li>If the answer is correct, the module will solve shortly.</li>
+                            <li>If the answer is incorrect, the module will reset to its initial state and issue a strike. All coordinates and rotations will remain the same.</li>
+                        </ul>
+                    </li>
+                    <li>Pressing an unlabeled button has no effect.</li>
+                </ul>
+
+                <p>Be careful: after each button press, the buttons may change their positions in a predictable manner.</p>
+            </div>
+            <div class="page-footer relative-footer">2</div>
+        </div>
+    </div>
+</body>
+</html>
