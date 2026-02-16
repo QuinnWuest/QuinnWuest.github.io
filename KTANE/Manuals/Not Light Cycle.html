@@ -30,7 +30,7 @@
 				<img class="hex-diagram" src="img/Not Light Cycle/hex-diagram.svg">
 				<p>There are six colored LEDs beneath six white LEDs. One of the colored LEDs will be lit, while the white LEDs will flash a sequence.</p>
 				<p>The flashing sequence of white LEDs corresponds to the shape and location of a tetrahex<sup>1</sup> on a 4×4 hexagonal grid (seen to the right) with the color of the lit colored LED.</p>
-				<p>To construct and place this tetrahex, take the positions of each flashing LED from left to right. Start at the <strong>corner</strong> corresponding to the first flash, then move in the <strong>directions</strong> corresponding to each flash after if possible. The hexes reached after <strong><i>these</i></strong> movements form the tetrahex.</p>
+				<p>To construct and place this tetrahex, take the positions of each flashing LED from left to right. Start at the <strong>corner</strong> corresponding to the first flash, then move in the <strong>directions</strong> corresponding to each following flash. The hexes reached after <strong><i>these</i></strong> movements form the tetrahex.</p>
 				<p>Place this tetrahex on the grid. (Overwrite the colors of previously placed hexes if necessary.) If there exists a continuous path of non-empty hexes connecting any of the grid’s corners to its diametrically opposite corner, proceed to the next section. Otherwise, press and immediately release the button to generate another tetrahex. Attempting to generate a tetrahex when a path connecting two corners is present will incur a strike.</p>
 				<h4>Forming the Path</h4>
 				<ul>
@@ -39,7 +39,7 @@
 					<li>If there are multiple paths that are tied in length, use the path which has the most color changes between successive hexes.</li>
 					<li>If there are multiple paths that are tied in the number of color changes between successive hexes, traverse the path from start to finish. At each place where the paths differ, take the direction that was moved from the previous hex, or towards the finishing hex if this is the first movement. Prioritize paths stemming from this direction and then each direction proceeding clockwise.</li>
 				</ul>
-				<p style="font-size: 10pt;"><sup>1</sup> A shape made up of four continuous regular hexagons attached to each other. Akin to a tetromino with hexagonal cells instead of square cells.</p>
+				<p style="font-size: 10pt; text-indent: -0.5em;"><span style="font-size: 80%; vertical-align: super;">1</span>A shape made up of four continuous regular hexagons attached to each other.<br>Akin to a tetromino with hexagonal cells instead of square cells.</p>
 			</div>
 			<div class="page-footer relative-footer">Page 1 of 2</div>
 		</div>
