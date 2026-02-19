@@ -3,20 +3,1002 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="initial-scale=1">
-		<title>QuinnWuest: About Me</title>
-		<link rel="icon" href="wupaintsmall.png">
-		<script src="js/jquery.3.7.0.min.js"></script>
+		<title>about quinn wuest</title>
+		<link rel="icon" href="wupaint.png">
+		<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			const birthDate = new Date(2002, 2, 13); 
+		
+			const today = new Date();
+		
+			let age = today.getFullYear() - birthDate.getFullYear();
+		
+			const hasHadBirthday =
+				today.getMonth() > birthDate.getMonth() ||
+				(today.getMonth() === birthDate.getMonth() &&
+				today.getDate() >= birthDate.getDate());
+		
+			if (!hasHadBirthday) {
+				age--;
+			}
+		
+			document.querySelector(".age").textContent = age;
+		});
+		</script>
 		<style>
 		@font-face {
 			font-family: 'Merriwether';
-			src: url(font/merriweather.light.ttf);
+			src: url(Avalon/font/merriweather.light.ttf); 
 		}
 		body {
-			background-color: #4477bb;
+			background-color: #6611bb;
 			font-family: 'Merriwether';
+		}
+		h1, h2, h3, p, li {
+			margin: 0;
+		}
+		h1 { font-size: 80pt; }
+		h2 { font-size: 50pt; }
+		h3 { font-size: 30pt; }
+		p, li { font-size: 20pt; }
+		.main-section, .semi-section {
+		margin: 0.25cm;
+			display: flex;
+			flex-direction: column;
+			border: 4px solid black;
+			border-radius: 1cm;
+			padding: 0.5cm;
+		}
+		.main-section {
+			background-color: #ccaaff;
+			align-items: center;
+		}
+		.showing-off-items {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 0.25cm;
+			margin: 0 auto;
+			padding: 0.5cm;
+			align-items: flex-start;
+		}
+		.semi-section {
+			background-color: #e0d0ff;
+			align-items: stretch;
+			border-radius: 0.5cm;
+			padding: 0.55cm;
+			width: 500px;
+			max-width: 95vw;
+		}
+		.semi-section h3 {
+			margin: 0 0 0.4cm 0;
+			text-align: center;
+		}
+		.content-row {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			gap: 0.5cm;
+			text-align: left;
+		}
+		.content-row > img {
+			width: 150px;
+			flex: 0 0 auto;
+			margin: 0;
+			display: block;
+		}
+		.content-row p {
+			margin: 0;
+			flex: 1;
+			font-size: 14pt;
+			line-height: 1.3;
+		}
+		.image-stack {
+			display: flex;
+			flex-direction: column;
+			gap: 0.5cm;
+			flex: 0 0 auto;
+		}
+		.image-stack img {
+			width: 150px;
+			display: block;
+		}
+		.text-block {
+			display: flex;
+			flex-direction: column;
+			gap: 0.5cm;
+			flex: 1;
+		}
+		.inline-icon {
+			width: 1.2em;
+			height: 1.2em;
+			vertical-align: -0.2em;
 		}
 		</style>
 	</head>
 	<body>
+		<div class="main-section">
+			<h1>about me</h1>
+			<img src="wupaint.png" style="width: 200px;">
+			<p>hello</p>
+			<p>my name is quinn wuest</p>
+			<p>my username is quinn wuest</p>
+			<p>i am <span class="age">age</span> years old</p>
+			<p>i am from new york</p>
+			<p>all of my hobbies are on the computer (i am scared of the outdoors)</p>
+			<ul>
+				<li>video games (too many)</li>
+				<li>art andgraphic design, mostly self taught (not very good)</li>
+				<li>programming, but almost exclusively mods for one singular game (not very good)</li>
+				<li>video editing (not very good)</li>
+			</ul>
+			<p>i only play a few games regularly</p>
+			<ul>
+				<li>league of legends</li>
+				<li>deadlock</li>
+				<li>keep talking and nobody explodes</li>
+				<li>online social deduction games
+				<ul>
+					<li>avalon</li>
+					<li>secret hitler</li>
+				</ul>
+				</li>
+				<li>catan</li>
+				<li>chess</li>
+				<li>some others i cannot think of currently</li>
+			</ul>
+			<p>i am not very at these games</p>
+			<p>i am mostly active in two communities</p>
+			<ul>
+				<li>keep talking and nobody explodes</li>
+				<li>online social deduction games
+				<ul>
+					<li>avalon</li>
+					<li>secret hitler</li>
+				</ul>
+				</li>
+			</ul>
+			<h2>keep talking and nobody explodes</h2>
+			<p>i do not play this game much anymore</p>
+			<p>my main contribution to this game is making modules</p>
+			<p>here they are</p>
+			<div class="showing-off-items">
+				<div class="semi-section">
+					<h3>the screw</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/The Screw.png">
+						<div class="text-block">
+							<p>wanted to make a module that didn't always strike on every individual wrong move (common for mods at the time)</p>
+							<p>screwing into the wrong hole wouldn't strike</p>
+							<p>meaning you don't know if the hole was wrong or the button press was wrong</p>
+							<p>first manual i wrote, aged like milk</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>color morse</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/Color Morse.png">
+						<div class="text-block">
+							<p>trying to merge color math and morse with emphasis on not using edgework</p>
+							<p>later added ruleseed support that timwi solved as a manual challenge (as timwi years ago wanted to solve it as one but i was convinced it wasn't possible at the time)</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>big circle</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/Big Circle.png">
+						<div class="text-block">
+							<p>trying to make a module that required no readout (similar to laundry or safety safe), which failed, because i decided its spinning direction was relevant haha lmao</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>perplexing wires</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/Perplexing Wires.png">
+						<div class="text-block">
+							<p>complicated complicated wires</p>
+							<p>designed around a single image made by marayzex</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>mafia</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/Mafia.png">
+						<div class="text-block">
+							<p>tbh this is more marioxturn's module</p>
+							<p>i just wrote the html and that was it i'm pretty sure</p>
+							<p>i hate this mod lol</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>type racer</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/Type Racer.png">
+						<div class="text-block">
+							<p>first mod i programmed</p>
+							<p>tried to make a module with a non-standard keyboard</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>go</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/Go.png">
+						<div class="text-block">
+							<p>originally around connect four where you observe the board state and play in such a way to make one of the players win</p>
+							<p>holy wow this mod is garbage</p>
+							<p>it would have been so much better if it was connect four but oh wait that module already exists so i was forced to change it haha lmao</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>aquarium</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/Aquarium.png">
+						<div class="text-block">
+							<p>adding onto the theme of solo puzzle modules</p>
+							<p>timwi did most of the heavy lifting</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>inselectables</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/Inselectables.png">
+						<div class="text-block">
+							<p>inspiration from a modding jam topic about unusual interaction so i wanted to make highlights not match up</p>
+							<p>released as a manual challenge</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>not the screw</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/Not The Screw.png">
+						<div class="text-block">
+							<p>another "not" module variant, where i wanted to make a non-standard maze</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>mayhem</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/Mayhem.png">
+						<div class="text-block">
+							<p>based off of the pummel party game mortal mayhem where you were given directions to move your character to a specific square; all squares but one were lit on fire</p>
+							<p>changed to hexes</p>
+							<p>probably the module that represents me as a mod creator the most: solo puzzles and funky music taste</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>flipping squares</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/Flipping Squares.png">
+						<div class="text-block">
+							<p>another solo puzzle idea which required 3 by 3 squares flipping around</p>
+							<p>turned into an arrow puzzle</p>
+							<p>didnt know what to do with this so timwi whipped something up</p>
+							<p>i like it but he hates it</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>the red button</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/The Red Button.png">
+						<div class="text-block">
+							<p>start of the bunch of buttons module pack</p>
+							<p>the initial challenge was to make a bunch of modules with only one kmselectable object</p>
+							<p>this one started it all</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>the teal button</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/The Teal Button.png">
+						<div class="text-block">
+							<p>serial number manipulation into a 9 by 9 latin square</p>
+							<p>another mod i want yeeted</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>the cyan button</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/The Cyan Button.png">
+						<div class="text-block">
+							<p>fast paced module using button position validity and logic gates</p>
+							<p>my attempt at trying to make a module where the expert is forced to work quickly</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>the white button</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/The White Button.png">
+						<div class="text-block">
+							<p>color identification wow</p>
+							<p>additive difference go brrr</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>twister</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/Twister.png">
+						<div class="text-block">
+							<p>wanting to make a boss module where the hands and feet would be progressively placed or moved on a mat</p>
+							<p>kinda sorta not really based on duck konundrum in the sense that a state of a mat (or room) would change across the duration of the bomb</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>rule of three</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/Rule of Three.png">
+						<div class="text-block">
+							<p>combining reading objects in 3d space as well as base conversion brought me to the idea of using balanced ternary to define a position in 3d space</p>
+							<p>finding the area of a triangle was a perfect fit, especially since the input method moves the spheres into a triangle shape</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>puzzle panel</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/Puzzle Panel.png">
+						<div class="text-block">
+							<p>some minigame from sm64ds that dicey liked</p>
+							<p>need to rework this one, current state is pretty bad</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>a square</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/A Square.png">
+						<div class="text-block">
+							<p>for modding jam #2 unusual interaction</p>
+							<p>the idea of focusing and defocusing the module came from an input idea that timwi brought up during the development of rule of three (which i later discarded)</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>simon shifts</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/simon shifts.png">
+						<div class="text-block">
+							<p>really wanted to make a simon module</p>
+							<p>shifts was a verb that came up so i made a slide puzzle</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>shape fill</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/Shape Fill.png">
+						<div class="text-block">
+							<p>lot of story to this one</p>
+							<p>asew whipped up a drawing and then made a manual from it for some university class??? i needed to finish this module in time for his class???</p>
+							<p>the original version was pretty shit, having to check through 26 different restrictions was pretty miserable</p>
+							<p>so i just basically made a completely different mod lol</p>
+							<p>basically just figure out which shapes and fills exist and do some calculation</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>3d tap code</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/3D Tap Code.png">
+						<div class="text-block">
+							<p>tap code but its a cube instead of a plane</p>
+							<p>a random idea timwi thought of while grocery shopping</p>
+							<p>i was in a vc with him as he explained it</p>
+							<p>he would have developed it if he was home</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>the neutral button</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/The Neutral Button.png">
+						<div class="text-block">
+							<p>stupid</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>faulty 14 segment display</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/Faulty 14 Segment Display.png">
+						<div class="text-block">
+							<p>combined faulty seven segment displays with 14</p>
+							<p>rgb why not</p>
+							<p>funnily enough i was told that i took the negatives out of two mods and combined them into one to make one good mod</p>
+							<p>lol</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>scramboozled eggain</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/Scramboozled Eggain.png">
+						<div class="text-block">
+							<p>a stupid joke as a result of trying to come up with more -boozled again names</p>
+							<p>it was a pain to try to come up with 18 different egg-related words that all had distinct letters</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>recolour flash</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/Recolour Flash.png">
+						<div class="text-block">
+							<p>my attempt at making a colour flash variant and combining solving processes from multiple other mods</p>
+							<p>initially was word search plus semaphore and was trash</p>
+							<p>redesigned it entirely so the prefix re in recolour actually makes sense since you are actually fucking recolouring things</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>encryption lingo</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/Encryption Lingo.png">
+						<div class="text-block">
+							<p>idea i had for a long time where youre basically just playing lingo with various encodings common in ktane</p>
+							<p>im fucking so sad because i had the idea long before wordle existed</p>
+							<p>i wouldve gotten way more street cred for using a gimmick from an old game show</p>
+							<p>but instead i used a gimmick from a nytimes game that the whole universe knows</p>
+							<p>im very proud of this mod</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>triple traversal</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/Triple Traversal.png">
+						<div class="text-block">
+							<p>move inside three mazes at once</p>
+							<p>yeah so i thought of this one while taking a shit at my local corner store</p>
+							<p>but the idea isnt actually shit</p>
+							<p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>ghost</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/Ghost.png">
+						<div class="text-block">
+							<p>followup to pow</p>
+							<p>another boss from nervous brickdown for the nintendo ds</p>
+							<p>coding the animations was lowkey kinda fun tho</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>quadruple simpleton't</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/Quadruple Simpleton't.png">
+						<div class="text-block">
+							<p>quadruple simpleton in itself is inoffensive</p>
+							<p>but when you go around bragging and showing off making a module with zero solving process, youre bound to get some deserved bullying</p>
+							<p>module #1 made purely out of spite</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>pseudocrypt</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/Pseudocrypt.png">
+						<div class="text-block">
+							<p>attempt at improving cryptography by actually requiring the player to read words instead of just count letters</p>
+							<p>not much of an improvement lol</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>the temple run</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/The Temple Run.png">
+						<div class="text-block">
+							<p>some word game? idunno ask grunkle</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>not bitmaps</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/Not Bitmaps.png">
+						<div class="text-block">
+							<p>idea was to find shapes within the bitmap (instead of just counting)</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>not colored switches</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/Not Colored Switches.png">
+						<div class="text-block">
+							<p>display info inspired by the marquee display in not morsematics</p>
+							<p>submission method inspired by superparsing levers</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>not double-oh</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/Not Double-Oh.png">
+						<div class="text-block">
+							<p>a mix of ideas</p>
+							<p>i thought that letters fit nicely into the display compared to numbers and the whole idea of finding the functions of the buttons is an added challenge</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>not perspective pegs</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/Not Perspective Pegs.png">
+						<div class="text-block">
+							<p>perspective simon basically</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>not symbolic password</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/Not Symbolic Password.png">
+						<div class="text-block">
+							<p>idk i just thought of it</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>castor &amp; pollux</h3>
+					<div class="content-row">
+						<div class="image-stack">
+							<img src="KTANE/Previews/Castor.png">
+							<img src="KTANE/Previews/Pollux.png">
+						</div>
+						<div class="text-block">
+							<p>for modding jam #3 duality</p>
+							<p>i thought having two modules work together was the best idea</p>
+							<p>the modules by themselves are quite boring</p>
+							<p>but the main idea is that they must be done together</p>
+							<p>shoutout to malaysian brothahs with the usernames castor and pollux</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>forget me maybe</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/Forget Me Maybe.png">
+						<div class="text-block">
+							<p>had the idea of a boss module that didn't generate an answer by stages but rather by a time interval (like amnesia or +)</p>
+							<p>but wanted it to be somewhat random/unpredictable hence the random time</p>
+							<p>my hope was for a module that had to be planned around/required a lot of attention for missions</p>
+							<p>but nobody even plays the mod lol</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>boozleage</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/Boozleage.png">
+						<div class="text-block">
+							<p>buttonage but boozleglyphs</p>
+							<p>square thingamajig inspired by not coordinates</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>fitting in</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/Fitting In.png">
+						<div class="text-block">
+							<p>neat little puzzle grunkle found</p>
+							<p>finally made a puzzle mod where i actually wrote the puzzle generation myself</p>
+							<p>woohoo</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>mid circle</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/Mid Circle.png">
+						<div class="text-block">
+							<p>dicey wanted to make a mod so i helped him with this</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>dominosa</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/Dominosa.png">
+						<div class="text-block">
+							<p>exish saw this puzzle in a video game without knowing that the actual puzzle existed</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>wander</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/Wander.png">
+						<div class="text-block">
+							<p>super fun manual challenge mod i made</p>
+							<p>luminoscity tim described it as similar to baba is who and tbh hes kinda right even though i never played the game</p>
+							<p>according to timwi it's the best manual challenge module he's ever played</p>
+							<p>so that's pretty rad</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>evil word search</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/Evil Word Search.png">
+						<div class="text-block">
+							<p>idea i had while exish was making cruel word search</p>
+							<p>but hilariously this mod is easier than the other despite my goal being to make it harder</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>bomb it!</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/Bomb It!.png">
+						<div class="text-block">
+							<p>bop it</p>
+							<p>easily the most amount of work ive put into a single module</p>
+							<p>from animations to translations to sound effects to finding people to do voiceover</p>
+							<p>fun little solo</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>chessword</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/Chessword.png">
+						<div class="text-block">
+							<p>tandycake manual</p>
+							<p>she couldnt think of a way to (efficiently) code it</p>
+							<p>so i (inefficiently) coded it</p>
+							<p>absolute fucking banger</p>
+							<p>also one of my "perfect" mods (in the sense that it has not required a single update on the steam workshop</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>find the invisible cow</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/Find The Invisible Cow.png">
+						<div class="text-block">
+							<p>moo</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>decolour flash</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/Decolour Flash.png">
+						<div class="text-block">
+							<p>discovered that a 4-length hexagon grid had 37 cells</p>
+							<p>6 words in 6 colors makes 36 combinations which is pretty damn close</p>
+							<p>dub to timwi for live streaming the development of this module (i wish he did it more)</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>piano paradox</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/Piano Paradox.png">
+						<div class="text-block">
+							<p>stupid joke because the submission always ends with the addams family theme</p>
+							<p>legit that is the only reason this exists</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>tents</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/Tents.png">
+						<div class="text-block">
+							<p>adding onto the theme of solo puzzle modules</p>
+							<p>timwi did most of the heavy lifting</p>
+							<p>hey haven't you heard this before?</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>ángel hernández</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/Ángel Hernández.png">
+						<div class="text-block">
+							<p>ump so bad you can call him</p>
+							<p>blind</p>
+							<p>braille who's on first haha</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>apple pen</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/Apple Pen.png">
+						<div class="text-block">
+							<p>exish at one point in history just said "i need to make another joke mod"</p>
+							<p>pen pineapple apple pen</p>
+							<p>(exish made pinapple pen)</p>
+							<p>this literally is the exact same gimmick as castor and pollux</p>
+							<p>what the fuck</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>logic wheel</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/Logic Wheel.png">
+						<div class="text-block">
+							<p>idunno i just thought of it</p>
+							<p>modeling is pretty neat tho</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>slow math</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/Slow Math.png">
+						<div class="text-block">
+							<p>not fast math came out</p>
+							<p>it was fast math without the math</p>
+							<p>holy fucking lazy shitbin mod</p>
+							<p>funny observation: if it was rule seeded, it was quite literally just fast math</p>
+							<p>so i made "not fast" math</p>
+							<p>module #2 made purely out of spite</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>rubik's slide</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/Rubik's Slide.png">
+						<div class="text-block">
+							<p>rubik's slide</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>area split</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/Area Split.png">
+						<div class="text-block">
+							<p>mario party minigame called stake your claim</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>denial displays</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/Denial Displays.png">
+						<div class="text-block">
+							<p>old lumbud manual</p>
+							<p>i actually have a timelapse of me making this on my ktane youtube channel</p>
+							<p>this module really just proved how bad i am at programming since maybe 20 bugs were reported after its release</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>ribbit programming</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/Ribbit Programming.png">
+						<div class="text-block">
+							<p>for modding jam #4 retro</p>
+							<p>pre-program a game of frogger</p>
+							<p>originally spawned from a joke by timwi</p>
+							<p>thought id write a manual</p>
+							<p>timwi implemented it</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>navigation determination</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/Navigation Determination.png">
+						<div class="text-block">
+							<p>for modding jam #5 three sentence manual</p>
+							<p>basically a maze where only the directions matter rather than each individual movement</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>haiku</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/Haiku.png">
+						<div class="text-block">
+							<p>asew noticed that</p>
+							<p>"on the subject of haikus"</p>
+							<p>can form a haiku</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>blackout</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/Blackout.png">
+						<div class="text-block">
+							<p>whiteout but more logic gates than just xor</p>
+							<p>using module names felt neat</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>q</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/Q.png">
+						<div class="text-block">
+							<p>serial designation f making too many single letter mods</p>
+							<p>only rececntly did i figure out they were named after characters from some show</p>
+							<p>did the modules have anything to do with either the characters or being single letters?</p>
+							<p>no lmao</p>
+							<p>so i made a single letter module that actually had relevancy to being a single letter</p>
+							<p>module #3 made purely out of spite</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>loop</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/Loop.png">
+						<div class="text-block">
+							<p>idunno i just thought of it</p>
+							<p>most of the work was put into the look and animations</p>
+							<p>to which i say i think i did a damn good job</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>chromaswapper</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/Chromaswapper.png">
+						<div class="text-block">
+							<p>random idea i had</p>
+							<p>inspired by mineswapper/mazeswapper</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>odd wall out</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/Odd Wall Out.png">
+						<div class="text-block">
+							<p>idea that <img src="blan.png" class="inline-icon"> sent me</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>bell of tío</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/Bell of Tío.png">
+						<div class="text-block">
+							<p>crazycaleb had an idea of inputting a word based on how tio hector salamanca used his bell on his wheelchair but not much more than that</p>
+							<p>so i made this uhh</p>
+							<p>unbelievably difficult module</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>tricon</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/Tricon.png">
+						<div class="text-block">
+							<p>idunno i just thought of it</p>
+							<p>maybe from triple vision and iconic together</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>passcube</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/Passcube.png">
+						<div class="text-block">
+							<p>scrapped module/model that i found on ghostsalt's site</p>
+							<p>so i thought of this on the spot</p>
+							<p>and it turned out pretty good</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>smallfont</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/Smallfont.png">
+						<div class="text-block">
+							<p>idea by 1254 about a 3×5 font using rgb values</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>fingers</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/Fingers.png">
+						<div class="text-block">
+							<p>classic parlor riddle</p>
+							<p>first heard of it from watching a santagato studios video</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>the aqua button</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/The Aqua Button.png">
+						<div class="text-block">
+							<p>another blue button module idea</p>
+							<p>always tried to find a way to make a braille word from a nonogram</p>
+							<p>came up with this very mid idea</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>gleamy glyphs</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/Gleamy Glyphs.png">
+						<div class="text-block">
+							<p>specifically made for team comps 3</p>
+							<p>i wanted to try and design a module specifically catered towards non ktane players</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>forteroudo</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/Forteroudo.png">
+						<div class="text-block">
+							<p>itzshaun manual</p>
+							<p>tbh this is one of those mods where after reading the manual it sounds so good</p>
+							<p>but actually playing the module its kinda miserable</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>simon's spider</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/Simon's Spider.png">
+						<div class="text-block">
+							<p>for secret santa #1 with obvious's "life" prompt</p>
+							<p>i had absolutely nothing for the first 3 and a half weeks and then whipped this idea out in four days somehow</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>bulbmaps</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/Bulbmaps.png">
+						<div class="text-block">
+							<p>for secret santa #2 with play's "modded swirl" prompt</p>
+							<p>i had the modeling for this module done for maybe three years</p>
+							<p>but i could never come up with a solving process for it</p>
+							<p>also fuck celtic</p>
+							<p>how do you sign up for a secret santa event and then dip at the last minute and force someone to potentially not get a gift</p>
+						</div>
+					</div>
+				</div>
+				<div class="semi-section">
+					<h3>swift eye test</h3>
+					<div class="content-row">
+						<img src="KTANE/Previews/Swift Eye Test.png">
+						<div class="text-block">
+							<p>while in la at broke's place, i played set cubed with jacob</p>
+							<p>and then it occurred to me, why the fuck has nobody incorporated the speed part of set into a set module</p>
+							<p>so i thought of this</p>
+							<p>holy shit this mod is so good</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
