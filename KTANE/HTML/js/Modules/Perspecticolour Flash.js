@@ -187,7 +187,7 @@ window.addEventListener('DOMContentLoaded', async function()
 	// svg.innerHTML = cubes.map(cube => `<path class='${face.c}' id='p-${ix}' d='' />`).join('');
 
 	const center = p(0, 0, 0);
-	const cubeSize = .25;
+	const cubeSize = .3;
 	let cameraPosition = p(0, 0, 0);
 	let diagramRotation = q(1, 0, 0, 0);
 	let curDiagramRotation = q(1, 0, 0, 0);
@@ -239,8 +239,8 @@ window.addEventListener('DOMContentLoaded', async function()
 
 	while (true)
 	{
-		let time = await new Promise(requestAnimationFrame) * .025;
-		cameraPosition = p(0, 0, -3.7).rotateX(3 * sin(time) + 25).rotateY(-15 * cos(time)).plus(center);
+		let time = await new Promise(requestAnimationFrame) * .03;
+		cameraPosition = p(0, 0, -3.7).rotateX(10 * sin(time) + 10).rotateY(-15 * cos(time)).plus(center);
 		updateDiagram();
 	}
 });
