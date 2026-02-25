@@ -7,13 +7,17 @@
 	<link rel="stylesheet" type="text/css" href="css/font.css">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="css/Modules/Perspecticolour Flash.css">
 	<script src="js/ktane-utils.js"></script>
 	<script src="js/Modules/Perspecticolour Flash.js"></script>
 	<style>
 		svg .face {
 			stroke: black;
 			stroke-width: .15;
+			cursor: pointer;
+		}
+		
+		svg .face.is-transparent {
+			opacity: 0.3;
 		}
 		
 		svg .face.color-0 {	fill: hsl(0,	80%, 70%);	}
@@ -67,13 +71,14 @@
 			</div>
 			<div class="page-footer relative-footer">Page 1 of 2</div>
 		</div>
-		<div class="page">
+		<div class="page page-bg-01">
 			<div class="page-header">
 				<span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
 				<span class="page-header-section-title">Perspecticolour Flash</span>
 			</div>
 			<div class="page-content">
-				<p style="text-align: center;">Use the buttons to rotate the diagram accordingly.</p>
+				<p style="text-align: center;">Use the buttons to rotate the orientation of the diagram.</p>
+				<p style="text-align: center;">Click any of the cubes to toggle their transparency.</p>
 				<div class='controls'>
 					<button class='rot' id="zCcw">⟲</button>
 					<button class='rot' id="xCcw">↑</button>

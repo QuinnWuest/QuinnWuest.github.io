@@ -184,10 +184,26 @@ window.addEventListener('DOMContentLoaded', async function()
 	}
 
 	const svg = document.getElementById('svg');
-	// svg.innerHTML = cubes.map(cube => `<path class='${face.c}' id='p-${ix}' d='' />`).join('');
-
+	const transparentCubes = new Set();
+	
+	svg.addEventListener('pointerdown', (e) => {
+		const path = e.target.closest?.('path.face');
+		if (!path)
+			return;
+		
+		const cubeIx = Number(path.dataset.cube);
+		if (Number.isNaN(cubeIx))
+			return;
+		
+		if (transparentCubes.has(cubeIx))
+			transparentCubes.delete(cubeIx);
+		else
+			transparentCubes.add(cubeIx);
+		e.preventDefault();
+	});
+	
 	const center = p(0, 0, 0);
-	const cubeSize = .3;
+	const cubeSize = .25;
 	let cameraPosition = p(0, 0, 0);
 	let diagramRotation = q(1, 0, 0, 0);
 	let curDiagramRotation = q(1, 0, 0, 0);
@@ -195,21 +211,50 @@ window.addEventListener('DOMContentLoaded', async function()
 	function updateDiagram()
 	{
 		let faces = cubes
-			.map(cube => [
-					/* top face	*/ { center: p(0, 1, 0).mul(cubeSize).plus(cube.center).rotate(curDiagramRotation),	corners: [p(-1, 1, -1),	p(1, 1, -1),	p(1, 1, 1),	p(-1, 1, 1)	].map(pt => pt.mul(cubeSize).plus(cube.center).rotate(curDiagramRotation)), color: cube.faces[0] },
-					/* front face	*/ { center: p(0, 0, -1).mul(cubeSize).plus(cube.center).rotate(curDiagramRotation),	corners: [p(-1, -1, -1),	p(1, -1, -1),	p(1, 1, -1),	p(-1, 1, -1)	].map(pt => pt.mul(cubeSize).plus(cube.center).rotate(curDiagramRotation)), color: cube.faces[1] },
-					/* right face	*/ { center: p(1, 0, 0).mul(cubeSize).plus(cube.center).rotate(curDiagramRotation),	corners: [p(1, -1, -1),	p(1, 1, -1),	p(1, 1, 1),	p(1, -1, 1)	].map(pt => pt.mul(cubeSize).plus(cube.center).rotate(curDiagramRotation)), color: cube.faces[2] },
-					/* back face	*/ { center: p(0, 0, 1).mul(cubeSize).plus(cube.center).rotate(curDiagramRotation),	corners: [p(-1, -1, 1),	p(1, -1, 1),	p(1, 1, 1),	p(-1, 1, 1)	].map(pt => pt.mul(cubeSize).plus(cube.center).rotate(curDiagramRotation)), color: cube.faces[3] },
-					/* left face	*/ { center: p(-1, 0, 0).mul(cubeSize).plus(cube.center).rotate(curDiagramRotation),	corners: [p(-1, -1, -1),	p(-1, 1, -1),	p(-1, 1, 1),	p(-1, -1, 1)	].map(pt => pt.mul(cubeSize).plus(cube.center).rotate(curDiagramRotation)), color: cube.faces[4] },
-					/* bottom face	*/ { center: p(0, -1, 0).mul(cubeSize).plus(cube.center).rotate(curDiagramRotation),	corners: [p(-1, -1, -1),	p(1, -1, -1),	p(1, -1, 1),	p(-1, -1, 1)	].map(pt => pt.mul(cubeSize).plus(cube.center).rotate(curDiagramRotation)), color: cube.faces[5] }
-				])
-			.reduce((prev, next) => [...prev, ...next], []);
-
+			.map((cube, cubeIx) => [
+				{ cubeIx, faceIx: 0, center: p(0, 1, 0).mul(cubeSize).plus(cube.center).rotate(curDiagramRotation),
+					corners: [p(-1, 1, -1), p(1, 1, -1), p(1, 1, 1), p(-1, 1, 1)].map(pt => pt.mul(cubeSize).plus(cube.center).rotate(curDiagramRotation)),
+					color: cube.faces[0]
+				},
+				{ cubeIx, faceIx: 1, center: p(0, 0, -1).mul(cubeSize).plus(cube.center).rotate(curDiagramRotation),
+					corners: [p(-1, -1, -1), p(1, -1, -1), p(1, 1, -1), p(-1, 1, -1)].map(pt => pt.mul(cubeSize).plus(cube.center).rotate(curDiagramRotation)),
+					color: cube.faces[1]
+				},
+				{ cubeIx, faceIx: 2, center: p(1, 0, 0).mul(cubeSize).plus(cube.center).rotate(curDiagramRotation),
+					corners: [p(1, -1, -1), p(1, 1, -1), p(1, 1, 1), p(1, -1, 1)].map(pt => pt.mul(cubeSize).plus(cube.center).rotate(curDiagramRotation)),
+					color: cube.faces[2]
+				},
+				{ cubeIx, faceIx: 3, center: p(0, 0, 1).mul(cubeSize).plus(cube.center).rotate(curDiagramRotation),
+					corners: [p(-1, -1, 1), p(1, -1, 1), p(1, 1, 1), p(-1, 1, 1)].map(pt => pt.mul(cubeSize).plus(cube.center).rotate(curDiagramRotation)),
+					color: cube.faces[3]
+				},
+				{ cubeIx, faceIx: 4, center: p(-1, 0, 0).mul(cubeSize).plus(cube.center).rotate(curDiagramRotation),
+					corners: [p(-1, -1, -1), p(-1, 1, -1), p(-1, 1, 1), p(-1, -1, 1)].map(pt => pt.mul(cubeSize).plus(cube.center).rotate(curDiagramRotation)),
+					color: cube.faces[4]
+				},
+				{ cubeIx, faceIx: 5, center: p(0, -1, 0).mul(cubeSize).plus(cube.center).rotate(curDiagramRotation),
+					corners: [p(-1, -1, -1), p(1, -1, -1), p(1, -1, 1), p(-1, -1, 1)].map(pt => pt.mul(cubeSize).plus(cube.center).rotate(curDiagramRotation)),
+					color: cube.faces[5]
+				}
+			])
+			.flat();
 		faces.sort((a, b) => b.center.dist(cameraPosition) - a.center.dist(cameraPosition));
+		
 		let cameraMatrix = getCameraMatrix(cameraPosition, center);
-		svg.innerHTML = faces.map(face =>
-			`<path class='face color-${face.color}' d='M${face.corners.map(p => p.projectTo2D(cameraPosition, cameraMatrix)).map(p => `${p.x} ${p.y}`).join(' ')}z' />`
-		).join('');
+		svg.innerHTML = faces.map(face => {
+			const pts = face.corners
+				.map(p => p.projectTo2D(cameraPosition, cameraMatrix))
+				.map(p2 => `${p2.x} ${p2.y}`)
+				.join(' ');
+			
+			
+			const isTransparent = transparentCubes.has(face.cubeIx);
+			return `<path class="face color-${face.color}
+				${isTransparent ? 'is-transparent' : ''}"
+				data-cube="${face.cubeIx}"
+				data-face="${face.faceIx}"
+				d="M${pts}z"></path>`;
+		}).join('');
 	}
 
 	let rotationButtons = [
