@@ -99,7 +99,7 @@
 
                 let tds = subtables[gridIx].getElementsByTagName('td');
                 for (let i = 0; i < 16; i++) {
-                    tds[i].className = grid[i] ? 'black' : '';
+                    tds[i].className = grid[i] ? 'black' : 'white';
                     if (i == xs[gridIx])
                         tds[i].innerText = 'X';
                 }
@@ -120,23 +120,17 @@
         }
         .dark.maintablecell, .maintablecell {
             border: none !important;
-            width: 150px;
         }
+		.maintable table { margin: 0 auto; }
         .subtable td {
-            width: 20px;
+			border-color: black;
+            width: 15px;
             height: 20px;
             text-align: center;
+			color: black;
         }
-        .black {
-            background-color: black;
-        }
-        td :not(.black) {
-            background-color: white;
-        }
-
-        h2 {
-            font-size: 1.4em;
-        }
+        .black { background-color: #333333; }
+        .white { background-color: #eeeeee; }
     </style>
 </head>
 <body>
