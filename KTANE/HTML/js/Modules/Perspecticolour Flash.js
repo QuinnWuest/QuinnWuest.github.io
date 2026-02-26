@@ -71,8 +71,8 @@ window.addEventListener('DOMContentLoaded', async function()
 	function getCounter() { let c = counter++; counter %= 2147483647; return c; }
 	async function coroutine(id, data, fnc)
 	{
-		let val = id === null ? null : (coroutines[id] = getCounter());
-		for (let ix = 0; ix < data.length; ix++)
+		let val = id === null ? null : (coroutines[id] = getCounter()), stop = false;
+		for (let ix = 0; ix < data.length && !stop; ix++)
 		{
 			if (data[ix] === null)
 				continue;
@@ -83,7 +83,7 @@ window.addEventListener('DOMContentLoaded', async function()
 			}
 			let startTime = await new Promise(requestAnimationFrame), elapsed = 0, dur = data[ix].d * 1000, ea = data[ix].e ?? (t => t), obj;
 			if (id !== null && coroutines[id] !== val)
-				return;
+				break;
 			while (elapsed < dur)
 			{
 				obj = data[ix].v ? Object.fromEntries(Object.entries(data[ix].v).map(([k, [s, e]]) => [k, (e-s)*ea(elapsed/dur) + s])) : elapsed/dur;
@@ -93,7 +93,10 @@ window.addEventListener('DOMContentLoaded', async function()
 					data[ix].fn(obj, ix, false);
 				elapsed = (await new Promise(requestAnimationFrame)) - startTime;
 				if (id !== null && coroutines[id] !== val)
-					return;
+				{
+					stop = true;
+					break;
+				}
 			}
 			obj = data[ix].v ? Object.fromEntries(Object.entries(data[ix].v).map(([k, v]) => [k, v[1]])) : 1;
 			if (fnc)
@@ -101,6 +104,7 @@ window.addEventListener('DOMContentLoaded', async function()
 			if (data[ix].fn)
 				data[ix].fn(obj, ix, false);
 		}
+		delete coroutines[id];
 	}
 
 	const Colour = { Red: 0, Yellow: 1, Green: 2, Blue: 3, Magenta: 4, White: 5 };
@@ -185,69 +189,115 @@ window.addEventListener('DOMContentLoaded', async function()
 
 	const svg = document.getElementById('svg');
 	const transparentCubes = new Set();
-	
-	svg.addEventListener('pointerdown', (e) => {
+	let mouseStart = null;
+
+	svg.addEventListener('pointerdown', e =>
+	{
 		const path = e.target.closest?.('path.face');
 		if (!path)
+		{
+			// Initiate drag-and-drop
+			mouseStart = { x: e.clientX, y: e.clientY };
+			curDiagramRotation = diagramRotation;
 			return;
-		
+		}
+
 		const cubeIx = Number(path.dataset.cube);
 		if (Number.isNaN(cubeIx))
 			return;
-		
+
 		if (transparentCubes.has(cubeIx))
 			transparentCubes.delete(cubeIx);
 		else
 			transparentCubes.add(cubeIx);
 		e.preventDefault();
 	});
-	
+
+	document.addEventListener('pointermove', e =>
+	{
+		if (mouseStart === null)
+			return;
+		let dx = e.clientX - mouseStart.x;
+		let dy = e.clientY - mouseStart.y;
+		let mAngle = Math.atan2(dy, dx);
+		let mDist = Math.sqrt(dx*dx + dy*dy);
+		let quat = q(Math.cos(mAngle + Math.PI/2), Math.sin(mAngle - Math.PI/2), 0, mDist/180);
+		curDiagramRotation = diagramRotation.comp(quat);
+	});
+
+	document.addEventListener('pointerup', e =>
+	{
+		if (mouseStart === null)
+			return;
+		mouseStart = null;
+		diagramRotation = curDiagramRotation;
+	});
+
 	const center = p(0, 0, 0);
 	const cubeSize = .25;
-	let cameraPosition = p(0, 0, 0);
+	let cameraPosition = p(0, 0, -10);
 	let diagramRotation = q(1, 0, 0, 0);
 	let curDiagramRotation = q(1, 0, 0, 0);
+	let queue = [];
 
 	function updateDiagram()
 	{
 		let faces = cubes
 			.map((cube, cubeIx) => [
-				{ cubeIx, faceIx: 0, center: p(0, 1, 0).mul(cubeSize).plus(cube.center).rotate(curDiagramRotation),
+				{
+					cubeIx: cubeIx,
+					faceIx: 0,
+					center: p(0, 1, 0).mul(cubeSize).plus(cube.center).rotate(curDiagramRotation),
 					corners: [p(-1, 1, -1), p(1, 1, -1), p(1, 1, 1), p(-1, 1, 1)].map(pt => pt.mul(cubeSize).plus(cube.center).rotate(curDiagramRotation)),
 					color: cube.faces[0]
 				},
-				{ cubeIx, faceIx: 1, center: p(0, 0, -1).mul(cubeSize).plus(cube.center).rotate(curDiagramRotation),
+				{
+					cubeIx: cubeIx,
+					faceIx: 1,
+					center: p(0, 0, -1).mul(cubeSize).plus(cube.center).rotate(curDiagramRotation),
 					corners: [p(-1, -1, -1), p(1, -1, -1), p(1, 1, -1), p(-1, 1, -1)].map(pt => pt.mul(cubeSize).plus(cube.center).rotate(curDiagramRotation)),
 					color: cube.faces[1]
 				},
-				{ cubeIx, faceIx: 2, center: p(1, 0, 0).mul(cubeSize).plus(cube.center).rotate(curDiagramRotation),
+				{
+					cubeIx: cubeIx,
+					faceIx: 2,
+					center: p(1, 0, 0).mul(cubeSize).plus(cube.center).rotate(curDiagramRotation),
 					corners: [p(1, -1, -1), p(1, 1, -1), p(1, 1, 1), p(1, -1, 1)].map(pt => pt.mul(cubeSize).plus(cube.center).rotate(curDiagramRotation)),
 					color: cube.faces[2]
 				},
-				{ cubeIx, faceIx: 3, center: p(0, 0, 1).mul(cubeSize).plus(cube.center).rotate(curDiagramRotation),
+				{
+					cubeIx: cubeIx,
+					faceIx: 3,
+					center: p(0, 0, 1).mul(cubeSize).plus(cube.center).rotate(curDiagramRotation),
 					corners: [p(-1, -1, 1), p(1, -1, 1), p(1, 1, 1), p(-1, 1, 1)].map(pt => pt.mul(cubeSize).plus(cube.center).rotate(curDiagramRotation)),
 					color: cube.faces[3]
 				},
-				{ cubeIx, faceIx: 4, center: p(-1, 0, 0).mul(cubeSize).plus(cube.center).rotate(curDiagramRotation),
+				{
+					cubeIx: cubeIx,
+					faceIx: 4,
+					center: p(-1, 0, 0).mul(cubeSize).plus(cube.center).rotate(curDiagramRotation),
 					corners: [p(-1, -1, -1), p(-1, 1, -1), p(-1, 1, 1), p(-1, -1, 1)].map(pt => pt.mul(cubeSize).plus(cube.center).rotate(curDiagramRotation)),
 					color: cube.faces[4]
 				},
-				{ cubeIx, faceIx: 5, center: p(0, -1, 0).mul(cubeSize).plus(cube.center).rotate(curDiagramRotation),
+				{
+					cubeIx: cubeIx,
+					faceIx: 5,
+					center: p(0, -1, 0).mul(cubeSize).plus(cube.center).rotate(curDiagramRotation),
 					corners: [p(-1, -1, -1), p(1, -1, -1), p(1, -1, 1), p(-1, -1, 1)].map(pt => pt.mul(cubeSize).plus(cube.center).rotate(curDiagramRotation)),
 					color: cube.faces[5]
 				}
 			])
 			.flat();
 		faces.sort((a, b) => b.center.dist(cameraPosition) - a.center.dist(cameraPosition));
-		
+
 		let cameraMatrix = getCameraMatrix(cameraPosition, center);
 		svg.innerHTML = faces.map(face => {
 			const pts = face.corners
 				.map(p => p.projectTo2D(cameraPosition, cameraMatrix))
 				.map(p2 => `${p2.x} ${p2.y}`)
 				.join(' ');
-			
-			
+
+
 			const isTransparent = transparentCubes.has(face.cubeIx);
 			return `<path class="face color-${face.color}
 				${isTransparent ? 'is-transparent' : ''}"
@@ -265,27 +315,31 @@ window.addEventListener('DOMContentLoaded', async function()
 		{ id: 'zCcw',	x: 0,	y: 0,	z: 1,	angle: Math.PI/2	},
 		{ id: 'zCw',	x: 0,	y: 0,	z: 1,	angle: -Math.PI/2	}
 	];
+
 	for (let inf of rotationButtons)
 	{
 		document.getElementById(inf.id).onclick = function()
 		{
-			let startRotation = diagramRotation;
-			diagramRotation = diagramRotation.comp(q(inf.x, inf.y, inf.z, inf.angle));
-			coroutine('rotation', [
-				{
-					d:	.4,
-					e:	t => t < .5 ? 2 * t * t : (4 - 2 * t) * t - 1,
-					v:	{ v: [0, inf.angle] },
-					fn:	t => { curDiagramRotation = startRotation.comp(q(inf.x, inf.y, inf.z, t.v)); }
-				}
-			]);
+			queue.push(() => {
+				let startRotation = diagramRotation;
+				diagramRotation = diagramRotation.comp(q(inf.x, inf.y, inf.z, inf.angle));
+				coroutine('rotation', [
+					{
+						d:	.4,
+						e:	t => t < .5 ? 2 * t * t : (4 - 2 * t) * t - 1,
+						v:	{ v: [0, inf.angle] },
+						fn:	t => { curDiagramRotation = startRotation.comp(q(inf.x, inf.y, inf.z, t.v)); }
+					}
+				]);
+			});
 		};
 	}
 
 	while (true)
 	{
-		let time = await new Promise(requestAnimationFrame) * .03;
-		cameraPosition = p(0, 0, -3.7).rotateX(10 * sin(time) + 10).rotateY(-15 * cos(time)).plus(center);
+		await new Promise(requestAnimationFrame);
+		if (queue.length > 0 && !('rotation' in coroutines))
+			queue.pop()();
 		updateDiagram();
 	}
 });
