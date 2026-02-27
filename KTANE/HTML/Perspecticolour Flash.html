@@ -10,6 +10,11 @@
 	<script src="js/ktane-utils.js"></script>
 	<script src="js/Modules/Perspecticolour Flash.js"></script>
 	<style>
+		svg {
+			touch-action: none;
+			user-select: none;
+		}
+		
 		svg .face {
 			stroke: black;
 			stroke-width: .15;
@@ -79,7 +84,7 @@
 				<span class="page-header-section-title">Perspecticolour Flash</span>
 			</div>
 			<div class="page-content">
-				<p style="text-align: center;">Use the buttons to rotate the orientation of the diagram.</p>
+				<p style="text-align: center;">Click and drag or use the buttons to rotate the orientation of the diagram.</p>
 				<p style="text-align: center;">Click any of the cubes to toggle their transparency.</p>
 				<div class='controls'>
 					<button class='rot' id="zCcw">⟲</button>

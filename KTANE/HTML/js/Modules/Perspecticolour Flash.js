@@ -193,30 +193,39 @@ window.addEventListener('DOMContentLoaded', async function()
 
 	svg.addEventListener('pointerdown', e =>
 	{
+		if (e.button !== 0)
+			return;
+		
+		e.preventDefault();
+		svg.setPointerCapture(e.pointerId);
+		
 		const path = e.target.closest?.('path.face');
-		if (!path)
-		{
-			// Initiate drag-and-drop
-			mouseStart = { x: e.clientX, y: e.clientY };
-			curDiagramRotation = diagramRotation;
+		if (path) {
+			const cubeIx = Number(path.dataset.cube);
+			if (Number.isNaN(cubeIx))
+				return;
+	
+			if (transparentCubes.has(cubeIx))
+				transparentCubes.delete(cubeIx);
+			else
+				transparentCubes.add(cubeIx);
 			return;
 		}
-
-		const cubeIx = Number(path.dataset.cube);
-		if (Number.isNaN(cubeIx))
-			return;
-
-		if (transparentCubes.has(cubeIx))
-			transparentCubes.delete(cubeIx);
-		else
-			transparentCubes.add(cubeIx);
-		e.preventDefault();
+		
+		mouseStart = { x: e.clientX, y: e.clientY };
+		curDiagramRotation = diagramRotation;
 	});
 
 	document.addEventListener('pointermove', e =>
 	{
 		if (mouseStart === null)
 			return;
+		
+		if ((e.buttons & 1) === 0) {
+			endDrag();
+			return;
+		}
+		
 		let dx = e.clientX - mouseStart.x;
 		let dy = e.clientY - mouseStart.y;
 		let mAngle = Math.atan2(dy, dx);
@@ -227,12 +236,22 @@ window.addEventListener('DOMContentLoaded', async function()
 
 	document.addEventListener('pointerup', e =>
 	{
+		try {
+			svg.releasePointerCapture(e.pointerId);
+		} catch {}
+		endDrag();
+	});
+	
+	svg.addEventListener('pointercancel', endDrag);
+	svg.addEventListener('lostpointercapture', endDrag);
+	
+	function endDrag() {
 		if (mouseStart === null)
 			return;
 		mouseStart = null;
 		diagramRotation = curDiagramRotation;
-	});
-
+	}
+	
 	const center = p(0, 0, 0);
 	const cubeSize = .25;
 	let cameraPosition = p(0, 0, -10);
