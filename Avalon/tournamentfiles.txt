@@ -248,6 +248,8 @@
 6t13-3-Crouton-spy.png
 6t13-3-glorious-res.png
 6t13-3-glorious-spy.png
+6t13-3-mrfahrenheit-res.png
+6t13-3-mrfahrenheit-spy.png
 6t13-5-0default-res.png
 6t13-5-0default-spy.png
 6t13-5-Avalanche-res.png
