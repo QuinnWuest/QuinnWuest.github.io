@@ -224,6 +224,8 @@
 6t12-5-not.me-spy.png
 6t13-1-0default-res.png
 6t13-1-0default-spy.png
+6t13-1-catfat-res.png
+6t13-1-catfat-spy.png
 6t13-1-FatalistEuronet-res.png
 6t13-1-FatalistEuronet-spy.png
 6t13-1-Kexhiluz-res.png
