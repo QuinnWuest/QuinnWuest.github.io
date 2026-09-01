@@ -13,147 +13,200 @@
 		function setDefaultRules(rnd) {
 			setRules(rnd);
 		}
+		
+		// blue = and
+		// green = or
+		// yellow = nand
+		// magenta = nor
+		// red = xor
 
 		function setRules(rnd) {
-			const targetColors = [
-				"Red",
-				"Green",
-				"Yellow",
-				"Blue",
-				"Magenta",
-				"Odd-colored"
-			];
-
-			const ruleGenerators = [
-				{ weight: 1, make: color => `${color} squares.` },
-
-				{ weight: 3, make: color => `${color} squares in this row.` },
-				{ weight: 3, make: color => `${color} squares in this column.` },
-				{ weight: 2, make: color => `${color} squares not in this row.` },
-				{ weight: 2, make: color => `${color} squares not in this column.` },
-
-				{ weight: 3, make: color => `${color} squares in the other square's row.` },
-				{ weight: 3, make: color => `${color} squares in the other square's column.` },
-				{ weight: 2, make: color => `${color} squares not in the other square's row.` },
-				{ weight: 2, make: color => `${color} squares not in the other square's column.` },
-
-				{
-					weight: 3,
-					make: (color, rnd) => {
-						const halves = ["left", "right", "top", "bottom"];
-						return `${color} squares in the ${halves[rnd.next(0, halves.length)]} half.`;
+		
+			// Shuffle the bit tables:
+			let btables = Array.from(document.querySelectorAll(".tcsq-bit-diagram"));
+			for (let table of btables) {
+				let btds = Array.from(table.querySelectorAll("td.bit"));
+				let numWhite = rnd.next(8, 9);
+				let bs = [];
+				for (let i = 0; i < btds.length; i++)
+					bs.push(i < numWhite ? 1 : 0);
+				rnd.shuffleFisherYates(bs);
+				for (let i = 0; i < btds.length; i++) {
+					btds[i].classList.remove("tcsq-bit-false", "tcsq-bit-true");
+					if (bs[i] === 0) {
+						btds[i].classList.add("tcsq-bit-false");
+						btds[i].innerText = "✗";
 					}
-				},
-
-				{
-					weight: 3,
-					make: (color, rnd) => {
-						const axis = rnd.next(0, 2) === 0 ? "left/right" : "top/bottom";
-						return `${color} squares in the same ${axis} half as this square.`;
-					}
-				},
-				{
-					weight: 3,
-					make: (color, rnd) => {
-						const axis = rnd.next(0, 2) === 0 ? "left/right" : "top/bottom";
-						return `${color} squares in the opposite ${axis} half from this square.`;
-					}
-				},
-				{
-					weight: 3,
-					make: (color, rnd) => {
-						const axis = rnd.next(0, 2) === 0 ? "left/right" : "top/bottom";
-						return `${color} squares in the same ${axis} half as the other square.`;
-					}
-				},
-				{
-					weight: 3,
-					make: (color, rnd) => {
-						const axis = rnd.next(0, 2) === 0 ? "left/right" : "top/bottom";
-						return `${color} squares in the opposite ${axis} half from the other square.`;
-					}
-				},
-
-				{ weight: 2, make: color => `${color} squares in this row or column.` },
-				{ weight: 2, make: color => `${color} squares in the other square's row or column.` },
-				{ weight: 2, make: color => `${color} squares in neither this row nor this column.` },
-				{ weight: 2, make: color => `${color} squares in neither the other square's row nor column.` },
-
-				{
-					weight: 2,
-					make: (color, rnd) => {
-						const which = rnd.next(0, 2) === 0 ? "row" : "column";
-						return `${color} squares in either square's ${which}.`;
-					}
-				},
-
-				{
-					weight: 2,
-					make: (color, rnd) => {
-						const axis = rnd.next(0, 2) === 0 ? "left/right" : "top/bottom";
-						return `${color} squares in the same ${axis} half as both squares.`;
-					}
-				}
-			];
-
-			const weighted = [];
-			for (const generator of ruleGenerators) {
-				for (let i = 0; i < generator.weight; i++)
-					weighted.push(generator);
-			}
-
-			const tableColors = ["r", "g", "y", "b", "m"];
-
-			for (const tableColor of tableColors) {
-				const usedRules = new Set();
-
-				for (let row = 0; row < 4; row++) {
-					for (let col = 0; col < 4; col++) {
-						let rule;
-						let attempts = 0;
-
-						do {
-							const color = targetColors[rnd.next(0, targetColors.length)];
-							const generator = weighted[rnd.next(0, weighted.length)];
-							rule = generator.make(color, rnd);
-							attempts++;
-						}
-						while (usedRules.has(rule) && attempts < 100);
-
-						usedRules.add(rule);
-
-						document.getElementById(
-							`${tableColor}-${row}-${col}`
-						).innerText = rule;
+					else {
+						btds[i].classList.add("tcsq-bit-true");
+						btds[i].innerText = "✓";
 					}
 				}
 			}
+			
+			// Shuffle the logic gates:
+			let gates = [ "AND", "OR", "NAND", "NOR", "XOR", "XNOR", ];
+			let gs = [];
+			for (let i = 0; i < gates.length; i++)
+				gs.push(gates[i]);
+			rnd.shuffleFisherYates(gs);
+			let gtds = Array.from(document.querySelectorAll(`.tcsq-logic-diagram td.gate`));
+			for (let i = 0; i < gtds.length; i++)
+				gtds[i].innerHTML = gs[i];
+			
+			// Shuffle the rules:
+			const transformations = [
+				"Swap Row&nbsp;1 with Row&nbsp;2",
+				"Swap Row&nbsp;1 with Row&nbsp;3",
+				"Swap Row&nbsp;1 with Row&nbsp;4",
+				"Swap Row&nbsp;2 with Row&nbsp;3",
+				"Swap Row&nbsp;2 with Row&nbsp;4",
+				"Swap Row&nbsp;3 with Row&nbsp;4",
+				"Swap Column&nbsp;A with Column&nbsp;B",
+				"Swap Column&nbsp;A with Column&nbsp;C",
+				"Swap Column&nbsp;A with Column&nbsp;D",
+				"Swap Column&nbsp;B with Column&nbsp;C",
+				"Swap Column&nbsp;B with Column&nbsp;D",
+				"Swap Column&nbsp;C with Column&nbsp;D",
+				"Invert Row&nbsp;1",
+				"Invert Row&nbsp;2",
+				"Invert Row&nbsp;3",
+				"Invert Row&nbsp;4",
+				"Invert Column&nbsp;A",
+				"Invert Column&nbsp;B",
+				"Invert Column&nbsp;C",
+				"Invert Column&nbsp;D",
+				"Invert the top&nbspleft quadrant",
+				"Invert the top&nbspright quadrant",
+				"Invert the bottom&nbspleft quadrant",
+				"Invert the bottom&nbspright quadrant",
+				"Invert the central four squares",
+				"Invert the four corner squares",
+				"Shift Row&nbsp;1 left&nbsp;once",
+				"Shift Row&nbsp;2 left&nbsp;once",
+				"Shift Row&nbsp;3 left&nbsp;once",
+				"Shift Row&nbsp;4 left&nbsp;once",
+				"Shift Row&nbsp;1 right&nbsp;once",
+				"Shift Row&nbsp;2 right&nbsp;once",
+				"Shift Row&nbsp;3 right&nbsp;once",
+				"Shift Row&nbsp;4 right&nbsp;once",
+				"Shift Column&nbsp;A up&nbsp;once",
+				"Shift Column&nbsp;B up&nbsp;once",
+				"Shift Column&nbsp;C up&nbsp;once",
+				"Shift Column&nbsp;D up&nbsp;once",
+				"Shift Column&nbsp;A down&nbsp;once",
+				"Shift Column&nbsp;B down&nbsp;once",
+				"Shift Column&nbsp;C down&nbsp;once",
+				"Shift Column&nbsp;D down&nbsp;once",
+				"Horizontally flip Row&nbsp;1",
+				"Horizontally flip Row&nbsp;2",
+				"Horizontally flip Row&nbsp;3",
+				"Horizontally flip Row&nbsp;4",
+				"Vertically flip Column&nbsp;A",
+				"Vertically flip Column&nbsp;B",
+				"Vertically flip Column&nbsp;C",
+				"Vertically flip Column&nbsp;D",
+				"Swap the left and right halves",
+				"Swap the top and bottom halves",
+				"Swap the top&nbsp;left and top&nbsp;right qaudrants",
+				"Swap the top&nbsp;left and bottom&nbsp;left qaudrants",
+				"Swap the top&nbsp;left and bottom&nbsp;right qaudrants",
+				"Swap the top&nbsp;right and bottom&nbsp;left qaudrants",
+				"Swap the top&nbsp;right and bottom&nbsp;right qaudrants",
+				"Swap the bottom&nbsp;left and bottom&nbsp;right qaudrants",
+				"Rotate the top&nbsp;left quadrant clockwise",
+				"Rotate the top&nbsp;left quadrant counterclockwise",
+				"Rotate the top&nbsp;right quadrant clockwise",
+				"Rotate the top&nbsp;right quadrant counterclockwise",
+				"Rotate the bottom&nbsp;left quadrant clockwise",
+				"Rotate the bottom&nbsp;left quadrant counterclockwise",
+				"Rotate the bottom&nbsp;right quadrant clockwise",
+				"Rotate the bottom&nbsp;right quadrant counterclockwise",
+				"Rotate the central four squares clockwise",
+				"Rotate the central four squares counterclockwise",
+				"Rotate the four corner squares clockwise",
+				"Rotate the four corner squares counterclockwise",
+				"Rotate the grid clockwise",
+				"Rotate the grid counterclockwise",
+				"Invert the position of the first paired&nbsp;square",
+				"Invert the position of the second paired&nbsp;square",
+				"Invert the position of the third paired&nbsp;square",
+				"Invert the position of the fourth paired&nbsp;square",
+				"Invert the position of the fifth paired&nbsp;square",
+				"Invert the position of the sixth paired&nbsp;square",
+				"Invert the position of the seventh paired&nbsp;square",
+				"Invert the position of the eighth paired&nbsp;square",
+			];
+			let ts = [];
+			for (let i = 0; i < transformations.length; i++)
+				ts.push(transformations[i]);
+			rnd.shuffleFisherYates(ts);
+			let rtds = Array.from(document.querySelectorAll(`.tcsq-rule-table td.rule`));
+			for (let i = 0; i < rtds.length; i++)
+				rtds[i].innerHTML = ts[i];
 		}
 	</script>
     <style>
-		.scsq-table {
+		
+		.tcsq-rule-table, .tcsq-bit-diagram, .tcsq-logic-diagram, .dark .tcsq-rule-table, .dark .tcsq-bit-diagram, .dark .tcsq-logic-diagram {
+			border: 2px solid black;
+		}
+		
+		.tcsq-rule-table {
 			width: 90%;
-			aspect-ratio: 4 / 3;
+			aspect-ratio: 2 / 1;
 			margin: 0em auto;
 			margin-top: 0.75cm;
-			border: 3px solid black;
 			outline: 10px solid black;
 		}
-		.scsq-table tr {
+		
+		.tcsq-rule-table:nth-child(2) {
+			margin-top: 2cm;
+		}
+		
+		.tcsq-rule-table tr {
 			height: 25%;
 		}
-		.scsq-table td {
+		.tcsq-rule-table td {
 			width: 25%;
 			text-align: center;
 			vertical-align: middle;
 			font-size: 9pt;
 		}
 		
-		.scsq-table.red     { outline-color: #f46; }
-		.scsq-table.green   { outline-color: #4f6; }
-		.scsq-table.yellow  { outline-color: #fd4; }
-		.scsq-table.blue    { outline-color: #4af; }
-		.scsq-table.magenta { outline-color: #f6f; }
+		.tcsq-bit-false { background-color: #f88; }
+		.tcsq-bit-true { background-color: #8f8; }
+		
+		.tcsq-logic-diagram {
+            float: right;
+            clear: right;
+            text-align: center;
+            margin-left: 10px;
+			margin-bottom: 20px;
+			outline: 5px solid black;
+			margin-bottom: 0.35cm;
+			width: 70px;
+        }
+		
+		.tcsq-bit-diagram {
+			margin: 0 4px;
+			outline: 5px solid black;
+			color: black;
+		}
+		.tcsq-bit-diagram td.bit {
+			width: 15px;
+			height: 18px;
+			font-size: 8pt;
+			text-align: center;
+			font-weight: bold;
+			border-color: black;
+		}
+		
+		.red     { outline-color: #f46; }
+		.green   { outline-color: #4f6; }
+		.yellow  { outline-color: #fd4; }
+		.blue    { outline-color: #4af; }
+		.magenta { outline-color: #f6f; }
     </style>
 </head>
 <body>
@@ -166,40 +219,78 @@
             <div class="page-content">
                 <img class="diagram" src="img/Component/Colored Squares.svg">
                 <h2>On the Subject of Technicolored Squares</h2>
-                <p class="flavour-text">what</p>
+                <p class="flavour-text">We all dream a lot. Some are lucky, some are not.<br>But if you think it, want it, dream it, then it's real. You are what you feel.</p>
                 <p class="appendix-reference" id="appendix-reference">See <a href="Appendix SQUARE.html">Appendix SQUARE</a> for identifying modules in Colored Squares family.</p>
+				<table class="tcsq-logic-diagram red"><tr><td class="gate"></td></tr></table>
+				<table class="tcsq-logic-diagram yellow"><tr><td class="gate"></td></tr></table>
+				<table class="tcsq-logic-diagram green"><tr><td class="gate"></td></tr></table>
+				<table class="tcsq-logic-diagram blue"><tr><td class="gate"></td></tr></table>
+				<table class="tcsq-logic-diagram magenta"><tr><td class="gate"></td></tr></table>
                 <ul>
                     <li>At the start, if there are not four colors that occur exactly twice each, you are looking at a different module.</li>
-					<li>The four colors that occur exactly twice are the <u>rule</u> colors. The leftover color is the <u>odd</u> color.</li>
-					<li>For each rule color, consult its table. Find the two cells whose positions correspond to the two squares of that color on the module, and apply the rules in those cells.</li>
-					<li>Within a rule, <u>this square</u> is the module square corresponding to that table cell; <u>the other square</u> is the other square of that rule color.</li>
-					<li>Each square earns points according to which of the applicable rules it satisfies.</li>
-					<li>Press all 16 squares in <u>ascending order of points</u>. If multiple squares have the same number of points, press those squares in <u>reading order</u>.</li>
+					<li>Begin with the grid corresponding to the color that occurs eight times.</li>
+					<li>For each of the remaining eight squares in reading order, use its color and position to find the corresponding rule in that color’s table, then apply that rule to the bit grid.</li>
+					<li>For each pair of identically-colored squares, find both squares’ positions in the resulting bit grid.</li>
+					<li>Using the logic gate corresponding to the pair’s color, evaluate the two bits at those positions.</li>
+					<li>If the result is true, press the first square of the pair followed by the second. If the result is false, press them in the opposite order.</li>
+					<li>Repeat this for all four pairs to disarm the module.</li>
                 </ul>
-				<table class="scsq-table red">
+				<div class="hstack">
+					<table class="tcsq-bit-diagram red">
+						<tr><td class='bit'></td><td class='bit'></td><td class='bit'></td><td class='bit'></td></tr>
+						<tr><td class='bit'></td><td class='bit'></td><td class='bit'></td><td class='bit'></td></tr>
+						<tr><td class='bit'></td><td class='bit'></td><td class='bit'></td><td class='bit'></td></tr>
+						<tr><td class='bit'></td><td class='bit'></td><td class='bit'></td><td class='bit'></td></tr>
+					</table>
+					<table class="tcsq-bit-diagram yellow">
+						<tr><td class='bit'></td><td class='bit'></td><td class='bit'></td><td class='bit'></td></tr>
+						<tr><td class='bit'></td><td class='bit'></td><td class='bit'></td><td class='bit'></td></tr>
+						<tr><td class='bit'></td><td class='bit'></td><td class='bit'></td><td class='bit'></td></tr>
+						<tr><td class='bit'></td><td class='bit'></td><td class='bit'></td><td class='bit'></td></tr>
+					</table>
+					<table class="tcsq-bit-diagram green">
+						<tr><td class='bit'></td><td class='bit'></td><td class='bit'></td><td class='bit'></td></tr>
+						<tr><td class='bit'></td><td class='bit'></td><td class='bit'></td><td class='bit'></td></tr>
+						<tr><td class='bit'></td><td class='bit'></td><td class='bit'></td><td class='bit'></td></tr>
+						<tr><td class='bit'></td><td class='bit'></td><td class='bit'></td><td class='bit'></td></tr>
+					</table>
+					<table class="tcsq-bit-diagram blue">
+						<tr><td class='bit'></td><td class='bit'></td><td class='bit'></td><td class='bit'></td></tr>
+						<tr><td class='bit'></td><td class='bit'></td><td class='bit'></td><td class='bit'></td></tr>
+						<tr><td class='bit'></td><td class='bit'></td><td class='bit'></td><td class='bit'></td></tr>
+						<tr><td class='bit'></td><td class='bit'></td><td class='bit'></td><td class='bit'></td></tr>
+					</table>
+					<table class="tcsq-bit-diagram magenta">
+						<tr><td class='bit'></td><td class='bit'></td><td class='bit'></td><td class='bit'></td></tr>
+						<tr><td class='bit'></td><td class='bit'></td><td class='bit'></td><td class='bit'></td></tr>
+						<tr><td class='bit'></td><td class='bit'></td><td class='bit'></td><td class='bit'></td></tr>
+						<tr><td class='bit'></td><td class='bit'></td><td class='bit'></td><td class='bit'></td></tr>
+					</table>
+				</div>
+				<table class="tcsq-rule-table red">
 					<tr>
-						<td id='r-0-0'>abcd abcd</td>
-						<td id='r-0-1'>abcd abcd</td>
-						<td id='r-0-2'>abcd abcd</td>
-						<td id='r-0-3'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
 					</tr>
 					<tr>
-						<td id='r-1-0'>abcd abcd</td>
-						<td id='r-1-1'>abcd abcd</td>
-						<td id='r-1-2'>abcd abcd</td>
-						<td id='r-1-3'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
 					</tr>
 					<tr>
-						<td id='r-2-0'>abcd abcd</td>
-						<td id='r-2-1'>abcd abcd</td>
-						<td id='r-2-2'>abcd abcd</td>
-						<td id='r-2-3'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
 					</tr>
 					<tr>
-						<td id='r-3-0'>abcd abcd</td>
-						<td id='r-3-1'>abcd abcd</td>
-						<td id='r-3-2'>abcd abcd</td>
-						<td id='r-3-3'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
 					</tr>
 				</table>
             </div>
@@ -211,55 +302,55 @@
                 <span class="page-header-section-title">Technicolored Squares</span>
             </div>
             <div class="page-content">
-				<table class="scsq-table yellow">
+				<table class="tcsq-rule-table yellow">
 					<tr>
-						<td id='y-0-0'>abcd abcd</td>
-						<td id='y-0-1'>abcd abcd</td>
-						<td id='y-0-2'>abcd abcd</td>
-						<td id='y-0-3'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
 					</tr>
 					<tr>
-						<td id='y-1-0'>abcd abcd</td>
-						<td id='y-1-1'>abcd abcd</td>
-						<td id='y-1-2'>abcd abcd</td>
-						<td id='y-1-3'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
 					</tr>
 					<tr>
-						<td id='y-2-0'>abcd abcd</td>
-						<td id='y-2-1'>abcd abcd</td>
-						<td id='y-2-2'>abcd abcd</td>
-						<td id='y-2-3'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
 					</tr>
 					<tr>
-						<td id='y-3-0'>abcd abcd</td>
-						<td id='y-3-1'>abcd abcd</td>
-						<td id='y-3-2'>abcd abcd</td>
-						<td id='y-3-3'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
 					</tr>
-					<table class="scsq-table green">
+					<table class="tcsq-rule-table green">
 					<tr>
-						<td id='g-0-0'>abcd abcd</td>
-						<td id='g-0-1'>abcd abcd</td>
-						<td id='g-0-2'>abcd abcd</td>
-						<td id='g-0-3'>abcd abcd</td>
-					</tr>
-					<tr>
-						<td id='g-1-0'>abcd abcd</td>
-						<td id='g-1-1'>abcd abcd</td>
-						<td id='g-1-2'>abcd abcd</td>
-						<td id='g-1-3'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
 					</tr>
 					<tr>
-						<td id='g-2-0'>abcd abcd</td>
-						<td id='g-2-1'>abcd abcd</td>
-						<td id='g-2-2'>abcd abcd</td>
-						<td id='g-2-3'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
 					</tr>
 					<tr>
-						<td id='g-3-0'>abcd abcd</td>
-						<td id='g-3-1'>abcd abcd</td>
-						<td id='g-3-2'>abcd abcd</td>
-						<td id='g-3-3'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
+					</tr>
+					<tr>
+						<td class='rule'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
 					</tr>
 				</table>
 				</table>
@@ -272,60 +363,60 @@
                 <span class="page-header-section-title">Technicolored Squares</span>
             </div>
             <div class="page-content">
-				<table class="scsq-table blue">
+				<table class="tcsq-rule-table blue">
 					<tr>
-						<td id='b-0-0'>abcd abcd</td>
-						<td id='b-0-1'>abcd abcd</td>
-						<td id='b-0-2'>abcd abcd</td>
-						<td id='b-0-3'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
 					</tr>
 					<tr>
-						<td id='b-1-0'>abcd abcd</td>
-						<td id='b-1-1'>abcd abcd</td>
-						<td id='b-1-2'>abcd abcd</td>
-						<td id='b-1-3'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
 					</tr>
 					<tr>
-						<td id='b-2-0'>abcd abcd</td>
-						<td id='b-2-1'>abcd abcd</td>
-						<td id='b-2-2'>abcd abcd</td>
-						<td id='b-2-3'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
 					</tr>
 					<tr>
-						<td id='b-3-0'>abcd abcd</td>
-						<td id='b-3-1'>abcd abcd</td>
-						<td id='b-3-2'>abcd abcd</td>
-						<td id='b-3-3'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
 					</tr>
 				</table>
-				<table class="scsq-table magenta">
+				<table class="tcsq-rule-table magenta">
 					<tr>
-						<td id='m-0-0'>abcd abcd</td>
-						<td id='m-0-1'>abcd abcd</td>
-						<td id='m-0-2'>abcd abcd</td>
-						<td id='m-0-3'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
 					</tr>
 					<tr>
-						<td id='m-1-0'>abcd abcd</td>
-						<td id='m-1-1'>abcd abcd</td>
-						<td id='m-1-2'>abcd abcd</td>
-						<td id='m-1-3'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
 					</tr>
 					<tr>
-						<td id='m-2-0'>abcd abcd</td>
-						<td id='m-2-1'>abcd abcd</td>
-						<td id='m-2-2'>abcd abcd</td>
-						<td id='m-2-3'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
 					</tr>
 					<tr>
-						<td id='m-3-0'>abcd abcd</td>
-						<td id='m-3-1'>abcd abcd</td>
-						<td id='m-3-2'>abcd abcd</td>
-						<td id='m-3-3'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
+						<td class='rule'>abcd abcd</td>
 					</tr>
 				</table>
 			</div>
-            <div class="page-footer relative-footer">Page 2 of 3</div>
+            <div class="page-footer relative-footer">Page 3 of 3</div>
         </div>
     </div>
 </body>
