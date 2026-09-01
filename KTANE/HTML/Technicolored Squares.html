@@ -13,23 +13,15 @@
 		function setDefaultRules(rnd) {
 			setRules(rnd);
 		}
-		
-		// blue = and
-		// green = or
-		// yellow = nand
-		// magenta = nor
-		// red = xor
 
 		function setRules(rnd) {
-		
 			// Shuffle the bit tables:
 			let btables = Array.from(document.querySelectorAll(".tcsq-bit-diagram"));
 			for (let table of btables) {
 				let btds = Array.from(table.querySelectorAll("td.bit"));
-				let numWhite = rnd.next(8, 9);
 				let bs = [];
 				for (let i = 0; i < btds.length; i++)
-					bs.push(i < numWhite ? 1 : 0);
+					bs.push(i < 8 ? 1 : 0);
 				rnd.shuffleFisherYates(bs);
 				for (let i = 0; i < btds.length; i++) {
 					btds[i].classList.remove("tcsq-bit-false", "tcsq-bit-true");
@@ -147,7 +139,6 @@
 		}
 	</script>
     <style>
-		
 		.tcsq-rule-table, .tcsq-bit-diagram, .tcsq-logic-diagram, .dark .tcsq-rule-table, .dark .tcsq-bit-diagram, .dark .tcsq-logic-diagram {
 			border: 2px solid black;
 		}
