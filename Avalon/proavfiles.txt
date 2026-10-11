@@ -536,6 +536,8 @@ lampage-res.png
 lampage-spy.png
 lauren-res.png
 lauren-spy.png
+Laziness-res.png
+Laziness-spy.png
 leaf-res.png
 leaf-spy.png
 lemonking-res.png

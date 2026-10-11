@@ -282,3 +282,11 @@
 8t02-8-0default-1-spy.png
 8t02-8-0default-2-res.png
 8t02-8-0default-2-spy.png
+8t04-1-0default-res.png
+8t04-1-0default-spy.png
+8t04-2-0default-res.png
+8t04-2-0default-spy.png
+8t04-2-420LlamaPerci-res.png
+8t04-2-420LlamaPerci-spy.png
+8t04-3-0default-res.png
+8t04-3-0default-spy.png
