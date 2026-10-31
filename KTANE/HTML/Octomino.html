@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1">
+    <title>Octomino — Keep Talking and Nobody Explodes Module</title>
+    <link rel="stylesheet" type="text/css" href="css/font.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/ktane-utils.js"></script>
+	<style>
+		.octo-table {
+			float: right;
+			clear: right;
+			margin-bottom: 0.5cm;
+			margin-left: 0.5cm;
+		}
+		.diag td { text-align: center; }
+		.diag img { width: 160px; }
+		.empty { border: none; }
+		code { background-color: #ddd; }
+        .dark code { background-color: #444; }
+		.dark .diag img { filter: invert(85%) };
+	</style>
+</head>
+<body>
+    <div class="section">
+        <div class="page page-bg-01">
+            <div class="page-header">
+                <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+                <span class="page-header-section-title">Octomino</span>
+            </div>
+            <div class="page-content">
+                <img src="img/Component/Octomino.svg" class="diagram">
+                <h2>On the Subject of Octomino</h2>
+                <p class="flavour-text">Who said a polyomino had to take up only two dimensions?</p>
+				<table class="octo-table empty">
+					<tr>
+						<th colspan="2" class="empty">Color offset value</th>
+					</tr>
+					<tr>
+						<td>Red</td>
+						<td>Strikes</td>
+					</tr>
+					<tr>
+						<td>Yellow</td>
+						<td>Stage number</td>
+					</tr>
+					<tr>
+						<td>Green</td>
+						<td>Solve count</td>
+					</tr>
+					<tr>
+						<td>Cyan</td>
+						<td>Indicators</td>
+					</tr>
+					<tr>
+						<td>Blue</td>
+						<td>Ports</td>
+					</tr>
+					<tr>
+						<td>Purple</td>
+						<td>Total modules</td>
+					</tr>
+					<tr>
+						<td>Magenta</td>
+						<td>Batteries</td>
+					</tr>
+					<tr>
+						<td>White</td>
+						<td>SN last digit</td>
+					</tr>
+				</table>
+				<table class="diag empty octo-table">
+					<tr>
+						<th colspan="2" class="empty">Offset direction</th>
+					</tr>
+					<tr>
+						<td>Right</td>
+						<td><img src="img/Octomino/diag-1.svg"></td>
+					</tr>
+					<tr>
+						<td>Left</td>
+						<td><img src="img/Octomino/diag-2.svg"></td>
+					</tr>
+				</table>
+				<p>Determine a starting button and an ending button, whose colors determine a starting and ending position within the net below, to which you must navigate a path.</p>
+				<p>The <u>ending button</u> and ending position will always be the color of the initially lit tile at the top.</p>
+				<p>The <u>starting button</u> is determined by finding an offset from the ending position based on the color of the ring of the circular button at the top right and the button layout. Use the layout of the buttons at the top to determine whether the direction in which you count your offset moves left or right.</p>
+				<p>To activate the module, press the starting button. A <code>&lt;TBD&gt;</code> second timer will start. The starting button will reveal its color and position within the net upon activation.</p>
+				<p>Navigate around the net by pressing the button whose color is orthogonally adjacent to your current position. Prioritize unvisited cells. If there are multiple possible navigable unvisited cells, prioritize the cell whose color appears furthest left in the row of buttons. If there are no adjacent unvisited cells, any adjacent cell is navigable.</p>
+				<p>After visiting all eight cells, navigate to the ending position, then press that button to submit.</p>
+				<p>The dimensions of the net for each stage change. There are five stages, with a 2D, 3D, 4D, 3D, and 2D net at each stage respectively.</p>
+				<p>Stages 3, 4, and 5, all share one <code>&lt;TBD&gt;</code> second timer. In Stage 4, the colored ring will contain two colors, to which you must add the values together to determine your offset. In Stage 5, the colored ring will contain three colors.</p>
+				<p>Hold the top right button to fully reset to Stage 1.</p>
+            </div>
+            <div class="page-footer relative-footer">Page 1 of 1</div>
+        </div>
+    </div>
+</body>
+</html>
