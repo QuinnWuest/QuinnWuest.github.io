@@ -288,5 +288,7 @@
 8t04-2-0default-spy.png
 8t04-2-420LlamaPerci-res.png
 8t04-2-420LlamaPerci-spy.png
+8t04-2-Spellblade-res.png
+8t04-2-Spellblade-spy.png
 8t04-3-0default-res.png
 8t04-3-0default-spy.png
